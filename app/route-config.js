@@ -13,8 +13,8 @@ function config($routeProvider, $locationProvider) {
         }).when('/portfoljbolag', {
             templateUrl: 'view/portfoljbolag.html'
         }).when('/portfoljbolag/investor', {
-            templateUrl: 'view/portfoljbolag/investor.html'
+            template: '<app-investor />'
         }).when('/portfoljbolag/latour', { 
-            templateUrl: 'view/portfoljbolag/latour.html'
+            template: '<app-latour />'
         });
 }
