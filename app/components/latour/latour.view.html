@@ -1,1 +1,17 @@
-Latour
+<h1>Latour</h1>
+<style>
+    table { border-collapse: collapse; }
+    td { border: solid 1px black; }
+</style>
+<table>
+    <tr>
+        <th>År</th>
+        <th>Utdelning</th>
+        <th>Extrautdelning</th>
+    </tr>
+    <tr ng-repeat="row in $ctrl.dividend">
+        <td>{{row.year}}</td>
+        <td>{{row.ordinary}} kr</td>
+        <td>{{row.extra}} kr</td>
+    </tr>
+</table>
