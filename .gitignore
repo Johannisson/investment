@@ -1,0 +1,6 @@
+*.css
+.sass-cache
+node_modules
+css
+package-lock.json
+!main.min.css
