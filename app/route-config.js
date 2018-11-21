@@ -9,12 +9,12 @@ function config($routeProvider, $locationProvider) {
 
     $routeProvider
         .when('/', {
-            template: '<a href="portföljbolag">Portföljbolag</a>'
-        }).when('/portföljbolag', {
-            templateUrl: 'view/portföljbolag.html'
-        }).when('/portföljbolag/investor', {
-            templateUrl: 'view/portföljbolag/investor.html'
-        }).when('/portföljbolag/latour', {
-            templateUrl: 'view/portföljbolag/latour.html'
+            template: '<a href="portfoljbolag">Portföljbolag</a>'
+        }).when('/portfoljbolag', {
+            templateUrl: 'view/portfoljbolag.html'
+        }).when('/portfoljbolag/investor', {
+            templateUrl: 'view/portfoljbolag/investor.html'
+        }).when('/portfoljbolag/latour', { 
+            templateUrl: 'view/portfoljbolag/latour.html'
         });
 }
