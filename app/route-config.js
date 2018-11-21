@@ -11,10 +11,10 @@ function config($routeProvider, $locationProvider) {
         .when('/', {
             template: '<a href="portföljbolag">Portföljbolag</a>'
         }).when('/portföljbolag', {
-            templateUrl: 'portföljbolag.html'
+            templateUrl: 'view/portföljbolag.html'
         }).when('/portföljbolag/investor', {
-            templateUrl: 'portföljbolag/investor.html'
+            templateUrl: 'view/portföljbolag/investor.html'
         }).when('/portföljbolag/latour', {
-            templateUrl: 'portföljbolag/latour.html'
+            templateUrl: 'view/portföljbolag/latour.html'
         });
 }
