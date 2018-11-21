@@ -1,11 +1,14 @@
 <!doctype html>
 <html ng-app="app">
     <head>
+        <base href="/">
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.min.js"></script>
         <script src="assets/main.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/main.min.css">
     </head>
     <body>
-        <a href="portföljbolag.html">Portföljbolag</a>
+        <ng-view />
     </body>
 </html>
