@@ -16,5 +16,7 @@ function config($routeProvider, $locationProvider) {
             template: '<app-investor />'
         }).when('/portfoljbolag/latour', { 
             template: '<app-latour />'
+        }).when('/portfoljbolag/swedbank', { 
+            template: '<app-swedbank />'
         });
 }
