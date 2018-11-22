@@ -13,6 +13,10 @@ function SwedbankController() {
     var vm = this;
 
     vm.data = {
-        quantity: 110
+        quantity: 110,
+        homepage: {
+            name: 'www.swedbank.se' ,
+            url: 'https://www.swedbank.com/svenska/investor-relations'
+        }
     };
 }

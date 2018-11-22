@@ -9,7 +9,7 @@ function config($routeProvider, $locationProvider) {
 
     $routeProvider
         .when('/', {
-            template: '<a href="portfoljbolag">Portföljbolag</a>'
+            template: '<app-index />'
         }).when('/portfoljbolag', {
             templateUrl: 'view/portfoljbolag.html'
         }).when('/portfoljbolag/investor', {

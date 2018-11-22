@@ -13,6 +13,10 @@ function InvestorController() {
     var vm = this;
 
     vm.data = {
-        quantity: 60
+        quantity: 60,
+        homepage: {
+            name: 'www.investorab.se' ,
+            url: 'https://www.investorab.se/'
+        }
     };
 }

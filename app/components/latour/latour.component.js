@@ -13,7 +13,11 @@ function LatourController() {
     var vm = this;
     
     vm.data = {
-        quantity: 220
+        quantity: 220,
+        homepage: {
+            name: 'www.latour.se' ,
+            url: 'https://latour.se/'
+        }
     };
 
     vm.diagram = [];
