@@ -11,4 +11,8 @@ SwedbankController.$inject = [];
 
 function SwedbankController() {
     var vm = this;
+
+    vm.data = {
+        quantity: 110
+    };
 }

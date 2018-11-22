@@ -11,4 +11,8 @@ InvestorController.$inject = [];
 
 function InvestorController() {
     var vm = this;
+
+    vm.data = {
+        quantity: 60
+    };
 }

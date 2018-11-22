@@ -11,6 +11,10 @@ LatourController.$inject = [];
 
 function LatourController() {
     var vm = this;
+    
+    vm.data = {
+        quantity: 220
+    };
 
     vm.diagram = [];
     vm.dividend = [

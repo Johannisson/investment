@@ -1,19 +1,19 @@
-<svg width="900" height="400">
+<svg width="100%" height="400">
     <g ng-repeat="data in $ctrl.data">
         <rect ng-if="data.value2 !== undefined"
-              width="12"
+              width="11"
               height="{{(data.value1 + data.value2) * $ctrl.scale + 4}}"
               y="{{375 - (data.value1 + data.value2) * $ctrl.scale - 4}}"
-              x="{{($index * 30) + 5}}"
+              x="{{($index * 28) + 5}}"
               fill="teal"
               stroke="white"
               stroke-width="2" />
-        <rect width="12"
+        <rect width="11"
               height="{{data.value1 * $ctrl.scale + 2}}" 
               y="{{375 - data.value1 * $ctrl.scale - 2}}"
-              x="{{($index * 30) + 5}}" fill="#E65708"
+              x="{{($index * 28) + 5}}" fill="#E65708"
               stroke="white"
               stroke-width="2" />
-        <text x="{{$index * 30}}" y="390" font-size="10">{{data.label}}</text>
+        <text font-size="9" font-family="Arial" transform="translate({{$index * 28}},390)">{{data.label}}</text>
     </g>
 </svg>

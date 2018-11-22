@@ -1,4 +1,14 @@
 body {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
+}
+
+article {
+    width: 80%;
+    float:left;
+}
+
+aside {
+    width: 20%;
+    float:right;
 }
