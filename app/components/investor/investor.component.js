@@ -13,7 +13,7 @@ function InvestorController() {
     var vm = this;
 
     vm.data = {
-        quantity: 60,
+        quantity: 30,
         homepage: {
             name: 'www.investorab.se' ,
             url: 'https://www.investorab.se/'
