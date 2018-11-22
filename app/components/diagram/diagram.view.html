@@ -1,16 +1,16 @@
-Diagram
 <svg width="900" height="400">
     <g ng-repeat="data in $ctrl.data">
-        <rect width="12"
+        <rect ng-if="data.value2 !== undefined"
+              width="10"
               height="{{(data.value1 + data.value2) * $ctrl.scale + 4}}"
-              y="{{360 - (data.value1 + data.value2) * $ctrl.scale}}"
+              y="{{360 - (data.value1 + data.value2) * $ctrl.scale - 4}}"
               x="{{($index * 30) + 4}}"
               fill="teal"
               stroke="white"
               stroke-width="2" />
-        <rect width="12"
-              height="{{data.value1 * $ctrl.scale + 4}}" 
-              y="{{360 - data.value1 * $ctrl.scale}}"
+        <rect width="10"
+              height="{{data.value1 * $ctrl.scale + 2}}" 
+              y="{{360 - data.value1 * $ctrl.scale - 2}}"
               x="{{($index * 30) + 4}}" fill="#E65708"
               stroke="white"
               stroke-width="2" />
