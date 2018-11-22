@@ -3,7 +3,10 @@ angular
     .controller('DiagramController', DiagramController)
     .component('appDiagram', {
         templateUrl: 'app/components/diagram/diagram.view.html',
-        bindings: {},
+        bindings: {
+            data: '=',
+            scale: '='
+        },
         controller: DiagramController
     });
 

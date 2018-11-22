@@ -1,1 +1,8 @@
 Diagram
+<svg width="900" height="400">
+    <g ng-repeat="data in $ctrl.data">
+        <rect width="8" height="{{(data.value1 + data.value2) * $ctrl.scale}}" y="{{360 - (data.value1 + data.value2) * $ctrl.scale}}" x="{{($index * 30) + 6}}" fill="Teal" />
+        <rect width="8" height="{{data.value1 * $ctrl.scale}}" y="{{360 - data.value1 * $ctrl.scale}}" x="{{($index * 30) + 6}}" fill="#E65708" />
+        <text x="{{$index * 30}}" y="380" font-size="10">{{data.label}}</text>
+    </g>
+</svg>

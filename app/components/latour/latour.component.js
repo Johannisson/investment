@@ -12,7 +12,8 @@ LatourController.$inject = [];
 function LatourController() {
     var vm = this;
 
-    this.dividend = [
+    vm.diagram = [];
+    vm.dividend = [
         { year: 1986, ordinary: 0.01 },
         { year: 1987, ordinary: 0.02, extra: 0.05 },
         { year: 1988, ordinary: 0.02, extra: 0.02 },
@@ -46,6 +47,9 @@ function LatourController() {
         { year: 2016, ordinary: 1.69 },
         { year: 2017, ordinary: 2.00 },
         { year: 2018, ordinary: 2.25 }
-
     ]
+
+    vm.dividend.forEach(function(element) {
+        vm.diagram.push({label:element.year, value1:element.ordinary, value2:element.extra});
+    });
 }

@@ -36,7 +36,8 @@
 
         uglify: {
             options: {
-                manage: false
+                manage: false,
+                compress: false
             },
             my_target: {
                 files: {
