@@ -22,3 +22,12 @@ aside {
 .right {
     float: right;
 }
+
+a {
+    color: #009ECF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
