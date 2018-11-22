@@ -13,6 +13,8 @@ function HusqvarnaController() {
     var vm = this;
 
     vm.data = {
+        stock: 'Husqvarna B',
+        ticker: 'HUSQ B',
         quantity: 170,
         homepage: {
             name: 'www.husqvarna.com' ,

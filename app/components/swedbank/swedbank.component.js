@@ -13,6 +13,8 @@ function SwedbankController() {
     var vm = this;
 
     vm.data = {
+        stock: 'Swedbank A',
+        ticker: 'SWED A',
         quantity: 110,
         homepage: {
             name: 'www.swedbank.se' ,

@@ -13,6 +13,8 @@ function LatourController() {
     var vm = this;
     
     vm.data = {
+        stock: 'Latour B',
+        ticker: 'LATO B',
         quantity: 220,
         homepage: {
             name: 'www.latour.se' ,

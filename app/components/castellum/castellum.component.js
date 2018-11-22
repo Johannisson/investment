@@ -13,6 +13,8 @@ function CastellumController() {
     var vm = this;
 
     vm.data = {
+        stock: 'Castellum',
+        ticker: 'CAST',
         quantity: 50,
         homepage: {
             name: 'www.castellum.se' ,
