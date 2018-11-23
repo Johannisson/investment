@@ -15,7 +15,7 @@ function LatourController() {
     vm.data = {
         stock: 'Latour B',
         ticker: 'LATO B',
-        quantity: 220,
+        quantity: latour.quantity,
         homepage: {
             name: 'www.latour.se' ,
             url: 'https://latour.se/'

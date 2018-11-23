@@ -15,7 +15,7 @@ function HusqvarnaController() {
     vm.data = {
         stock: 'Husqvarna B',
         ticker: 'HUSQ B',
-        quantity: 170,
+        quantity: husqvarna.quantity,
         homepage: {
             name: 'www.husqvarna.com' ,
             url: 'https://www.husqvarna.com/se/'

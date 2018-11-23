@@ -15,7 +15,7 @@ function InvestorController() {
     vm.data = {
         stock: 'Investor B',
         ticker: 'INVE B',
-        quantity: 30,
+        quantity: investor.quantity,
         homepage: {
             name: 'www.investorab.se' ,
             url: 'https://www.investorab.se/'

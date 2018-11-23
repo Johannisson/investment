@@ -13,4 +13,13 @@ DividendController.$inject = [];
 
 function DividendController() {
     var vm = this;
+
+    vm.data = [
+        castellum,
+        husqvarna,
+        investor,
+        latour,
+        sagax,
+        swedbank
+    ];
 }

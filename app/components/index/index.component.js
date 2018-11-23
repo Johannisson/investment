@@ -12,7 +12,10 @@ IndexController.$inject = [];
 function IndexController() {
     var vm = this;
 
-    vm.data = {
-        quantity: 60
-    };
+    vm.castellum = castellum;
+    vm.husqvarna = husqvarna;
+    vm.investor = investor;
+    vm.latour = latour;
+    vm.sagax = sagax;
+    vm.swedbank = swedbank;
 }

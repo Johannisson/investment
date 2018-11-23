@@ -15,7 +15,7 @@ function SwedbankController() {
     vm.data = {
         stock: 'Swedbank A',
         ticker: 'SWED A',
-        quantity: 110,
+        quantity: swedbank.quantity,
         homepage: {
             name: 'www.swedbank.se' ,
             url: 'https://www.swedbank.com/svenska/investor-relations'

@@ -15,7 +15,7 @@ function CastellumController() {
     vm.data = {
         stock: 'Castellum',
         ticker: 'CAST',
-        quantity: 50,
+        quantity: castellum.quantity,
         homepage: {
             name: 'www.castellum.se' ,
             url: 'https://www.castellum.se/'

@@ -1,1 +1,16 @@
 <h1>UTDELNING</h1>
+
+<table>
+    <tr ng-repeat="month in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']">
+        <td>{{month}}</td>
+        <td>
+            <div ng-repeat="row in $ctrl.data">
+                <div ng-if="row.dividends[month] !== undefined">
+                    {{row.name}}:
+                    [{{row.dividends[month]}} kr]
+                    [{{row.dividends[month] * row.quantity}} kr]
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
