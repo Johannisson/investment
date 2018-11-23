@@ -8,7 +8,9 @@ function config($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 
     $routeProvider
-        .when('/', {
+        .when('/utdelning', {
+            template: '<app-dividend />'
+        }).when('/', {
             template: '<app-index />'
         }).when('/portfoljbolag', {
             templateUrl: 'view/portfoljbolag.html'
