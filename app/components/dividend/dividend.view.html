@@ -1,16 +1,28 @@
 <h1>UTDELNING</h1>
 
 <table>
-    <tr ng-repeat="month in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']">
-        <td>{{month}}</td>
-        <td>
-            <div ng-repeat="row in $ctrl.data">
-                <div ng-if="row.dividends[month] !== undefined">
-                    {{row.name}}:
-                    [{{row.dividends[month]}} kr]
-                    [{{row.dividends[month] * row.quantity}} kr]
+    <tr>
+        <th>Månad</th>
+        <th class="fixed">Aktie</th>
+        <th class="fixed">Utdelning</th>
+        <th class="fixed">Summa</th>
+    </tr>
+    <tr ng-repeat="month in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']" class="split">
+        <td>{{$ctrl.months[month]}}</td>
+        <td colspan="3">
+            <table>
+                <tr ng-repeat="row in $ctrl.data" ng-if="row.dividends[month] !== undefined">
+                    <td class="fixed">{{row.stock}}</td>
+                    <td class="fixed">{{row.dividends[month]}} kr</td>
+                    <td class="fixed">{{row.dividends[month] * row.quantity}} kr</td>
                 </div>
-            </div>
+            </table>
         </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{$ctrl.getTotal()}}</td>
     </tr>
 </table>

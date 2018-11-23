@@ -14,6 +14,21 @@ DividendController.$inject = [];
 function DividendController() {
     var vm = this;
 
+    vm.months = {
+        january: 'Januari',
+        february: 'Februari',
+        march: 'Mars',
+        april: 'April',
+        may: 'Maj',
+        june: 'Juni',
+        july: 'Juli',
+        august: 'Augusti',
+        september: 'September',
+        october: 'Oktober',
+        november: 'November',
+        december: 'December'
+    };
+
     vm.data = [
         castellum,
         husqvarna,
@@ -22,4 +37,8 @@ function DividendController() {
         sagax,
         swedbank
     ];
+
+    vm.getTotal = function () {
+        return 123;
+    }
 }

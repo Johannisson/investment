@@ -23,6 +23,10 @@ aside {
     float: right;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 a {
     color: #009ECF;
     text-decoration: none;
@@ -30,4 +34,20 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    vertical-align: top;
+}
+
+.fixed {
+    width: 200px;
+}
+
+.split {
+    border-bottom: solid 1px #999;
 }

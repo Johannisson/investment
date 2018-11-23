@@ -1,5 +1,6 @@
 var sagax = {
     name: 'Sagax',
+    stock: 'Sagax D',
     quantity: 660,
     dividends: {
         january: 0.50,

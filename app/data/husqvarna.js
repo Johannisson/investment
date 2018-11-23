@@ -1,5 +1,6 @@
 var husqvarna = {
     name: 'Husqvarna',
+    stock: 'Husqvarna B',
     quantity: 170,
     dividends: {
         april: 0.75,
