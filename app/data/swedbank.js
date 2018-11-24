@@ -1,4 +1,5 @@
 var swedbank = {
+    id: 'swedbank',
     name: 'Swedbank',
     stock: 'Swedbank A',
     quantity: 110,

@@ -1,4 +1,5 @@
 var sagax = {
+    id: 'sagax',
     name: 'Sagax',
     stock: 'Sagax D',
     quantity: 660,

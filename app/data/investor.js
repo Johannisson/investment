@@ -1,4 +1,5 @@
 var investor = {
+    id: 'investor',
     name: 'Investor',
     stock: 'Investor B',
     quantity: 30,

@@ -1,4 +1,5 @@
 var husqvarna = {
+    id: 'husqvarna',
     name: 'Husqvarna',
     stock: 'Husqvarna B',
     quantity: 170,

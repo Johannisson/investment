@@ -4,28 +4,8 @@
     <a href="utdelning">Utdelning</a>
 </article>
 <aside>
-    <div>
-        <a href="portfoljbolag/castellum">Castellum</a>
-        <span class="right">{{$ctrl.castellum.quantity}} st</span>
-    </div>
-    <div>
-        <a href="portfoljbolag/husqvarna">Husqvarna</a>
-        <span class="right">{{$ctrl.husqvarna.quantity}} st</span>
-    </div>
-    <div>
-        <a href="portfoljbolag/investor">Investor</a>
-        <span class="right">{{$ctrl.investor.quantity}} st</span>
-    </div>
-    <div>
-        <a href="portfoljbolag/latour">Latour</a>
-        <span class="right">{{$ctrl.latour.quantity}} st</span>
-    </div>
-    <div>
-        <a href="portfoljbolag/sagax">Sagax</a>
-        <span class="right">{{$ctrl.sagax.quantity}} st</span>
-    </div>
-    <div>
-        <a href="portfoljbolag/swedbank">Swedbank</a>
-        <span class="right">{{$ctrl.swedbank.quantity}} st</span>
+    <div ng-repeat="row in $ctrl.data">
+        <a href="portfoljbolag/{{row.id}}">{{row.stock}}</a>
+        <span class="right">{{row.quantity}} st</span>
     </div>
 </aside>
