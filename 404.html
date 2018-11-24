@@ -12,9 +12,10 @@
                 'portfoljbolag',
                 'utdelning',
             ]
-            pages.forEach(function(page) {
+            pages.some(function(page) {
                 if (window.location.href.indexOf(page) !== -1) {
-                    window.location.replace('https://johannisson.github.io/investment/#!/' + page);    
+                    window.location.replace('https://johannisson.github.io/investment/#!/' + page);
+                    return true;
                 }
             });
         </script>
