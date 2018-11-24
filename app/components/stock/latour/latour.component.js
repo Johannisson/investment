@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('LatourController', LatourController)
     .component('appLatour', {
-        templateUrl: 'app/components/latour/latour.view.html',
+        templateUrl: 'app/components/stock/latour/latour.view.html',
         bindings: {},
         controller: LatourController
     });
@@ -12,15 +12,7 @@ LatourController.$inject = [];
 function LatourController() {
     var vm = this;
     
-    vm.data = {
-        stock: 'Latour B',
-        ticker: 'LATO B',
-        quantity: latour.quantity,
-        homepage: {
-            name: 'www.latour.se' ,
-            url: 'https://latour.se/'
-        }
-    };
+    vm.data = latour;
 
     vm.diagram = [];
     vm.dividend = [
