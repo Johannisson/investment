@@ -4,17 +4,17 @@
         <tr>
             <th>Månad</th>
             <th class="fixed">Aktie</th>
-            <th class="fixed">Utdelning</th>
-            <th class="fixed">Summa</th>
+            <th class="fixed" style="text-align: right">Utdelning</th>
+            <th class="fixed" style="text-align: right">Summa</th>
         </tr>
         <tr ng-repeat="month in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']" class="split">
             <td>{{$ctrl.months[month]}}</td>
             <td colspan="3">
                 <table>
-                    <tr ng-repeat="row in $ctrl.data" ng-if="row.dividends[month] !== undefined">
-                        <td class="fixed">{{row.stock}}</td>
-                        <td class="fixed">{{row.dividends[month]}} kr</td>
-                        <td class="fixed">{{row.dividends[month] * row.quantity}} kr</td>
+                    <tr ng-repeat="stock in $ctrl.data" ng-if="stock.dividends[month] !== undefined">
+                        <td class="fixed">{{stock.stock}}</td>
+                        <td class="fixed" style="text-align: right">{{stock.dividends[month] | number : 2}} kr</td>
+                        <td class="fixed" style="text-align: right">{{(stock.dividends[month] * stock.quantity) | number : 2}} kr</td>
                     </div>
                 </table>
             </td>
@@ -23,13 +23,13 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>{{$ctrl.getTotal()}}</td>
+            <td style="text-align: right"><b>{{$ctrl.getTotal() | number : 2}} kr</b></td>
         </tr>
     </table>
 </article>
 <aside>
     <div ng-repeat="row in $ctrl.data">
-        <a href="portfoljbolag/{{row.id}}">{{row.name}}</a>
+        <a href="portfoljbolag/{{row.id}}">{{row.stock}}</a>
         <span class="right">{{row.quantity}} st</span>
     </div>
 </aside>
