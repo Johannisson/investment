@@ -11,7 +11,7 @@ var latour = {
         name: 'www.latour.se' ,
         url: 'https://latour.se/'
     },
-    dividends: [
+    years: [
         { year: 1986, ordinary: 0.01 },
         { year: 1987, ordinary: 0.02, extra: 0.05 },
         { year: 1988, ordinary: 0.02, extra: 0.02 },

@@ -1,28 +1,31 @@
-<svg width="100%" height="400">
+<svg ng-attr-width="{{$ctrl.width}}" ng-attr-height="{{$ctrl.height}}">
+    <g ng-repeat="row in $ctrl.rows">
+        <line stroke="grey"
+                stroke-width="1"
+                x1="30"
+                ng-attr-y1="{{374.5 - row * $ctrl.scale}}"
+                x2="1000"
+                ng-attr-y2="{{374.5 - row * $ctrl.scale}}" />
+        <text font-size="11" font-family="Arial" text-anchor="end" ng-attr-transform="translate(20, {{378.5 - row * $ctrl.scale}})">{{row}}</text>
+    </g>
     <g ng-repeat="data in $ctrl.data">
         <rect ng-if="data.value3 !== undefined"
-            width="11"
-            ng-attr-height="{{(data.value1 + data.value2 + data.value3) * $ctrl.scale + 6}}"
-            ng-attr-y="{{375 - (data.value1 + data.value2 + data.value3) * $ctrl.scale - 6}}"
-            ng-attr-x="{{($index * 26) + 5}}"
-            fill="#37939E"
-            stroke="white"
-            stroke-width="2" />
+            width="9"
+            ng-attr-height="{{(data.value1 + data.value2 + data.value3) * $ctrl.scale}}"
+            ng-attr-y="{{375 - (data.value1 + data.value2 + data.value3) * $ctrl.scale}}"
+            ng-attr-x="{{($index * 26) + 40}}"
+            fill="#37939E" />
         <rect ng-if="data.value2 !== undefined"
-              width="11"
-              ng-attr-height="{{(data.value1 + data.value2) * $ctrl.scale + 4}}"
-              ng-attr-y="{{375 - (data.value1 + data.value2) * $ctrl.scale - 4}}"
-              ng-attr-x="{{($index * 26) + 5}}"
-              fill="#1F3862"
-              stroke="white"
-              stroke-width="2" />
-        <rect width="11"
-              ng-attr-height="{{data.value1 * $ctrl.scale + 2}}" 
-              ng-attr-y="{{375 - data.value1 * $ctrl.scale - 2}}"
-              ng-attr-x="{{($index * 26) + 5}}"
-              fill="#DF1E32"
-              stroke="white"
-              stroke-width="2" />
-        <text font-size="9" font-family="Arial" ng-attr-transform="translate({{$index * 26 + 5}},390)">{{data.label}}</text>
+              width="9"
+              ng-attr-height="{{(data.value1 + data.value2) * $ctrl.scale}}"
+              ng-attr-y="{{375 - (data.value1 + data.value2) * $ctrl.scale}}"
+              ng-attr-x="{{($index * 26) + 40}}"
+              fill="#1F3862" />
+        <rect width="9"
+              ng-attr-height="{{data.value1 * $ctrl.scale}}" 
+              ng-attr-y="{{375 - data.value1 * $ctrl.scale}}"
+              ng-attr-x="{{($index * 26) + 40}}"
+              fill="#DF1E32" />
+        <text font-size="11" font-family="Arial" ng-attr-transform="translate({{$index * 26 + 38}},390)">{{data.label}}</text>
     </g>
 </svg>

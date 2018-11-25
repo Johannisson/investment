@@ -5,7 +5,10 @@ angular
         templateUrl: 'app/components/diagram/diagram.view.html',
         bindings: {
             data: '=',
-            scale: '='
+            scale: '=',
+            rows: '=',
+            width: '=',
+            height: '='
         },
         controller: DiagramController
     });

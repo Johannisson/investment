@@ -12,7 +12,7 @@ var investor = {
         name: 'www.investorab.se' ,
         url: 'https://www.investorab.se/'
     },
-    dividends: [
+    years: [
         { year: 1985, ordinary: 0.32 },
         { year: 1986, ordinary: 0.42 },
         { year: 1987, ordinary: 0.46 },
