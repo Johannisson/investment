@@ -12,6 +12,6 @@ var sagax = {
     },
     homepage: {
         name: 'www.sagax.se' ,
-        url: 'https://www.sagax.com/svenska/investor-relations'
+        url: 'https://www.sagax.se'
     }
 };
