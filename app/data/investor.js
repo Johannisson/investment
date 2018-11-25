@@ -42,10 +42,10 @@ var investor = {
         { year: 2011, ordinary: 5.00 },
         { year: 2012, ordinary: 6.00 },
         { year: 2013, ordinary: 7.00 },
-        { year: 2014, ordinary: 4.38 },
-        { year: 2015, ordinary: 4.50 },
-        { year: 2016, ordinary: 5.69 },
-        { year: 2017, ordinary: 6.00 },
-        { year: 2018, ordinary: 7.00 }
+        { year: 2014, ordinary: 8.00 },
+        { year: 2015, ordinary: 9.00 },
+        { year: 2016, ordinary: 10.00 },
+        { year: 2017, ordinary: 11.00 },
+        { year: 2018, ordinary: 12.00 }
     ]
 };
