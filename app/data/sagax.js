@@ -13,5 +13,19 @@ var sagax = {
     homepage: {
         name: 'www.sagax.se' ,
         url: 'https://www.sagax.se'
-    }
+    },
+    calendar: [
+        { month: 'jan', ordinary: 0.50 },
+        { month: 'feb', ordinary: 0.00 },
+        { month: 'mar', ordinary: 0.00 },
+        { month: 'apr', ordinary: 0.50 },
+        { month: 'maj', ordinary: 0.00 },        
+        { month: 'jun', ordinary: 0.00 },
+        { month: 'jul', ordinary: 0.50 },
+        { month: 'aug', ordinary: 0.00 },
+        { month: 'sep', ordinary: 0.00 },
+        { month: 'okt', ordinary: 0.50 },
+        { month: 'nov', ordinary: 0.00 },
+        { month: 'dec', ordinary: 0.00 }
+    ]
 };
