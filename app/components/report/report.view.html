@@ -7,11 +7,15 @@
     <tr>
         <th class="fixed">Aktie</th>
         <th class="fixed" style="text-align: right">Antal</th>
+        <th class="fixed" style="text-align: right">Delta</th>
         <th class="fixed" style="text-align: right">Utdelning</th>
     </tr>
     <tr ng-repeat="row in $ctrl.year2018.november">
         <td>{{row.data.stock}}</td>
         <td style="text-align: right">{{row.quantity}} st</td>
+        <td style="text-align: right">
+            <span ng-if="row.delta">{{row.delta + ' st'}}</span>
+        </td>
         <td style="text-align: right"></td>
     </tr>
 </table>

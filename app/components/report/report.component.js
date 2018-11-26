@@ -16,13 +16,16 @@ function ReportController() {
         november: [
             {
                 data: castellum,
-                quantity: 50
+                quantity: 50,
+                delta: 50
             }, {
                 data: husqvarna,
-                quantity: 120
+                quantity: 120,
+                delta: 120
             }, {
                 data: investor,
                 quantity: 30,
+                delta: 30
             }, {
                 data: latour,
                 quantity: 220
