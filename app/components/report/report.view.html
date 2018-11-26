@@ -11,7 +11,7 @@
         <th class="fixed" style="text-align: right">Utdelning</th>
     </tr>
     <tr ng-repeat="row in $ctrl.year2018.november">
-        <td>{{row.data.stock}}</td>
+        <td><a href="../portfoljbolag/{{row.data.id}}">{{row.data.stock}}</a></td>
         <td style="text-align: right">{{row.quantity}} st</td>
         <td style="text-align: right">
             <span ng-if="row.delta">{{row.delta + ' st'}}</span>
