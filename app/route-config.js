@@ -8,10 +8,12 @@ function config($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 
     $routeProvider
-        .when('/utdelning', {
-            template: '<app-dividend />'
-        }).when('/', {
+        .when('/', {
             template: '<app-index />'
+        }).when('/utdelning', {
+            template: '<app-dividend />'
+        }).when('/manadsrapport', {
+            template: '<app-report />'
         }).when('/portfoljbolag', {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/investor', {
