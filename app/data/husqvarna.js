@@ -3,7 +3,7 @@ var husqvarna = {
     name: 'Husqvarna',
     stock: 'Husqvarna B',
     ticker: 'HUSQ B',
-    quantity: 170,
+    quantity: 120,
     dividends: {
         april: 0.75,
         october: 0.75
