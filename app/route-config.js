@@ -10,7 +10,7 @@ function config($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             template: '<app-index />'
-        }).when('/utdelning', {
+        }).when('/utdelningsprognos', {
             template: '<app-dividend />'
         }).when('/manadsrapport', {
             template: '<app-report />'

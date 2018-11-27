@@ -3,6 +3,7 @@ var swedbank = {
     name: 'Swedbank',
     stock: 'Swedbank A',
     ticker: 'SWED A',
+    currency: 'kr',
     quantity: 110,
     dividends: {
         march: 13.0

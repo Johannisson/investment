@@ -1,35 +1,32 @@
-<h1>UTDELNING</h1>
+<h1>UTDELNINGSPROGNOS</h1>
 <article>
     <table>
         <tr>
-            <th>Månad</th>
-            <th class="fixed">Aktie</th>
-            <th class="fixed" style="text-align: right">Utdelning</th>
-            <th class="fixed" style="text-align: right">Summa</th>
+            <td class="month w40"></td>
+            <td class="month w20 right">Antal</td>
+            <td class="month w20 right">Utdelning</td>
+            <td class="month w20 right">Summa</td>
         </tr>
-        <tr ng-repeat="month in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']" class="split">
-            <td>{{$ctrl.months[month]}}</td>
-            <td colspan="3">
+    </table>
+    <table>
+        <tr ng-repeat="month in $ctrl.months">
+            <td class="month">
+                {{month.name}}
                 <table>
-                    <tr ng-repeat="stock in $ctrl.data" ng-if="stock.dividends[month] !== undefined">
-                        <td class="fixed">{{stock.stock}}</td>
-                        <td class="fixed" style="text-align: right">{{stock.dividends[month] | number : 2}} kr</td>
-                        <td class="fixed" style="text-align: right">{{(stock.dividends[month] * stock.quantity) | number : 2}} kr</td>
-                    </div>
+                    <tr ng-repeat="stock in $ctrl.data" ng-if="stock.dividends[month.id] !== undefined">
+                        <td class="text w40"><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
+                        <td class="text w20 right">{{stock.quantity}} st&nbsp;&nbsp;</td>
+                        <td class="text w20 right">{{stock.dividends[month.id] | number:2}} {{stock.currency}}&nbsp;&nbsp;</td>
+                        <td class="text w20 right">{{(stock.dividends[month.id] * stock.quantity) | number:2}} {{stock.currency}}</td>
+                    </tr>
                 </table>
             </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td style="text-align: right"><b>{{$ctrl.getTotal() | number : 2}} kr</b></td>
         </tr>
     </table>
 </article>
 <aside>
-    <div ng-repeat="row in $ctrl.data">
-        <a href="portfoljbolag/{{row.id}}">{{row.stock}}</a>
-        <span class="right">{{row.quantity}} st</span>
+    <div ng-repeat="stock in $ctrl.data">
+        <a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a>
+        <span class="right">{{stock.quantity}} st</span>
     </div>
 </aside>

@@ -3,6 +3,7 @@ var castellum = {
     name: 'Castellum',
     stock: 'Castellum',
     ticker: 'CAST',
+    currency: 'kr',
     quantity: 50,
     dividends: {
         march: 2.65,

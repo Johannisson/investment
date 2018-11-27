@@ -14,20 +14,20 @@ DividendController.$inject = [];
 function DividendController() {
     var vm = this;
 
-    vm.months = {
-        january: 'Januari',
-        february: 'Februari',
-        march: 'Mars',
-        april: 'April',
-        may: 'Maj',
-        june: 'Juni',
-        july: 'Juli',
-        august: 'Augusti',
-        september: 'September',
-        october: 'Oktober',
-        november: 'November',
-        december: 'December'
-    };
+    vm.months = [
+        { id: 'january', name: 'Januari' },
+        { id: 'february', name: 'Februari' },
+        { id: 'march', name: 'Mars' },
+        { id: 'april', name: 'April' },
+        { id: 'may', name: 'Maj' },
+        { id: 'june', name: 'Juni' },
+        { id: 'july', name: 'Juli' },
+        { id: 'august', name: 'Augusti' },
+        { id: 'september', name: 'September' },
+        { id: 'october', name: 'Oktober' },
+        { id: 'november', name: 'November' },
+        { id: 'december', name: 'December' }
+    ];
 
     vm.data = [
         castellum,
