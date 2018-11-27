@@ -11,7 +11,7 @@
     <table>
         <tr ng-repeat="month in $ctrl.months">
             <td class="split padding">
-                <div class="bold">{{month.name}}</div>
+                <div class="month">{{month.name}}</div>
                 <table>
                     <tr ng-repeat="stock in $ctrl.data" ng-if="stock.dividends[month.id] !== undefined">
                         <td class="w40"><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
@@ -31,8 +31,10 @@
     </table>
 </article>
 <aside>
-    <div ng-repeat="stock in $ctrl.data">
-        <a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a>
-        <span class="right">{{stock.quantity}} st</span>
-    </div>
+    <table>
+        <tr ng-repeat="stock in $ctrl.data">
+            <td><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
+            <td class="right">{{stock.quantity}} st</td>
+        </tr>
+    </table>
 </aside>

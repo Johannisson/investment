@@ -5,8 +5,10 @@
     <a href="manadsrapport">Månadsrapport</a>
 </article>
 <aside>
-    <div ng-repeat="row in $ctrl.data">
-        <a href="portfoljbolag/{{row.id}}">{{row.stock}}</a>
-        <span class="right">{{row.quantity}} st</span>
-    </div>
+    <table>
+        <tr ng-repeat="stock in $ctrl.data">
+            <td><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
+            <td class="right">{{stock.quantity}} st</td>
+        </tr>
+    </table>
 </aside>

@@ -11,7 +11,7 @@ body {
 }
 
 article {
-    width: 76%;
+    width: 70%;
     float:left;
 }
 
@@ -37,6 +37,8 @@ h3 {
 aside {
     width: 20%;
     float: right;
+    padding: 5px 20px;
+    border-left: solid 10px #FAD706;
 }
 
 div.right {
@@ -81,6 +83,10 @@ td {
 
 .bold {
     font-weight: 700;
+}
+
+.month {
+    font-weight: bold;
 }
 
 td.right {
