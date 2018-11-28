@@ -21,4 +21,8 @@ function DiagramController() {
     vm.step = function(index, offset) {
         return Math.floor(index * (vm.width / vm.data.length) * 0.95 + offset);
     };
+
+    vm.pixel = function(value) {
+        return Math.floor(value) + 0.5;
+    }
 }

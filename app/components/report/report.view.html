@@ -2,20 +2,22 @@
 <h2>2018</h2>
 <h3>NOVEMBER</h3>
 <label>Utdelningsprognos</label><br>
-<strong>{{4050 | number:2}} kr/år</strong><br><br>
-<table>
-    <tr>
-        <th class="fixed">Aktie</th>
-        <th class="fixed" style="text-align: right">Antal</th>
-        <th class="fixed" style="text-align: right">Delta</th>
-        <th class="fixed" style="text-align: right">Utdelning</th>
-    </tr>
-    <tr ng-repeat="row in $ctrl.year2018.november">
-        <td><a href="../portfoljbolag/{{row.data.id}}">{{row.data.stock}}</a></td>
-        <td style="text-align: right">{{row.quantity}} st</td>
-        <td style="text-align: right">
-            <span ng-if="row.delta">{{row.delta + ' st'}}</span>
-        </td>
-        <td style="text-align: right"></td>
-    </tr>
-</table>
+<strong>{{$ctrl.year2018.november.forecast | number:2}} kr/år</strong><br><br>
+<div class="w50">
+    <table>
+        <tr>
+            <th class="fixed">Aktie</th>
+            <th class="fixed" style="text-align: right">Antal</th>
+            <th class="fixed" style="text-align: right">Delta</th>
+            <th class="fixed" style="text-align: right">Utdelning</th>
+        </tr>
+        <tr ng-repeat="row in $ctrl.year2018.november.stocks">
+            <td><a href="../portfoljbolag/{{row.data.id}}">{{row.data.stock}}</a></td>
+            <td style="text-align: right">{{row.quantity}} st</td>
+            <td style="text-align: right">
+                <span ng-if="row.delta">{{row.delta + ' st'}}</span>
+            </td>
+            <td style="text-align: right"></td>
+        </tr>
+    </table>
+</div>
