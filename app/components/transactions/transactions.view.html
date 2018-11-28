@@ -1,0 +1,14 @@
+<h1>TRANSAKTIONER</h1>
+<article>
+    <div class="w80">
+        <table>
+            <tr ng-repeat="transaction in $ctrl.transactions | orderBy:date:true">
+                <td ng-if="transaction.stock" class="w15">{{transaction.date}}</td>
+                <td ng-if="transaction.stock" class="w30"><a href="portfoljbolag/{{transaction.stock.id}}">{{transaction.stock.name}}</a></td>
+                <td ng-if="transaction.stock" class="w15 right">{{transaction.quantity}} st</td>
+                <td ng-if="transaction.stock" class="w20 right">{{transaction.price | number:2}} {{transaction.stock.currency}}</td>
+                <td ng-if="transaction.stock" class="w20 right">{{transaction.price * transaction.quantity | number:2}} {{transaction.stock.currency}}</td>
+            </tr>
+        </table>
+    </div>
+</aside>
