@@ -13,19 +13,19 @@
             width="9"
             ng-attr-height="{{(data.value1 + data.value2 + data.value3) * $ctrl.scale}}"
             ng-attr-y="{{($ctrl.height - 25) - (data.value1 + data.value2 + data.value3) * $ctrl.scale}}"
-            ng-attr-x="{{($index * 26) + 40}}"
+            ng-attr-x="{{$ctrl.step($index, 40)}}"
             fill="#45B9C6" />
         <rect ng-if="data.value2 !== undefined"
               width="9"
               ng-attr-height="{{(data.value1 + data.value2) * $ctrl.scale}}"
               ng-attr-y="{{($ctrl.height - 25) - (data.value1 + data.value2) * $ctrl.scale}}"
-              ng-attr-x="{{($index * 26) + 40}}"
+              ng-attr-x="{{$ctrl.step($index, 40)}}"
               fill="#1F3862" />
         <rect width="9"
               ng-attr-height="{{data.value1 * $ctrl.scale}}" 
               ng-attr-y="{{($ctrl.height - 25) - data.value1 * $ctrl.scale}}"
-              ng-attr-x="{{($index * 26) + 40}}"
+              ng-attr-x="{{$ctrl.step($index, 40)}}"
               fill="#DF1E32" />
-        <text font-size="11" font-family="Arial" ng-attr-transform="translate({{$index * 26 + 38}},{{$ctrl.height - 10}})">{{data.label}}</text>
+        <text font-size="11" font-family="Arial" ng-attr-transform="translate({{$ctrl.step($index, 38)}},{{$ctrl.height - 10}})">{{data.label}}</text>
     </g>
 </svg>

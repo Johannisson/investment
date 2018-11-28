@@ -20,7 +20,7 @@ function config($routeProvider, $locationProvider) {
             template: '<app-investor />'
         }).when('/portfoljbolag/latour', { 
             template: '<app-latour />'
-        }).when('/portfoljbolag/sagax', { 
+        }).when('/portfoljbolag/sagax-d', { 
             template: '<app-sagax />'
         }).when('/portfoljbolag/swedbank', { 
             template: '<app-swedbank />'
@@ -28,5 +28,7 @@ function config($routeProvider, $locationProvider) {
             template: '<app-husqvarna />'
         }).when('/portfoljbolag/castellum', { 
             template: '<app-castellum />'
+        }).when('/portfoljbolag/handelsbanken', { 
+            template: '<app-handelsbanken />'
         });
 }

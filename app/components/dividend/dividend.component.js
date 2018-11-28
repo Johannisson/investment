@@ -31,6 +31,7 @@ function DividendController() {
 
     vm.data = [
         castellum,
+        handelsbanken,
         husqvarna,
         investor,
         latour,
@@ -40,10 +41,10 @@ function DividendController() {
 
     vm.getTotal = function () {
         var total = 0;
-        ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'].forEach(function(month) {
+        vm.months.forEach(function(month) {
             vm.data.forEach(function(stock) {
-                if (stock.dividends[month] !== undefined) {
-                    total += stock.dividends[month] * stock.quantity
+                if (stock.dividends[month.id] !== undefined) {
+                    total += stock.dividends[month.id] * stock.quantity
                 }
             });
         });;

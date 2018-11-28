@@ -17,4 +17,8 @@ DiagramController.$inject = [];
 
 function DiagramController() {
     var vm = this;
+
+    vm.step = function(index, offset) {
+        return Math.floor(index * (vm.width / vm.data.length) * 0.95 + offset);
+    };
 }

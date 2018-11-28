@@ -14,6 +14,7 @@ function IndexController() {
 
     vm.data = [
         castellum,
+        handelsbanken,
         husqvarna,
         investor,
         latour,
