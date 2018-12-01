@@ -1,15 +1,15 @@
 angular
     .module('app')
-    .controller('XACTHogutdelandeController', XACTHogutdelandeController)
-    .component('appXACTHogutdelande', {
+    .controller('XactHogutdelandeController', XactHogutdelandeController)
+    .component('appXactHogutdelande', {
         templateUrl: 'app/components/assets/xact_hogutdelande/xact_hogutdelande.view.html',
         bindings: {},
-        controller: XACTHogutdelandeController
+        controller: XactHogutdelandeController
     });
 
-XACTHogutdelandeController.$inject = [];
+XactHogutdelandeController.$inject = [];
 
-function XACTHogutdelandeController() {
+function XactHogutdelandeController() {
     var vm = this;
 
     vm.data = xact_hogutdelande;

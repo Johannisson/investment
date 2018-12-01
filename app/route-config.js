@@ -34,5 +34,7 @@ function config($routeProvider, $locationProvider) {
             template: '<app-castellum />'
         }).when('/portfoljbolag/handelsbanken', { 
             template: '<app-handelsbanken />'
+        }).when('/portfoljbolag/xact_hogutdelande', { 
+            template: '<app-xact-hogutdelande />'
         });
 }
