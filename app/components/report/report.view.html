@@ -1,22 +1,36 @@
 <h1>MÅNADSRAPPORT</h1>
 <h2>2018</h2>
 <h3>NOVEMBER</h3>
-<table class="w20">
+<table class="w25">
+    <tr>
+        <td>Värde</td>
+        <td class="right bold">{{$ctrl.getTotal() | number:2:sv}}</td>
+        <td class="bold">&nbsp;kr</td>
+    </tr>
+    <tr>
+        <td>Utdelning</td>
+        <td class="right bold">{{$ctrl.getDividends() | number:2:sv}}</td>
+        <td class="bold">&nbsp;kr</td>
+    </tr>
     <tr>
         <td>Utdelningsprognos</td>
-        <td class="right bold">{{$ctrl.year2018.november.forecast | number:2}} kr/år</td>
+        <td class="right bold">{{$ctrl.year2018.november.forecast | number:2}}</td>
+        <td class="bold">&nbsp;kr/år</td>
     </tr>
     <tr>
         <td>Ackumulerad utdelning</td>
-        <td class="right bold">0.00 kr</td>
+        <td class="right bold">0.00</td>
+        <td class="bold">&nbsp;kr</td>
     </tr>
     <tr>
         <td>Belåning</td>
-        <td class="right bold">0.00 kr</td>
+        <td class="right bold">0.00</td>
+        <td class="bold">&nbsp;kr</td>
     </tr>        
     <tr>
         <td>Belåningsgrad</td>
-        <td class="right bold">0.00 %</td>
+        <td class="right bold">0.00</td>
+        <td class="bold">&nbsp;%</td>
     </tr>    
 </table>
 <br>
@@ -47,8 +61,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="right bold">{{$ctrl.getTotal() | number:2}} kr</td>
-            <td class="right bold">{{$ctrl.getDividends() | number:2}} kr</td>
+            <td class="right bold">{{$ctrl.getTotal() | number:2:'se-sv'}} kr</td>
+            <td class="right bold">{{$ctrl.getDividends() | number:2:'sv'}} kr</td>
         </tr>
     </table>
 </div>
