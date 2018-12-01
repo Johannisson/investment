@@ -3,17 +3,17 @@
 <h3>NOVEMBER</h3>
 <table class="w20">
     <tr>
-        <td>Portföljvärde</td>
-        <td class="right bold">{{$ctrl.getTotal() | number:2}} kr</td>
-    </tr>
-    <tr>
         <td>Utdelningsprognos</td>
         <td class="right bold">{{$ctrl.year2018.november.forecast | number:2}} kr/år</td>
     </tr>
     <tr>
-            <td>Belåning</td>
-            <td class="right bold">0.00 kr</td>
-        </tr>        
+        <td>Ackumulerad utdelning</td>
+        <td class="right bold">0.00 kr</td>
+    </tr>
+    <tr>
+        <td>Belåning</td>
+        <td class="right bold">0.00 kr</td>
+    </tr>        
     <tr>
         <td>Belåningsgrad</td>
         <td class="right bold">0.00 %</td>
@@ -48,6 +48,7 @@
             <td></td>
             <td></td>
             <td class="right bold">{{$ctrl.getTotal() | number:2}} kr</td>
+            <td class="right bold">{{$ctrl.getDividends() | number:2}} kr</td>
         </tr>
     </table>
 </div>

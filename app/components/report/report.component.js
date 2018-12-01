@@ -60,4 +60,12 @@ function ReportController() {
         });
         return sum;
     }
+
+    vm.getDividends = function () {
+        var sum = 0;
+        vm.year2018.november.stocks.forEach(function(stock) {
+            sum += stock.dividend || 0;
+        });
+        return sum;
+    }
 }
