@@ -12,7 +12,7 @@ IndexController.$inject = [];
 function IndexController() {
     var vm = this;
 
-    vm.data = [
+    vm.assets = [
         castellum,
         handelsbanken,
         husqvarna,

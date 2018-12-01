@@ -16,6 +16,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-transactions />'
         }).when('/manadsrapport', {
             template: '<app-report />'
+        }).when('/bevakningslista', {
+            template: '<app-watchlist />'
         }).when('/portfoljbolag', {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/investor', {
