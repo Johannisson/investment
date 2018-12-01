@@ -1,23 +1,53 @@
 <h1>MÅNADSRAPPORT</h1>
 <h2>2018</h2>
 <h3>NOVEMBER</h3>
-<label>Utdelningsprognos</label><br>
-<strong>{{$ctrl.year2018.november.forecast | number:2}} kr/år</strong><br><br>
-<div class="w50">
+<table class="w20">
+    <tr>
+        <td>Portföljvärde</td>
+        <td class="right bold">{{$ctrl.getTotal() | number:2}} kr</td>
+    </tr>
+    <tr>
+        <td>Utdelningsprognos</td>
+        <td class="right bold">{{$ctrl.year2018.november.forecast | number:2}} kr/år</td>
+    </tr>
+    <tr>
+            <td>Belåning</td>
+            <td class="right bold">0.00 kr</td>
+        </tr>        
+    <tr>
+        <td>Belåningsgrad</td>
+        <td class="right bold">0.00 %</td>
+    </tr>    
+</table>
+<br>
+<div class="w70">
     <table>
-        <tr>
-            <th class="fixed">Aktie</th>
-            <th class="fixed" style="text-align: right">Antal</th>
-            <th class="fixed" style="text-align: right">Delta</th>
-            <th class="fixed" style="text-align: right">Utdelning</th>
+        <tr class="split">
+            <th class="w20">Aktie</th>
+            <th class="w20 right">Antal</th>
+            <th class="w20 right">Delta</th>
+            <th class="w20 right">Värde</th>
+            <th class="w20 right">Utdelning</th>
         </tr>
         <tr ng-repeat="row in $ctrl.year2018.november.stocks">
             <td><a href="../portfoljbolag/{{row.data.id}}">{{row.data.stock}}</a></td>
-            <td style="text-align: right">{{row.quantity}} st</td>
-            <td style="text-align: right">
+            <td class="right">{{row.quantity}} st</td>
+            <td class="right">
                 <span ng-if="row.delta">{{row.delta + ' st'}}</span>
             </td>
-            <td style="text-align: right"></td>
+            <td class="right">
+                <span>{{row.value | number:2}} kr</span>
+            </td>
+            <td class="right"></td>
+        </tr>
+        <tr class="split">
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="right bold">{{$ctrl.getTotal() | number:2}} kr</td>
         </tr>
     </table>
 </div>

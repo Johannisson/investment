@@ -91,7 +91,11 @@ td {
 }
 
 .month {
-    font-weight: bold;
+    border-bottom: solid 10px white;
+}
+
+th.right {
+    text-align: right;
 }
 
 td.right {
@@ -115,5 +119,8 @@ td.right {
 .w40 { width: 40%; }
 .w45 { width: 45%; }
 .w50 { width: 50%; }
+.w55 { width: 55%; }
 .w60 { width: 60%; }
+.w70 { width: 70%; }
+.w75 { width: 75%; }
 .w80 { width: 80%; }

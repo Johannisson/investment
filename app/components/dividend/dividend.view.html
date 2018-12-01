@@ -1,17 +1,17 @@
 <h1>UTDELNINGSPROGNOS</h1>
 <article>
     <table>
-        <tr>
+        <tr class="split">
             <td class="w40"></td>
-            <td class="w20 right bold padding">Antal</td>
-            <td class="w20 right bold padding">Utdelning</td>
-            <td class="w20 right bold padding">Summa</td>
+            <td class="w20 right bold">Antal</td>
+            <td class="w20 right bold">Utdelning</td>
+            <td class="w20 right bold">Summa</td>
         </tr>
     </table>
     <table>
-        <tr ng-repeat="month in $ctrl.months">
-            <td class="split padding">
-                <div class="month">{{month.name}}</div>
+        <tr ng-repeat="month in $ctrl.months" class="month">
+            <td>
+                <div class="bold">{{month.name}}</div>
                 <table>
                     <tr ng-repeat="stock in $ctrl.data" ng-if="stock.dividends[month.id] !== undefined">
                         <td class="w40"><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
@@ -24,9 +24,12 @@
         </tr>
     </table>
     <table>
+        <tr class="split">
+            <td colspan="2"></td>
+        </tr>
         <tr>
             <td class="w80"></td>
-            <td class="bold padding w20 right">Summa: {{$ctrl.getTotal() | number:2}} kr</td>
+            <td class="bold w20 right">Summa: {{$ctrl.getTotal() | number:2}} kr</td>
         </tr>
     </table>
 </article>
