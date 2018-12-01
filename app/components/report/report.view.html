@@ -39,7 +39,7 @@
         <tr class="split">
             <th class="w20">Aktie</th>
             <th class="w20 right">Antal</th>
-            <th class="w20 right">Delta</th>
+            <th class="w20 right">Köp/Sälj</th>
             <th class="w20 right">Värde</th>
             <th class="w20 right">Utdelning</th>
         </tr>
@@ -47,7 +47,7 @@
             <td><a href="../portfoljbolag/{{row.data.id}}">{{row.data.stock}}</a></td>
             <td class="right">{{row.quantity}} st</td>
             <td class="right">
-                <span ng-if="row.delta">{{row.delta + ' st'}}</span>
+                <span ng-if="row.change">{{row.change + ' st'}}</span>
             </td>
             <td class="right">
                 <span>{{row.value | number:2}} kr</span>

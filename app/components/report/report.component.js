@@ -20,22 +20,22 @@ function ReportController() {
                     data: castellum,
                     quantity: 50,
                     value: 7960,
-                    delta: 50
+                    change: 50
                 }, {
                     data: handelsbanken,
                     quantity: 60,
                     value: 6015,
-                    delta: 60
+                    change: 60
                 }, {
                     data: husqvarna,
                     quantity: 120,
                     value: 8602,
-                    delta: 120
+                    change: 120
                 }, {
                     data: investor,
                     quantity: 30,
                     value: 11961,
-                    delta: 30
+                    change: 30
                 }, {
                     data: latour,
                     quantity: 220,
