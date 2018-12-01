@@ -5,7 +5,7 @@
 body {
     margin: 0 auto;
     padding: 16px;
-    max-width: 1200px;
+    width: 1200px;
     font-family: 'Open Sans';
     font-size: 14px;
 }
@@ -124,3 +124,32 @@ td.right {
 .w70 { width: 70%; }
 .w75 { width: 75%; }
 .w80 { width: 80%; }
+
+.active {
+    opacity: 1.0 !important;
+}
+
+.button_year {
+    font-family: 'Oswald';
+    font-size: 1.8rem;
+    color: #DF1E32;
+    background: transparent;
+    border: 0;
+    padding: 0 20px 0 0;
+    margin: 0;
+    outline: none;
+    opacity: 0.3;
+}
+
+.button_month {
+    font-family: 'Oswald';
+    font-size: 1.2rem;
+    color: #1F3862;
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+    padding: 0 20px 0 0;
+    margin: 0;
+    outline: none;
+    opacity: 0.3;
+}

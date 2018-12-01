@@ -14,11 +14,11 @@ function ReportController() {
 
     vm.order = 'data.name';
 
-    vm.month_2018 = '2018-december';
+    vm.year = 2018;
+    vm.month = 'december';
 
     vm.data = [];
     vm.data['2018-december'] = {
-        title: 'DECEMBER',
         forecast: 4380,
         accumulated: 0,
         assets: [
@@ -59,7 +59,6 @@ function ReportController() {
         ]
     }
     vm.data['2018-november'] = {
-        title: 'NOVEMBER',
         forecast: 4380,
         accumulated: 0,
         assets: [
@@ -108,10 +107,6 @@ function ReportController() {
 
     vm.getDescription = function(month) {
         return vm.data[month].description;
-    }
-
-    vm.getTitle = function(month) {
-        return vm.data[month].title;
     }
 
     vm.getAccumulatedDividends = function(month) {
