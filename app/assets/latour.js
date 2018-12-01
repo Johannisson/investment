@@ -1,7 +1,7 @@
 var latour = {
     id: 'latour',
     name: 'Latour',
-    stock: 'Latour B',
+    asset: 'Latour B',
     ticker: 'LATO B',
     currency: 'kr',
     quantity: 220,

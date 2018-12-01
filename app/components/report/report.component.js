@@ -12,48 +12,110 @@ ReportController.$inject = [];
 function ReportController() {
     var vm = this;
 
+    vm.order = 'data.name';
+
+    vm.month_2018 = '2018-december';
+
     vm.data = [];
-    vm.data['2018-november'] = {
+    vm.data['2018-december'] = {
+        title: 'DECEMBER',
         forecast: 4380,
+        accumulated: 0,
         assets: [
             {
-                data: castellum,
+                asset: castellum,
+                quantity: 50,
+                value: 7960
+            }, {
+                asset: handelsbanken,
+                quantity: 60,
+                value: 6015
+            }, {
+                asset: husqvarna,
+                quantity: 120,
+                value: 8602
+            }, {
+                asset: investor,
+                quantity: 30,
+                value: 11961
+            }, {
+                asset: latour,
+                quantity: 220, 
+                value: 25036
+            }, {
+                asset: sagax,
+                quantity: 660,
+                value: 21648
+            }, {
+                asset: swedbank,
+                quantity: 110,
+                value: 23265
+            }, {
+                asset: xact_hogutdelande,
+                quantity: 100,
+                value: 0,
+                change: 0
+            }
+        ]
+    }
+    vm.data['2018-november'] = {
+        title: 'NOVEMBER',
+        forecast: 4380,
+        accumulated: 0,
+        assets: [
+            {
+                asset: castellum,
                 quantity: 50,
                 value: 7960,
                 change: 50
             }, {
-                data: handelsbanken,
+                asset: handelsbanken,
                 quantity: 60,
                 value: 6015,
                 change: 60
             }, {
-                data: husqvarna,
+                asset: husqvarna,
                 quantity: 120,
                 value: 8602,
                 change: 120
             }, {
-                data: investor,
+                asset: investor,
                 quantity: 30,
                 value: 11961,
                 change: 30
             }, {
-                data: latour,
+                asset: latour,
                 quantity: 220, 
-                value: 25036
+                value: 25036,
+                change: 220
             }, {
-                data: sagax,
+                asset: sagax,
                 quantity: 660,
                 value: 21648,
+                change: 660
             }, {
-                data: swedbank,
+                asset: swedbank,
                 quantity: 110,
                 value: 23265,
+                change: 110
             }
         ]
     };
 
     vm.getAssets = function(month) {
         return vm.data[month].assets;
+    }
+
+    vm.getDescription = function(month) {
+        return vm.data[month].description;
+    }
+
+    vm.getTitle = function(month) {
+        return vm.data[month].title;
+    }
+
+    vm.getAccumulatedDividends = function(month) {
+        return vm.data[month].accumulated;
     }
 
     vm.getTotal = function (month) {

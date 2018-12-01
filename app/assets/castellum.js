@@ -1,7 +1,7 @@
 var castellum = {
     id: 'castellum',
     name: 'Castellum',
-    stock: 'Castellum',
+    asset: 'Castellum',
     ticker: 'CAST',
     currency: 'kr',
     quantity: 50,

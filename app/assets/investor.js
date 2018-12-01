@@ -1,7 +1,7 @@
 var investor = {
     id: 'investor',
     name: 'Investor',
-    stock: 'Investor B',
+    asset: 'Investor B',
     ticker: 'INVE B',
     currency: 'kr',
     quantity: 30,
@@ -10,7 +10,7 @@ var investor = {
         november: 4.0
     },
     homepage: {
-        name: 'www.investorab.se' ,
+        name: 'www.investorab.se',
         url: 'https://www.investorab.se/'
     },
     years: [

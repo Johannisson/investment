@@ -1,7 +1,7 @@
 var husqvarna = {
     id: 'husqvarna',
     name: 'Husqvarna',
-    stock: 'Husqvarna B',
+    asset: 'Husqvarna B',
     ticker: 'HUSQ B',
     currency: 'kr',
     quantity: 120,

@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('SagaxController', SagaxController)
     .component('appSagax', {
-        templateUrl: 'app/components/stock/sagax/sagax.view.html',
+        templateUrl: 'app/components/assets/sagax/sagax.view.html',
         bindings: {},
         controller: SagaxController
     });

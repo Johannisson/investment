@@ -12,13 +12,5 @@ WatchlistController.$inject = [];
 function WatchlistController() {
     var vm = this;
 
-    vm.assets = [
-        castellum,
-        handelsbanken,
-        husqvarna,
-        investor,
-        latour,
-        sagax,
-        swedbank
-    ];
+    vm.assets = assets;
 }

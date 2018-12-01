@@ -13,11 +13,11 @@
             <td>
                 <div class="bold">{{month.name}}</div>
                 <table>
-                    <tr ng-repeat="stock in $ctrl.data" ng-if="stock.dividends[month.id] !== undefined">
-                        <td class="w40"><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
-                        <td class="w20 right">{{stock.quantity}} st</td>
-                        <td class="w20 right">{{stock.dividends[month.id] | number:2}} {{stock.currency}}</td>
-                        <td class="w20 right">{{(stock.dividends[month.id] * stock.quantity) | number:2}} {{stock.currency}}</td>
+                    <tr ng-repeat="asset in $ctrl.assets" ng-if="asset.dividends[month.id] !== undefined">
+                        <td class="w40"><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
+                        <td class="w20 right">{{asset.quantity}} st</td>
+                        <td class="w20 right">{{asset.dividends[month.id] | number:2}} {{asset.currency}}</td>
+                        <td class="w20 right">{{(asset.dividends[month.id] * asset.quantity) | number:2}} {{asset.currency}}</td>
                     </tr>
                 </table>
             </td>
@@ -35,9 +35,9 @@
 </article>
 <aside>
     <table>
-        <tr ng-repeat="stock in $ctrl.data">
-            <td><a href="portfoljbolag/{{stock.id}}">{{stock.stock}}</a></td>
-            <td class="right">{{stock.quantity}} st</td>
+        <tr ng-repeat="asset in $ctrl.assets">
+            <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
+            <td class="right">{{asset.quantity}} st</td>
         </tr>
     </table>
 </aside>

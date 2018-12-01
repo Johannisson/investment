@@ -1,18 +1,18 @@
 angular
     .module('app')
-    .controller('LatourController', LatourController)
-    .component('appLatour', {
-        templateUrl: 'app/components/stock/latour/latour.view.html',
+    .controller('InvestorController', InvestorController)
+    .component('appInvestor', {
+        templateUrl: 'app/components/assets/investor/investor.view.html',
         bindings: {},
-        controller: LatourController
+        controller: InvestorController
     });
 
-LatourController.$inject = [];
+InvestorController.$inject = [];
 
-function LatourController() {
+function InvestorController() {
     var vm = this;
-    
-    vm.data = latour;
+
+    vm.data = investor;
 
     vm.diagram = [];
 

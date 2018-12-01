@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('HusqvarnaController', HusqvarnaController)
     .component('appHusqvarna', {
-        templateUrl: 'app/components/stock/husqvarna/husqvarna.view.html',
+        templateUrl: 'app/components/assets/husqvarna/husqvarna.view.html',
         bindings: {},
         controller: HusqvarnaController
     });

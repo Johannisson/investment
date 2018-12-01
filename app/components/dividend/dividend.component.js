@@ -29,22 +29,14 @@ function DividendController() {
         { id: 'december', name: 'December' }
     ];
 
-    vm.data = [
-        castellum,
-        handelsbanken,
-        husqvarna,
-        investor,
-        latour,
-        sagax,
-        swedbank
-    ];
+    vm.assets = assets;
 
     vm.getTotal = function () {
         var total = 0;
         vm.months.forEach(function(month) {
-            vm.data.forEach(function(stock) {
-                if (stock.dividends[month.id] !== undefined) {
-                    total += stock.dividends[month.id] * stock.quantity
+            vm.assets.forEach(function(asset) {
+                if (asset.dividends[month.id] !== undefined) {
+                    total += asset.dividends[month.id] * asset.quantity
                 }
             });
         });;

@@ -7,18 +7,13 @@ angular
         controller: IndexController
     });
 
-IndexController.$inject = [];
+IndexController.$inject = ['$locale'];
 
-function IndexController() {
+function IndexController($locale) {
     var vm = this;
 
-    vm.assets = [
-        castellum,
-        handelsbanken,
-        husqvarna,
-        investor,
-        latour,
-        sagax,
-        swedbank
-    ];
+    $locale.NUMBER_FORMATS.GROUP_SEP = ' ';
+    $locale.NUMBER_FORMATS.DECIMAL_SEP = ',';
+
+    vm.assets = assets;
 }

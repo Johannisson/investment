@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('CastellumController', CastellumController)
     .component('appCastellum', {
-        templateUrl: 'app/components/stock/castellum/castellum.view.html',
+        templateUrl: 'app/components/assets/castellum/castellum.view.html',
         bindings: {},
         controller: CastellumController
     });

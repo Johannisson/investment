@@ -1,7 +1,7 @@
 var handelsbanken = {
     id: 'handelsbanken',
     name: 'Handelsbanken',
-    stock: 'Handelsbanken A',
+    asset: 'Handelsbanken A',
     ticker: 'SHB A',
     currency: 'kr',
     quantity: 60,

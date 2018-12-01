@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('HandelsbankenController', HandelsbankenController)
     .component('appHandelsbanken', {
-        templateUrl: 'app/components/stock/handelsbanken/handelsbanken.view.html',
+        templateUrl: 'app/components/assets/handelsbanken/handelsbanken.view.html',
         bindings: {},
         controller: HandelsbankenController
     });
