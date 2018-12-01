@@ -4,17 +4,22 @@
 <table class="w25">
     <tr>
         <td>Värde</td>
-        <td class="right bold">{{$ctrl.getTotal() | number:2:sv}}</td>
+        <td class="right bold">{{$ctrl.getTotal('2018-november') | number:2}}</td>
         <td class="bold">&nbsp;kr</td>
     </tr>
     <tr>
         <td>Utdelning</td>
-        <td class="right bold">{{$ctrl.getDividends() | number:2:sv}}</td>
+        <td class="right bold">{{$ctrl.getDividends('2018-november') | number:2}}</td>
         <td class="bold">&nbsp;kr</td>
     </tr>
     <tr>
+        <td>Direktavkastning</td>
+        <td class="right bold">{{$ctrl.getYield('2018-november') | number:2}}</td>
+        <td class="bold">&nbsp;%</td>
+    </tr>
+    <tr>
         <td>Utdelningsprognos</td>
-        <td class="right bold">{{$ctrl.year2018.november.forecast | number:2}}</td>
+        <td class="right bold">{{$ctrl.getForecast('2018-november') | number:2}}</td>
         <td class="bold">&nbsp;kr/år</td>
     </tr>
     <tr>
@@ -43,14 +48,14 @@
             <th class="w20 right">Värde</th>
             <th class="w20 right">Utdelning</th>
         </tr>
-        <tr ng-repeat="row in $ctrl.year2018.november.stocks">
-            <td><a href="../portfoljbolag/{{row.data.id}}">{{row.data.stock}}</a></td>
-            <td class="right">{{row.quantity}} st</td>
+        <tr ng-repeat="asset in $ctrl.getAssets('2018-november')">
+            <td><a href="../portfoljbolag/{{asset.data.id}}">{{asset.data.stock}}</a></td>
+            <td class="right">{{asset.quantity}} st</td>
             <td class="right">
-                <span ng-if="row.change">{{row.change + ' st'}}</span>
+                <span ng-if="asset.change">{{asset.change + ' st'}}</span>
             </td>
             <td class="right">
-                <span>{{row.value | number:2}} kr</span>
+                <span>{{asset.value | number:2}} kr</span>
             </td>
             <td class="right"></td>
         </tr>
@@ -61,8 +66,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="right bold">{{$ctrl.getTotal() | number:2:'se-sv'}} kr</td>
-            <td class="right bold">{{$ctrl.getDividends() | number:2:'sv'}} kr</td>
+            <td class="right bold">{{$ctrl.getTotal('2018-november') | number:2:'se-sv'}} kr</td>
+            <td class="right bold">{{$ctrl.getDividends('2018-november') | number:2:'sv'}} kr</td>
         </tr>
     </table>
 </div>
