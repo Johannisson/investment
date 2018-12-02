@@ -129,6 +129,11 @@ td.right {
     opacity: 1.0 !important;
 }
 
+.star {
+    font-size: 20px;
+    line-height: 0.8rem;
+}
+
 .button_year {
     font-family: 'Oswald';
     font-size: 1.8rem;
@@ -139,6 +144,7 @@ td.right {
     margin: 0;
     outline: none;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .button_month {
@@ -152,4 +158,5 @@ td.right {
     margin: 0;
     outline: none;
     opacity: 0.3;
+    cursor: pointer;
 }
