@@ -20,6 +20,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-watchlist />'
         }).when('/portfoljbolag', {
             template: '<app-portfolio />'
+        }).when('/portfoljbolag/axfood', {
+            template: '<app-axfood />'
         }).when('/portfoljbolag/investor', {
             template: '<app-investor />'
         }).when('/portfoljbolag/latour', { 

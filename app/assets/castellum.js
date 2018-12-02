@@ -10,7 +10,7 @@ var castellum = {
         september: 2.65
     },
     homepage: {
-        name: 'www.castellum.se' ,
+        name: 'www.castellum.se',
         url: 'https://www.castellum.se/'
     },
     years: [
