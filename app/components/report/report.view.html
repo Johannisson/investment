@@ -78,7 +78,7 @@
                     <span ng-if="asset.change">{{asset.change + ' st'}}</span>
                 </td>
                 <td class="right">
-                    <span>{{asset.value | number:2}} kr</span>
+                    <span>{{asset.quantity * asset.price | number:2}} kr</span>
                 </td>
                 <td class="right"></td>
             </tr>
