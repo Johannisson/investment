@@ -25,31 +25,31 @@ function ReportController() {
             {
                 asset: castellum,
                 quantity: 50,
-                value: 7960
+                price: 159.20
             }, {
                 asset: handelsbanken,
                 quantity: 60,
-                value: 6015
+                price: 100.25
             }, {
                 asset: husqvarna,
                 quantity: 120,
-                value: 8602
+                price: 71.68
             }, {
                 asset: investor,
                 quantity: 30,
-                value: 11961
+                price: 398.70
             }, {
                 asset: latour,
                 quantity: 220, 
-                value: 25036
+                price: 113.80
             }, {
                 asset: sagax,
                 quantity: 660,
-                value: 21648
+                price:32.80
             }, {
                 asset: swedbank,
                 quantity: 110,
-                value: 23265
+                price: 211.50
             }, {
                 asset: xact_hogutdelande,
                 quantity: 60,
@@ -65,38 +65,38 @@ function ReportController() {
             {
                 asset: castellum,
                 quantity: 50,
-                value: 7960,
-                change: 50
+                change: 50,
+                price: 159.20
             }, {
                 asset: handelsbanken,
                 quantity: 60,
-                value: 6015,
-                change: 60
+                change: 60,
+                price: 100.25
             }, {
                 asset: husqvarna,
                 quantity: 120,
-                value: 8602,
-                change: 120
+                change: 120,
+                price: 71.68
             }, {
                 asset: investor,
                 quantity: 30,
-                value: 11961,
-                change: 30
+                change: 30,
+                price: 398.70
             }, {
                 asset: latour,
                 quantity: 220, 
-                value: 25036,
-                change: 220
+                change: 220,
+                price: 113.80
             }, {
                 asset: sagax,
                 quantity: 660,
-                value: 21648,
-                change: 660
+                change: 660,
+                price:32.80
             }, {
                 asset: swedbank,
                 quantity: 110,
-                value: 23265,
-                change: 110
+                change: 110,
+                price: 211.50
             }
         ]
     };
@@ -116,7 +116,7 @@ function ReportController() {
     vm.getTotal = function (month) {
         var sum = 0;
         vm.getAssets(month).forEach(function(asset) {
-            sum += asset.value;
+            sum += asset.quantity * asset.price;
         });
         return sum;
     }
