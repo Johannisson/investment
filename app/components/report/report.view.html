@@ -52,12 +52,12 @@
         </tr>
         <tr>
             <td>Belåning</td>
-            <td class="right bold">0,00</td>
+            <td class="right bold">{{$ctrl.getLoan(month) | number:2}}</td>
             <td class="bold">&nbsp;kr</td>
         </tr>        
         <tr>
             <td>Belåningsgrad</td>
-            <td class="right bold">0,00</td>
+            <td class="right bold">{{$ctrl.getLoan(month) / $ctrl.getTotal(month) * 100 | number:2}}</td>
             <td class="bold">&nbsp;%</td>
         </tr>    
     </table>

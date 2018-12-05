@@ -2,7 +2,8 @@
 <article>
     <div class="w80">
         <table>
-            <tr ng-repeat="transaction in $ctrl.transactions | orderBy:date:true">
+            <tr ng-repeat="transaction in $ctrl.transactions">
+                <td ng-if="transaction.label" class="bold" colspan="3">{{transaction.label}}</td>
                 <td ng-if="transaction.asset" class="w15">{{transaction.date}}</td>
                 <td ng-if="transaction.asset" class="w30"><a href="portfoljbolag/{{transaction.asset.id}}">{{transaction.asset.asset}}</a></td>
                 <td ng-if="transaction.asset" class="w15 right">{{transaction.quantity}} st</td>
