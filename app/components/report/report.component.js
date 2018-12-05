@@ -52,9 +52,9 @@ function ReportController() {
                 value: 23265
             }, {
                 asset: xact_hogutdelande,
-                quantity: 0,
+                quantity: 60,
                 value: 0,
-                change: 0
+                change: 60
             }
         ]
     }
