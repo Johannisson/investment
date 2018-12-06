@@ -72,7 +72,7 @@
                 <th class="w20 right">Utdelning</th>
             </tr>
             <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order">
-                <td><a href="../portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
+                <td><a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
                 <td class="right">{{asset.quantity}} st</td>
                 <td class="right">
                     <span ng-if="asset.change">{{asset.change + ' st'}}</span>
