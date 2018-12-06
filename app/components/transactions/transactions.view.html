@@ -4,6 +4,8 @@
         <table>
             <tr ng-repeat="transaction in $ctrl.transactions">
                 <td ng-if="transaction.label" class="bold" colspan="3">{{transaction.label}}</td>
+                <td ng-if="transaction.sum" colspan="4" class="split-top"></td>
+                <td ng-if="transaction.sum" class="bold right split-top">{{$ctrl.getSum(transaction.sum) | number:2}} kr</td>
                 <td ng-if="transaction.asset" class="w15">{{transaction.date}}</td>
                 <td ng-if="transaction.asset" class="w30"><a href="portfoljbolag/{{transaction.asset.id}}">{{transaction.asset.asset}}</a></td>
                 <td ng-if="transaction.asset" class="w15 right">{{transaction.quantity}} st</td>
