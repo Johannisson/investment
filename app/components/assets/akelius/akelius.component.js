@@ -1,18 +1,18 @@
 angular
     .module('app')
-    .controller('SwedbankController', SwedbankController)
-    .component('appSwedbank', {
-        templateUrl: 'app/components/assets/swedbank/swedbank.view.html',
+    .controller('AkeliusController', AkeliusController)
+    .component('appAkelius', {
+        templateUrl: 'app/components/assets/akelius/akelius.view.html',
         bindings: {},
-        controller: SwedbankController
+        controller: AkeliusController
     });
 
-SwedbankController.$inject = [];
+AkeliusController.$inject = [];
 
-function SwedbankController() {
+function AkeliusController() {
     var vm = this;
 
-    vm.data = swedbank;
+    vm.data = akelius;
 
     vm.diagram = [];
 

@@ -34,6 +34,10 @@ function config($routeProvider, $locationProvider) {
             template: '<app-husqvarna />'
         }).when('/portfoljbolag/castellum', { 
             template: '<app-castellum />'
+        }).when('/portfoljbolag/kungsleden', { 
+            template: '<app-kungsleden />'
+        }).when('/portfoljbolag/akelius', { 
+            template: '<app-akelius />'
         }).when('/portfoljbolag/handelsbanken', { 
             template: '<app-handelsbanken />'
         }).when('/portfoljbolag/xact_hogutdelande', { 
