@@ -1,107 +1,110 @@
 <h1>MÅNADSRAPPORT</h1>
-<div>
-    <button class="button_year" ng-class="$ctrl.year === 2018 ? 'active' : ''" ng-click="$ctrl.year = 2018">2018</button>
-<!--    <button class="button_year" ng-class="$ctrl.year === 2019 ? 'active' : ''" ng-click="$ctrl.year = 2019">2019</button>-->
-</div>
-<div ng-if="$ctrl.year === 2019">
-    <button class="button_month" ng-class="$ctrl.month === 'january' ? 'active' : ''" ng-click="$ctrl.month = 'january'">Januari</button>
-    <button class="button_month" ng-class="$ctrl.month === 'february' ? 'active' : ''" ng-click="$ctrl.month = 'february'">Februari</button>
-    <button class="button_month" ng-class="$ctrl.month === 'march' ? 'active' : ''" ng-click="$ctrl.month = 'march'">Mars</button>
-    <button class="button_month" ng-class="$ctrl.month === 'april' ? 'active' : ''" ng-click="$ctrl.month = 'april'">April</button>
-    <button class="button_month" ng-class="$ctrl.month === 'may' ? 'active' : ''" ng-click="$ctrl.month = 'may'">Maj</button>
-    <button class="button_month" ng-class="$ctrl.month === 'june' ? 'active' : ''" ng-click="$ctrl.month = 'june'">Juni</button>
-    <button class="button_month" ng-class="$ctrl.month === 'july' ? 'active' : ''" ng-click="$ctrl.month = 'july'">Juli</button>
-    <button class="button_month" ng-class="$ctrl.month === 'august' ? 'active' : ''" ng-click="$ctrl.month = 'august'">Augusti</button>
-    <button class="button_month" ng-class="$ctrl.month === 'september' ? 'active' : ''" ng-click="$ctrl.month = 'september'">September</button>
-    <button class="button_month" ng-class="$ctrl.month === 'october' ? 'active' : ''" ng-click="$ctrl.month = 'october'">Oktober</button>
-    <button class="button_month" ng-class="$ctrl.month === 'november' ? 'active' : ''" ng-click="$ctrl.month = 'november'">November</button>
-    <button class="button_month" ng-class="$ctrl.month === 'december' ? 'active' : ''" ng-click="$ctrl.month = 'december'">December</button>
-</div>
-<br>
-<div ng-if="$ctrl.year === 2018">
-    <button class="button_month" ng-class="$ctrl.month === 'november' ? 'active' : ''" ng-click="$ctrl.month = 'november'">November</button>
-    <button class="button_month" ng-class="$ctrl.month === 'december' ? 'active' : ''" ng-click="$ctrl.month = 'december'">December</button>
-</div>
-<br>
-<div ng-repeat="month in ['2018-december', '2018-november']" ng-if="$ctrl.year + '-' + $ctrl.month === month">
-    <table class="w25">
-        <tr>
-            <td>Värde</td>
-            <td class="right bold">{{$ctrl.getTotal(month) | number:2}}</td>
-            <td class="bold">&nbsp;kr</td>
-        </tr>
-        <tr>
-            <td>Utdelning</td>
-            <td class="right bold">{{$ctrl.getDividends(month) | number:2}}</td>
-            <td class="bold">&nbsp;kr</td>
-        </tr>
-        <tr>
-            <td>Direktavkastning</td>
-            <td class="right bold">{{$ctrl.getYield(month) | number:2}}</td>
-            <td class="bold">&nbsp;%</td>
-        </tr>
-        <tr>
-            <td>Utdelningsprognos</td>
-            <td class="right bold">{{$ctrl.getForecast(month) | number:2}}</td>
-            <td class="bold">&nbsp;kr/år</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="right bold">{{$ctrl.getForecast(month) / 12 | number:2}}</td>
-            <td class="bold">&nbsp;kr/månad</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="right bold">{{$ctrl.getForecast(month) / 218 | number:2}}</td>
-            <td class="bold">&nbsp;kr/arbetsdag</td>
-        </tr>
-        <tr>
-            <td>Ackumulerad utdelning</td>
-            <td class="right bold">{{$ctrl.getAccumulatedDividends(month) | number:2}}</td>
-            <td class="bold">&nbsp;kr</td>
-        </tr>
-        <tr>
-            <td>Belåning</td>
-            <td class="right bold">{{-$ctrl.getLoan(month) | number:2}}</td>
-            <td class="bold">&nbsp;kr</td>
-        </tr>        
-        <tr>
-            <td>Belåningsgrad</td>
-            <td class="right bold">{{$ctrl.getLoan(month) / $ctrl.getTotal(month) * 100 | number:2}}</td>
-            <td class="bold">&nbsp;%</td>
-        </tr>    
-    </table>
+<article>
+    <div>
+        <button class="button_year" ng-class="$ctrl.year === 2018 ? 'active' : ''" ng-click="$ctrl.year = 2018">2018</button>
+    <!--    <button class="button_year" ng-class="$ctrl.year === 2019 ? 'active' : ''" ng-click="$ctrl.year = 2019">2019</button>-->
+    </div>
+    <div ng-if="$ctrl.year === 2019">
+        <button class="button_month" ng-class="$ctrl.month === 1 ? 'active' : ''" ng-click="$ctrl.month = 1">Januari</button>
+        <button class="button_month" ng-class="$ctrl.month === 2 ? 'active' : ''" ng-click="$ctrl.month = 2">Februari</button>
+        <button class="button_month" ng-class="$ctrl.month === 3 ? 'active' : ''" ng-click="$ctrl.month = 3">Mars</button>
+        <button class="button_month" ng-class="$ctrl.month === 4 ? 'active' : ''" ng-click="$ctrl.month = 4">April</button>
+        <button class="button_month" ng-class="$ctrl.month === 5 ? 'active' : ''" ng-click="$ctrl.month = 5">Maj</button>
+        <button class="button_month" ng-class="$ctrl.month === 6 ? 'active' : ''" ng-click="$ctrl.month = 6">Juni</button>
+        <button class="button_month" ng-class="$ctrl.month === 7 ? 'active' : ''" ng-click="$ctrl.month = 7">Juli</button>
+        <button class="button_month" ng-class="$ctrl.month === 8 ? 'active' : ''" ng-click="$ctrl.month = 8">Augusti</button>
+        <button class="button_month" ng-class="$ctrl.month === 9 ? 'active' : ''" ng-click="$ctrl.month = 9">September</button>
+        <button class="button_month" ng-class="$ctrl.month === 10 ? 'active' : ''" ng-click="$ctrl.month = 10">Oktober</button>
+        <button class="button_month" ng-class="$ctrl.month === 11 ? 'active' : ''" ng-click="$ctrl.month = 11">November</button>
+        <button class="button_month" ng-class="$ctrl.month === 12 ? 'active' : ''" ng-click="$ctrl.month = 12">December</button>
+    </div>
     <br>
-    <div class="w70">
-        <table>
-            <tr class="split">
-                <th class="w20" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
-                <th class="w20 right">Antal</th>
-                <th class="w20 right">Köp/Sälj</th>
-                <th class="w20 right" ng-click="$ctrl.order = '-value'"><span ng-if="$ctrl.order === '-value'">&#9660;&nbsp;</span>Värde</th>
-                <th class="w20 right">Utdelning</th>
+    <div ng-if="$ctrl.year === 2018">
+        <button class="button_month" ng-class="$ctrl.month === 11 ? 'active' : ''" ng-click="$ctrl.month = 11">November</button>
+        <button class="button_month" ng-class="$ctrl.month === 12 ? 'active' : ''" ng-click="$ctrl.month = 12">December</button>
+    </div>
+    <br>
+    <div ng-repeat="month in ['2018-11', '2018-12']" ng-if="$ctrl.year + '-' + $ctrl.month === month">
+        <table class="w40">
+            <tr>
+                <td>Värde</td>
+                <td class="right bold">{{$ctrl.getTotal(month) | number:2}}</td>
+                <td class="bold">&nbsp;kr</td>
             </tr>
-            <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order">
-                <td><a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
-                <td class="right">{{asset.quantity}} st</td>
-                <td class="right">
-                    <span ng-if="asset.change">{{asset.change + ' st'}}</span>
-                </td>
-                <td class="right">
-                    <span>{{asset.quantity * asset.price | number:2}} kr</span>
-                </td>
-                <td class="right"></td>
+            <tr>
+                <td>Utdelning</td>
+                <td class="right bold">{{$ctrl.getDividends(month) | number:2}}</td>
+                <td class="bold">&nbsp;kr</td>
             </tr>
-            <tr class="split">
-                <td colspan="5"></td>
+            <tr>
+                <td>Direktavkastning</td>
+                <td class="right bold">{{$ctrl.getYield(month) | number:2}}</td>
+                <td class="bold">&nbsp;%</td>
+            </tr>
+            <tr>
+                <td>Utdelningsprognos</td>
+                <td class="right bold">{{$ctrl.getForecast(month) | number:2}}</td>
+                <td class="bold">&nbsp;kr/år</td>
             </tr>
             <tr>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td class="right bold">{{$ctrl.getTotal(month) | number:2:'se-sv'}} kr</td>
-                <td class="right bold">{{$ctrl.getDividends(month) | number:2:'sv'}} kr</td>
+                <td class="right bold">{{$ctrl.getForecast(month) / 12 | number:2}}</td>
+                <td class="bold">&nbsp;kr/månad</td>
             </tr>
+            <tr>
+                <td></td>
+                <td class="right bold">{{$ctrl.getForecast(month) / 218 | number:2}}</td>
+                <td class="bold">&nbsp;kr/arbetsdag</td>
+            </tr>
+            <tr>
+                <td>Ackumulerad utdelning</td>
+                <td class="right bold">{{$ctrl.getAccumulatedDividends(month) | number:2}}</td>
+                <td class="bold">&nbsp;kr</td>
+            </tr>
+            <tr>
+                <td>Belåning</td>
+                <td class="right bold">{{-$ctrl.getLoan(month) | number:2}}</td>
+                <td class="bold">&nbsp;kr</td>
+            </tr>        
+            <tr>
+                <td>Belåningsgrad</td>
+                <td class="right bold">{{$ctrl.getLoan(month) / $ctrl.getTotal(month) * 100 | number:2}}</td>
+                <td class="bold">&nbsp;%</td>
+            </tr>    
         </table>
+        <br>
+        <div class="w90">
+            <table>
+                <tr class="split">
+                    <th class="w20" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
+                    <th class="w20 right">Antal</th>
+                    <th class="w20 right">Köp/Sälj</th>
+                    <th class="w20 right" ng-click="$ctrl.order = '-value'"><span ng-if="$ctrl.order === '-value'">&#9660;&nbsp;</span>Värde</th>
+                    <th class="w20 right">Utdelning</th>
+                </tr>
+                <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order">
+                    <td><a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
+                    <td class="right">{{asset.quantity}} st</td>
+                    <td class="right">
+                        <span ng-if="asset.change">{{asset.change + ' st'}}</span>
+                    </td>
+                    <td class="right">
+                        <span>{{asset.quantity * asset.price | number:2}} kr</span>
+                    </td>
+                    <td class="right"></td>
+                </tr>
+                <tr class="split">
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="right bold">{{$ctrl.getTotal(month) | number:2:'se-sv'}} kr</td>
+                    <td class="right bold">{{$ctrl.getDividends(month) | number:2:'sv'}} kr</td>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
+</article>
+<app-assets />

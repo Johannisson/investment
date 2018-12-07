@@ -11,6 +11,4 @@ WatchlistController.$inject = [];
 
 function WatchlistController() {
     var vm = this;
-
-    vm.assets = assets;
 }

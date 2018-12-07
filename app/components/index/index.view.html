@@ -3,14 +3,10 @@
     <a href="portfoljbolag">Portföljbolag</a><br>
     <a href="utdelningsprognos">Utdelningsprognos</a><br>
     <a href="manadsrapport">Månadsrapport</a><br>
+    <br>
     <a href="transaktioner">Transaktioner</a><br>
+    <a href="utdelningar">Utdelningar</a><br>
+    <br>
     <a href="bevakningslista">Bevakningslista</a>
 </article>
-<aside>
-    <table>
-        <tr ng-repeat="asset in $ctrl.assets">
-            <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
-            <td class="right">{{asset.quantity}} st</td>
-        </tr>
-    </table>
-</aside>
+<app-assets />

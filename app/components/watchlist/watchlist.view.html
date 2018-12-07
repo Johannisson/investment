@@ -45,11 +45,4 @@
         </tr>
     </table>
 </article>
-<aside>
-    <table>
-        <tr ng-repeat="asset in $ctrl.assets">
-            <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
-            <td class="right">{{asset.quantity}} st</td>
-        </tr>
-    </table>
-</aside>
+<app-assets />

@@ -15,10 +15,10 @@ function ReportController() {
     vm.order = 'data.name';
 
     vm.year = 2018;
-    vm.month = 'december';
+    vm.month = 12;
 
     vm.data = [];
-    vm.data['2018-december'] = {
+    vm.data['2018-12'] = {
         forecast: 5237,
         accumulated: 0,
         loan: 0,
@@ -75,7 +75,7 @@ function ReportController() {
             }
         ]
     }
-    vm.data['2018-november'] = {
+    vm.data['2018-11'] = {
         forecast: 4380,
         accumulated: 0,
         loan: 0,

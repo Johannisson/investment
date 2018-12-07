@@ -14,6 +14,4 @@ function IndexController($locale) {
 
     $locale.NUMBER_FORMATS.GROUP_SEP = ' ';
     $locale.NUMBER_FORMATS.DECIMAL_SEP = ',';
-
-    vm.assets = assets;
 }
