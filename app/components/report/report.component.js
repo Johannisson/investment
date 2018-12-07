@@ -21,7 +21,7 @@ function ReportController() {
     vm.data['2018-december'] = {
         forecast: 5237,
         accumulated: 0,
-        loan: 7075,
+        loan: 0,
         assets: [
             {
                 asset: akelius,

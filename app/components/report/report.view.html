@@ -46,6 +46,16 @@
             <td class="bold">&nbsp;kr/år</td>
         </tr>
         <tr>
+            <td></td>
+            <td class="right bold">{{$ctrl.getForecast(month) / 12 | number:2}}</td>
+            <td class="bold">&nbsp;kr/månad</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="right bold">{{$ctrl.getForecast(month) / 218 | number:2}}</td>
+            <td class="bold">&nbsp;kr/arbetsdag</td>
+        </tr>
+        <tr>
             <td>Ackumulerad utdelning</td>
             <td class="right bold">{{$ctrl.getAccumulatedDividends(month) | number:2}}</td>
             <td class="bold">&nbsp;kr</td>
