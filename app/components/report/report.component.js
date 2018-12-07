@@ -69,8 +69,8 @@ function ReportController() {
                 price: 206.70
             }, {
                 asset: xact_hogutdelande,
-                quantity: 60,
-                change: 60,
+                quantity: 100,
+                change: 100,
                 price: 109.30
             }
         ]
