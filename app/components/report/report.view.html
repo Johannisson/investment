@@ -79,7 +79,7 @@
                     <th class="w20" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
                     <th class="w20 right">Antal</th>
                     <th class="w20 right">Köp/Sälj</th>
-                    <th class="w20 right" ng-click="$ctrl.order = '-value'"><span ng-if="$ctrl.order === '-value'">&#9660;&nbsp;</span>Värde</th>
+                    <th class="w20 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
                     <th class="w20 right">Utdelning</th>
                 </tr>
                 <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order">
