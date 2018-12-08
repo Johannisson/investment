@@ -39,9 +39,18 @@ h3 {
     color: #1F3862;
 }
 
+ul {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 p {
     font-family: 'Open Sans';
+    font-weight: 300;
     font-size: 14px;
+    line-height: 20px;
 }
 
 aside {
@@ -58,7 +67,8 @@ div.right {
 table {
     width: 100%;
     font-family: 'Roboto';
-    font-size: 0.8rem;
+    font-weight: 300;
+    font-size: 13px;
     border-collapse: collapse;
 }
 

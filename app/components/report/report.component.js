@@ -20,6 +20,8 @@ function ReportController() {
     vm.data = [];
     vm.data['2018-12'] = {
         forecast: 5237,
+        goal: 43000,
+        outcome: 18442.30,
         accumulated: 0,
         loan: 0,
         assets: [
@@ -76,7 +78,15 @@ function ReportController() {
         ]
     }
     vm.data['2018-11'] = {
+        description: 'Jag har beslutat att bygga en utdelningsportfölj som komplement till min ordinarie fondportfölj. ' + 
+                     'Målet med portföljen är att byta investeringsfokus från kapitaltillväxt till utdelningstilväxt. ' +
+                     'På så sätt kan jag fokusera på långisktigt värdeskapande i portföljen snarare än dagliga aktiekurser. ' +
+                     'Primära målet med portföljen kommer vara utdelningstillväxt, och fokus kommer att ligga på bolag som har stadigt stigande utdelning. <br>' +
+                     '<br>' + 
+                     '<a href="strategi">Läs mer om min strategi.</a>',
         forecast: 4380,
+        goal: 100000,
+        outcome: 101669.60,
         accumulated: 0,
         loan: 0,
         assets: [
@@ -133,6 +143,18 @@ function ReportController() {
 
     vm.getLoan = function(month) {
         return vm.data[month].loan;
+    }
+
+    vm.getGoal = function(month) {
+        return vm.data[month].goal;
+    }
+
+    vm.getOutcome = function(month) {
+        return vm.data[month].outcome;
+    }
+
+    vm.getDescription = function(month) {
+        return vm.data[month].description;
     }
 
     vm.getTotal = function (month) {
