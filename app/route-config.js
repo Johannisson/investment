@@ -26,6 +26,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/axfood', {
             template: '<app-axfood />'
+        }).when('/portfoljbolag/atlas-copco', {
+            template: '<app-atlas-copco />'
         }).when('/portfoljbolag/investor', {
             template: '<app-investor />'
         }).when('/portfoljbolag/latour', { 
