@@ -1,5 +1,5 @@
 var xact_hogutdelande = {
-    id: 'xact_hogutdelande',
+    id: 'xact-hogutdelande',
     name: 'XACT Högutdelande',
     asset: 'XACT Högutdelande',
     ticker: 'XACTHDIV',

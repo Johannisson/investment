@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
 @import url('https://fonts.googleapis.com/css?family=Oswald:700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
 
 body {
     margin: 0 auto;
@@ -27,15 +27,21 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oswald';
-    font-size: 1.8rem;
-    color: #DF1E32;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 26px;
+    color: #000;
 }
 
 h3 {
     font-family: 'Oswald';
     font-size: 1.2rem;
     color: #1F3862;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 14px;
 }
 
 aside {

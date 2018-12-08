@@ -20,6 +20,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-report />'
         }).when('/bevakningslista', {
             template: '<app-watchlist />'
+        }).when('/strategi', {
+            template: '<app-strategy />'
         }).when('/portfoljbolag', {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/axfood', {
@@ -44,7 +46,7 @@ function config($routeProvider, $locationProvider) {
             template: '<app-akelius />'
         }).when('/portfoljbolag/handelsbanken', { 
             template: '<app-handelsbanken />'
-        }).when('/portfoljbolag/xact_hogutdelande', { 
+        }).when('/portfoljbolag/xact-hogutdelande', { 
             template: '<app-xact-hogutdelande />'
         });
 }
