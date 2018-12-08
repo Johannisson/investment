@@ -30,6 +30,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-latour />'
         }).when('/portfoljbolag/sagax-d', { 
             template: '<app-sagax />'
+        }).when('/portfoljbolag/skanska', { 
+            template: '<app-skanska />'
         }).when('/portfoljbolag/swedbank', { 
             template: '<app-swedbank />'
         }).when('/portfoljbolag/husqvarna', { 
