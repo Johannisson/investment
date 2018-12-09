@@ -89,6 +89,15 @@ th {
 
 td {
     vertical-align: top;
+    padding: 3px 0px;
+}
+
+td.padding {
+    padding: 3px 6px;
+}
+
+td.alt:nth-child(odd) {
+    background: #f6f6f6;
 }
 
 .fixed {
@@ -100,11 +109,15 @@ td {
 }
 
 .split {
-    border-bottom: solid 1px #CCC;
+    border-bottom: solid 1px #DDD;
 }
 
 .split-top {
-    border-top: solid 1px #CCC;
+    border-top: solid 1px #DDD;
+}
+
+.split-right {
+    border-right: solid 1px #DDD;
 }
 
 
@@ -120,6 +133,10 @@ th.right {
     text-align: right;
 }
 
+tr.hover:hover {
+    background: #eee;
+}
+
 td.right {
     text-align: right;
 }
@@ -131,9 +148,14 @@ td.right {
     padding: 4px 0px 0px 0px;
 }
 
+.w4 { width: 4%; }
 .w5 { width: 5%; }
+.w6 { width: 6%; }
+.w7 { width: 7%; }
 .w10 { width: 10%; }
+.w12 { width: 12%; }
 .w15 { width: 15%; }
+.w16 { width: 16%; }
 .w20 { width: 20%; }
 .w25 { width: 25%; }
 .w30 { width: 30%; }
