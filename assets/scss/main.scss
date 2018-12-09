@@ -34,7 +34,8 @@ h2 {
 }
 
 h3 {
-    font-family: 'Oswald';
+    font-family: 'Open Sans';
+    font-weight: 300;
     font-size: 1.2rem;
     color: #1F3862;
 }
@@ -182,4 +183,8 @@ td.right {
     outline: none;
     opacity: 0.3;
     cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
 }

@@ -24,9 +24,10 @@ function ReportController() {
                      'Bolagen ska vara stabila utdelningshöjare eller generera löpande kassaflöde för att på så sätt alltid ge lite mer pengar att återinvestera.' +
                      '<br><br>' + 
                      '<b>Belåning</b><br>' +
-                     'Jag har introducerat belåning som bör ligga kring 10% av portföljens totala värde. ' +
+                     'Jag har introducerat belåning i portföljen. ' +
+                     'Tanken är att den bör ligga kring 10% av portföljens totala värde. ' +
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
-                     'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå av hävstång i portföljen samt att Avanza erbjuder 0% ränta vi den belåningensgraden. ' +
+                     'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
         forecast: 5237,
         goal: 43000,
@@ -94,7 +95,7 @@ function ReportController() {
                      'Primära målet med portföljen kommer vara utdelningstillväxt, och fokus kommer att ligga på bolag som har stadigt stigande utdelning.' +
                      '<br><br>' +
                      '<b>Courtageklass</b><br>' +
-                     'Byte av courtageklass från Avanza small till mini har gjorts för att jag kan handla mer regelbundet och till mindre summor.' +
+                     'Byte av courtageklass från Avanza small till mini har gjorts för att jag kan handla mer regelbundet och till mindre summor. ' +
                      'Trots ganska hög köptakt beräknar jag att mina kostnader för courtage inte bör överstiga 100 kr per månad.' +
                      'Skulle jag använda Avanza small skulle samma kostnad bara räcka till i snitt 2,5 affärer per månad.',
         forecast: 4380,
