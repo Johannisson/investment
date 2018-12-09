@@ -20,12 +20,12 @@ function ReportController() {
     vm.data = [];
     vm.data['2018-12'] = {
         description: '<b>Bevakningsposter</b><br>' +
-                     'November månad har jag fokuserat på att köpa mindre bevakningsposter i bolag som jag finner extra intressanta ur ett utdelningsperspektiv. ' + 
+                     'Under november månad har jag fokuserat på att köpa mindre bevakningsposter i bolag som jag finner extra intressanta ur ett utdelningsperspektiv. ' + 
                      'Bolagen ska vara stabila utdelningshöjare eller generera löpande kassaflöde för att på så sätt alltid ha lite mer pengar att återinvestera.' +
                      '<br><br>' + 
                      '<b>Belåning</b><br>' +
                      'Jag har introducerat belåning som bör ligga kring 10% av portföljens totala värde. ' +
-                     'Belåningen ska användas för <a href="portfoljbolag/xact-hogutdelande">Xact Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
+                     'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå av hävstång i portföljen samt att Avanza erbjuder 0% ränta vi den belåningensgraden.' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
         forecast: 5237,
