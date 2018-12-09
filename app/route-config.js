@@ -16,6 +16,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-dividends />'
         }).when('/transaktioner', {
             template: '<app-transactions />'
+        }).when('/milstolpar', {
+            template: '<app-milestones />'
         }).when('/manadsrapport', {
             template: '<app-report />'
         }).when('/bevakningslista', {

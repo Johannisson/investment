@@ -19,6 +19,9 @@ function ReportController() {
 
     vm.data = [];
     vm.data['2018-12'] = {
+        description: 'November månad har jag fokuserat på att köpa mindre bevakningsposter i bolag som jag finner extra intressanta ur ett utdelningsperspektiv. ' + 
+                     'Jag har även introducerat belåning som bör ligga kring 10% av portföljens totala värde. ' +
+                     'Belåningen ska användas för <a href="portfoljbolag/xact-hogutdelande">Xact Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ',
         forecast: 5237,
         goal: 43000,
         outcome: 18442.30,
@@ -81,9 +84,7 @@ function ReportController() {
         description: 'Jag har beslutat att bygga en utdelningsportfölj som komplement till min ordinarie fondportfölj. ' + 
                      'Målet med portföljen är att byta investeringsfokus från kapitaltillväxt till utdelningstilväxt. ' +
                      'På så sätt kan jag fokusera på långisktigt värdeskapande i portföljen snarare än dagliga aktiekurser. ' +
-                     'Primära målet med portföljen kommer vara utdelningstillväxt, och fokus kommer att ligga på bolag som har stadigt stigande utdelning. <br>' +
-                     '<br>' + 
-                     '<a href="strategi">Läs mer om min strategi.</a>',
+                     'Primära målet med portföljen kommer vara utdelningstillväxt, och fokus kommer att ligga på bolag som har stadigt stigande utdelning.',
         forecast: 4380,
         goal: 100000,
         outcome: 101669.60,
