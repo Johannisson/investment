@@ -21,7 +21,7 @@ function ReportController() {
     vm.data['2018-12'] = {
         description: '<b>Bevakningsposter</b><br>' +
                      'Under november månad har jag fokuserat på att köpa mindre bevakningsposter i bolag som jag finner extra intressanta ur ett utdelningsperspektiv. ' + 
-                     'Bolagen ska vara stabila utdelningshöjare eller generera löpande kassaflöde för att på så sätt alltid ha lite mer pengar att återinvestera.' +
+                     'Bolagen ska vara stabila utdelningshöjare eller generera löpande kassaflöde för att på så sätt alltid ge lite mer pengar att återinvestera.' +
                      '<br><br>' + 
                      '<b>Belåning</b><br>' +
                      'Jag har introducerat belåning som bör ligga kring 10% av portföljens totala värde. ' +
