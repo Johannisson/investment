@@ -25,8 +25,8 @@ function ReportController() {
                      '<br><br>' + 
                      '<b>Belåning</b><br>' +
                      'Jag har introducerat belåning som bör ligga kring 10% av portföljens totala värde. ' +
-                     'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
-                     'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå av hävstång i portföljen samt att Avanza erbjuder 0% ränta vi den belåningensgraden.' +
+                     'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
+                     'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå av hävstång i portföljen samt att Avanza erbjuder 0% ränta vi den belåningensgraden. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
         forecast: 5237,
         goal: 43000,
