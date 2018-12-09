@@ -94,7 +94,7 @@ function ReportController() {
                      'Primära målet med portföljen kommer vara utdelningstillväxt, och fokus kommer att ligga på bolag som har stadigt stigande utdelning.' +
                      '<br><br>' +
                      '<b>Courtageklass</b><br>' +
-                     'Byte av courtageklass från Avanza small till mini har jag gjort för att jag kan handla mer regelbundet och till mindre summor.' +
+                     'Byte av courtageklass från Avanza small till mini har gjorts för att jag kan handla mer regelbundet och till mindre summor.' +
                      'Trots ganska hög köptakt beräknar jag att mina kostnader för courtage inte bör överstiga 100 kr per månad.' +
                      'Skulle jag använda Avanza small skulle samma kostnad bara räcka till i snitt 2,5 affärer per månad.',
         forecast: 4380,
