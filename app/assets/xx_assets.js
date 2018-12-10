@@ -1,5 +1,6 @@
 var assets = [
     akelius,
+    autoliv,
     axfood,
     castellum,
     handelsbanken,
@@ -8,6 +9,7 @@ var assets = [
     kungsleden,
     latour,
     sagax,
+    skanska,
     swedbank,
     xact_hogutdelande
 ];

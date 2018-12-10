@@ -36,6 +36,10 @@ function TransactionsController() {
         { date: '2018-12-04', asset: axfood, quantity: 11, price: 159.90 },
         { date: '2018-12-05', asset: xact_hogutdelande, quantity: 40, price: 109.70 },
         { date: '2018-12-06', asset: xact_hogutdelande, quantity: 40, price: 107.40 },
+        { date: '2018-12-10', asset: skanska, quantity: 10, price: 136.30 },
+        { date: '2018-12-10', asset: autoliv, quantity: 2, price: 694.40 },
+        { date: '2018-12-10', asset: industrivarden, quantity: 10, price: 181.30 },
+        { date: '2018-12-10', asset: xact_hogutdelande, quantity: 13, price: 107.42 },
         { sum: '2018-12' },
     ]
 

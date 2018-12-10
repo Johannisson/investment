@@ -4,7 +4,7 @@ var skanska = {
     asset: 'Skanska B',
     ticker: 'SKA B',
     currency: 'kr',
-    quantity: 0,
+    quantity: 10,
     dividends: {
         april: 8.25,
     },

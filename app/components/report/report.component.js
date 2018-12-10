@@ -41,6 +41,11 @@ function ReportController() {
                 change: 10,
                 price: 330.00
             }, {
+                asset: autoliv,
+                quantity: 2,
+                change: 2,
+                price: 694.40
+            }, {
                 asset: axfood,
                 quantity: 11,
                 change: 11,
@@ -57,6 +62,11 @@ function ReportController() {
                 asset: husqvarna,
                 quantity: 120,
                 price: 66.94
+            }, {
+                asset: industrivarden,
+                quantity: 10,
+                change: 10,
+                price: 181.30
             }, {
                 asset: investor,
                 quantity: 33,
@@ -76,13 +86,17 @@ function ReportController() {
                 quantity: 660,
                 price: 33.30
             }, {
+                asset: skanska,
+                quantity: 10,
+                price: 136.30
+            }, {
                 asset: swedbank,
                 quantity: 110,
                 price: 206.70
             }, {
                 asset: xact_hogutdelande,
-                quantity: 100,
-                change: 100,
+                quantity: 113,
+                change: 113,
                 price: 109.30
             }
         ]
