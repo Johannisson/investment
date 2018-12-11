@@ -21,6 +21,11 @@ function AssetController($locale) {
         if (vm.asset === 'atlas_copco') {
             vm.data = atlas_copco;
         } 
+        if (vm.asset === 'autoliv') {
+            vm.data = autoliv;
+            vm.scale = 35;
+            vm.rows = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        }
         if (vm.asset === 'axfood') {
             vm.data = axfood;
             vm.scale = 35;

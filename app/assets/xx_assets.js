@@ -5,6 +5,7 @@ var assets = [
     castellum,
     handelsbanken,
     husqvarna,
+    industrivarden,
     investor,
     kungsleden,
     latour,

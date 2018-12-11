@@ -28,6 +28,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/axfood', {
             template: '<app-asset asset="axfood" />'
+        }).when('/portfoljbolag/autoliv', {
+            template: '<app-asset asset="autoliv" />'
         }).when('/portfoljbolag/dustin-group', {
             template: '<app-asset asset="dustin_group" />'
         }).when('/portfoljbolag/atlas-copco', {
