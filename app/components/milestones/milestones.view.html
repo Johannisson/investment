@@ -1,49 +1,48 @@
 <h1>MILSTOLPAR</h1>
 <article>
-    <h3>Portföljvärde</h3>
-    <p style="float:left; text-align:right">
-        <span class="done">100 000 kr</span><br>
-        200 000 kr<br>
-        300 000 kr<br>
-        400 000 kr<br>
-        500 000 kr<br>
-        600 000 kr<br>
-        700 000 kr<br>
-        800 000 kr<br>
-        900 000 kr<br>
-        1 000 000 kr
-    </p>
-    <p style="float:left; padding-left: 100px">2018-11-28</p>
-    <h3 style="clear:both">Utdelningsprognos</h3>
-    <p style="float:left; text-align:right">
-        10 000 kr/år<br>
-        20 000 kr/år<br>
-        30 000 kr/år<br>
-        40 000 kr/år<br>
-        50 000 kr/år<br>
-        60 000 kr/år<br>
-        70 000 kr/år<br>
-        80 000 kr/år<br>
-        90 000 kr/år<br>
-        100 000 kr/år
-    </p>
-    <h3 style="clear:both">Akumulerad utdelning</h3>
-    <p style="float:left; text-align:right">
-        50 000 kr<br>
-        100 000 kr<br>
-        150 000 kr<br>
-        200 000 kr<br>
-        250 000 kr<br>
-        300 000 kr<br>
-        350 000 kr<br>
-        400 000 kr<br>
-        450 000 kr<br>
-        500 000 kr<br>
-    </p>
-    <h3 style="clear:both">Utdelning per månad</h3>
+    <h2>Portföljvärde</h2>
     <table class="w70">
         <tr>
-            <td class="split"></td>
+            <td class="split w16"></td>
+            <td class="split w16 bold right">Datum</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="row in $ctrl.value">
+            <td class="right" ng-class="row.date ? 'done' : ''">{{row.goal | number:0}} kr</td>
+            <td class="right">
+                <span ng-if="row.date">{{row.date}}</span>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Utdelningsprognos</h2>
+    <table class="w70">
+        <tr>
+            <td class="split w16"></td>
+            <td class="split w16 bold right">Datum</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="row in $ctrl.forecast">
+            <td class="right">{{row.goal | number:0}} kr</td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Akumulerad utdelning</h2>
+    <table class="w70">
+        <tr>
+            <td class="split w16"></td>
+            <td class="split w16 bold right">Datum</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="row in $ctrl.accumulated">
+            <td class="right">{{row.goal | number:0}} kr</td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Utdelning per månad</h2>
+    <table class="w70">
+        <tr>
+            <td class="split w16"></td>
             <td class="split w7 center bold">Jan</td>
             <td class="split w7 center bold">Feb</td>
             <td class="split w7 center bold">Mars</td>
