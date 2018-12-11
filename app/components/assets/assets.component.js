@@ -2,7 +2,7 @@ angular
     .module('app')
     .controller('AssetsController', AssetsController)
     .component('appAssets', {
-        templateUrl: 'app/components/assets/assets/assets.view.html',
+        templateUrl: 'app/components/assets/assets.view.html',
         bindings: {
             model: '=',
         },

@@ -1,5 +1,5 @@
 var skanska = {
-    id: 'skanska-b',
+    id: 'skanska',
     name: 'Skanska B',
     asset: 'Skanska B',
     ticker: 'SKA B',

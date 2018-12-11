@@ -27,32 +27,32 @@ function config($routeProvider, $locationProvider) {
         }).when('/portfoljbolag', {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/axfood', {
-            template: '<app-axfood />'
+            template: '<app-asset asset="axfood" />'
         }).when('/portfoljbolag/dustin-group', {
-            template: '<app-dustin-group />'
+            template: '<app-asset asset="dustin_group" />'
         }).when('/portfoljbolag/atlas-copco', {
-            template: '<app-atlas-copco />'
+            template: '<app-asset asset="atlas_copco" />'
         }).when('/portfoljbolag/investor', {
-            template: '<app-investor />'
+            template: '<app-asset asset="investor" />'
         }).when('/portfoljbolag/latour', { 
-            template: '<app-latour />'
+            template: '<app-asset asset="latour" />'
         }).when('/portfoljbolag/sagax-d', { 
-            template: '<app-sagax />'
+            template: '<app-asset asset="sagax" />'
         }).when('/portfoljbolag/skanska', { 
-            template: '<app-skanska />'
+            template: '<app-asset asset="skanska" />'
         }).when('/portfoljbolag/swedbank', { 
-            template: '<app-swedbank />'
+            template: '<app-asset asset="swedbank" />'
         }).when('/portfoljbolag/husqvarna', { 
-            template: '<app-husqvarna />'
+            template: '<app-asset asset="husqvarna" />'
         }).when('/portfoljbolag/castellum', { 
-            template: '<app-castellum />'
+            template: '<app-asset asset="castellum" />'
         }).when('/portfoljbolag/kungsleden', { 
-            template: '<app-kungsleden />'
+            template: '<app-asset asset="kungsleden" />'
         }).when('/portfoljbolag/akelius', { 
-            template: '<app-akelius />'
+            template: '<app-asset asset="akelius" />'
         }).when('/portfoljbolag/handelsbanken', { 
-            template: '<app-handelsbanken />'
+            template: '<app-asset asset="handelsbanken" />'
         }).when('/portfoljbolag/xact-hogutdelande', { 
-            template: '<app-xact-hogutdelande />'
+            template: '<app-asset asset="xact_hogutdelande" />'
         });
 }
