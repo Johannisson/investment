@@ -41,22 +41,25 @@
         500 000 kr<br>
     </p>
     <h3 style="clear:both">Utdelning per månad</h3>
-    <table class="w50">
+    <table class="w70">
         <tr>
-            <td></td>
-            <td>j</td>
-            <td>f</td>
-            <td>m</td>
-            <td>a</td>
-            <td>m</td>
-            <td>j</td>
-            <td>j</td>
-            <td>a</td>
+            <td class="split"></td>
+            <td class="split w7 center bold">Jan</td>
+            <td class="split w7 center bold">Feb</td>
+            <td class="split w7 center bold">Mars</td>
+            <td class="split w7 center bold">April</td>
+            <td class="split w7 center bold">Maj</td>
+            <td class="split w7 center bold">Juni</td>
+            <td class="split w7 center bold">Juli</td>
+            <td class="split w7 center bold">Aug</td>
+            <td class="split w7 center bold">Sept</td>
+            <td class="split w7 center bold">Okt</td>
+            <td class="split w7 center bold">Nov</td>
+            <td class="split w7 center bold">Dec</td>
         </tr>
         <tr ng-repeat="row in $ctrl.monthly">
-            <td class="right">{{row.goal | number:0}} kr/månad</td>
-            <td>{{row.months}}</td>
-            <td ng-repeat="row in row.months">a</td>
+            <td class="right">{{row.goal | number:0}}&nbsp;kr</td>
+            <td ng-repeat="month in row.months track by $index" ng-class="month ? 'goal': ''"></td>
         </tr>
     </table>
 </article>
