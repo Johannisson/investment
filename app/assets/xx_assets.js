@@ -1,5 +1,6 @@
 var assets = [
     akelius,
+    atlas_copco,
     autoliv,
     axfood,
     castellum,

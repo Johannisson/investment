@@ -40,6 +40,7 @@ function TransactionsController() {
         { date: '2018-12-10', asset: autoliv, quantity: 2, price: 694.40 },
         { date: '2018-12-10', asset: industrivarden, quantity: 10, price: 181.30 },
         { date: '2018-12-10', asset: xact_hogutdelande, quantity: 13, price: 107.42 },
+        { date: '2018-12-13', asset: atlas_copco, quantity: 10, price: 203.80 },
         { sum: '2018-12' },
     ]
 
