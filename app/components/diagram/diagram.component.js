@@ -27,11 +27,6 @@ function DiagramController() {
 
     vm.$onInit = function() {
         vm.scale = 1 / Math.max.apply(null, vm.rows) * 310;
-        rows.forEach(function (row) {
-            if (row.element % 1 !== 0) {
-                vm.decimals = 1;
-            }
-        });
-        vm.decimals = 1;
+        vm.decimals = undefined;
     }
 }
