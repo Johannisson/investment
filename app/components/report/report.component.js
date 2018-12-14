@@ -33,7 +33,7 @@ function ReportController() {
         goal: 43000,
         outcome: 29237.66,
         accumulated: 0,
-        loan: 4761,
+        loan: 9600.10,
         assets: [
             {
                 asset: akelius,
