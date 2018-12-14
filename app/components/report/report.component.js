@@ -29,7 +29,7 @@ function ReportController() {
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
-        forecast: 5553.50,
+        forecast: 5609.50,
         goal: 43000,
         outcome: 24403.56,
         accumulated: 0,
@@ -52,8 +52,8 @@ function ReportController() {
                 price: 200.15
             }, {
                 asset: axfood,
-                quantity: 11,
-                change: 11,
+                quantity: 19,
+                change: 19,
                 price: 159.00
             }, {
                 asset: castellum,
