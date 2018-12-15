@@ -29,11 +29,11 @@ function ReportController() {
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
-        forecast: 5679.50,
+        forecast: 5679,
         goal: 43000,
-        outcome: 29237.66,
+        outcome: 29237,
         accumulated: 0,
-        loan: 9600.10,
+        loan: 9600,
         assets: [
             {
                 asset: akelius,
@@ -119,7 +119,7 @@ function ReportController() {
                      'Skulle jag använda Avanza small skulle samma kostnad bara räcka till i snitt 2,5 affärer per månad.',
         forecast: 4380,
         goal: 100000,
-        outcome: 101669.60,
+        outcome: 101669,
         accumulated: 0,
         loan: 0,
         assets: [

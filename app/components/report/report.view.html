@@ -30,12 +30,12 @@
         <table class="w40">
             <tr class="split">
                 <td>Värde</td>
-                <td class="right bold">{{$ctrl.getTotal(month) | number:2}}</td>
+                <td class="right bold">{{$ctrl.getTotal(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>
             <tr>
                 <td>Utdelning</td>
-                <td class="right bold">{{$ctrl.getDividends(month) | number:2}}</td>
+                <td class="right bold">{{$ctrl.getDividends(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>
             <tr>
@@ -70,7 +70,7 @@
             </tr>
             <tr>
                 <td>Belåning</td>
-                <td class="right bold">{{-$ctrl.getLoan(month) | number:2}}</td>
+                <td class="right bold">{{-$ctrl.getLoan(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>        
             <tr class="split">
@@ -80,12 +80,12 @@
             </tr>
             <tr>
                 <td>Investerat &#11208; Mål</td>
-                <td class="right bold">{{$ctrl.getGoal(month) | number:2}}</td>
+                <td class="right bold">{{$ctrl.getGoal(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>
             <tr>
                 <td><span style="color:#fff">Investerat</span> &#11208; Utfall</td>
-                <td class="right bold">{{$ctrl.getOutcome(month) | number:2}}</td>
+                <td class="right bold">{{$ctrl.getOutcome(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>  
         </table>
@@ -106,7 +106,7 @@
                         <span ng-if="asset.change">{{asset.change + ' st'}}</span>
                     </td>
                     <td class="right">
-                        <span>{{asset.quantity * asset.price | number:2}} kr</span>
+                        <span>{{asset.quantity * asset.price | number:0}} kr</span>
                     </td>
                     <td class="right"></td>
                 </tr>
@@ -117,8 +117,8 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td class="right bold">{{$ctrl.getTotal(month) | number:2:'se-sv'}} kr</td>
-                    <td class="right bold">{{$ctrl.getDividends(month) | number:2:'sv'}} kr</td>
+                    <td class="right bold">{{$ctrl.getTotal(month) | number:0:'se-sv'}} kr</td>
+                    <td class="right bold">{{$ctrl.getDividends(month) | number:0:'sv'}} kr</td>
                 </tr>
             </table>
         </div>
