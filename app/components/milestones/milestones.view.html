@@ -1,10 +1,10 @@
 <h1>MILSTOLPAR</h1>
 <article>
     <h2>Portföljvärde</h2>
-    <table class="w70">
+    <table class="w80">
         <tr>
-            <td class="split w16"></td>
-            <td class="split w16 bold right">Datum</td>
+            <td class="split w14"></td>
+            <td class="split w14 bold right">Datum</td>
             <td></td>
         </tr>
         <tr ng-repeat="row in $ctrl.value">
@@ -16,10 +16,10 @@
         </tr>
     </table>
     <h2>Utdelningsprognos</h2>
-    <table class="w70">
+    <table class="w80">
         <tr>
-            <td class="split w16"></td>
-            <td class="split w16 bold right">Datum</td>
+            <td class="split w14"></td>
+            <td class="split w14 bold right">Datum</td>
             <td></td>
         </tr>
         <tr ng-repeat="row in $ctrl.forecast">
@@ -28,10 +28,10 @@
         </tr>
     </table>
     <h2>Akumulerad utdelning</h2>
-    <table class="w70">
+    <table class="w80">
         <tr>
-            <td class="split w16"></td>
-            <td class="split w16 bold right">Datum</td>
+            <td class="split w14"></td>
+            <td class="split w14 bold right">Datum</td>
             <td></td>
         </tr>
         <tr ng-repeat="row in $ctrl.accumulated">
@@ -40,26 +40,42 @@
         </tr>
     </table>
     <h2>Utdelning per månad</h2>
-    <table class="w70">
+    <table class="w80">
         <tr>
-            <td class="split w16"></td>
-            <td class="split w7 center bold">Jan</td>
-            <td class="split w7 center bold">Feb</td>
-            <td class="split w7 center bold">Mars</td>
-            <td class="split w7 center bold">April</td>
-            <td class="split w7 center bold">Maj</td>
-            <td class="split w7 center bold">Juni</td>
-            <td class="split w7 center bold">Juli</td>
-            <td class="split w7 center bold">Aug</td>
-            <td class="split w7 center bold">Sept</td>
-            <td class="split w7 center bold">Okt</td>
-            <td class="split w7 center bold">Nov</td>
-            <td class="split w7 center bold">Dec</td>
+            <td class="split w14"></td>
+            <td class="split w14 right bold">Datum</td>
+            <td class="split w6 center bold">Jan</td>
+            <td class="split w6 center bold">Feb</td>
+            <td class="split w6 center bold">Mars</td>
+            <td class="split w6 center bold">April</td>
+            <td class="split w6 center bold">Maj</td>
+            <td class="split w6 center bold">Juni</td>
+            <td class="split w6 center bold">Juli</td>
+            <td class="split w6 center bold">Aug</td>
+            <td class="split w6 center bold">Sept</td>
+            <td class="split w6 center bold">Okt</td>
+            <td class="split w6 center bold">Nov</td>
+            <td class="split w6 center bold">Dec</td>
         </tr>
-        <tr ng-repeat="row in $ctrl.monthly">
+        <tr ng-repeat="row in $ctrl.monthly" class="hover">
             <td class="right">{{row.goal | number:0}}&nbsp;kr</td>
             <td ng-repeat="month in row.months track by $index" ng-class="month ? 'goal': ''"></td>
         </tr>
     </table>
+    <h2>Utdelning per timme</h2>
+    <table class="w80">
+            <tr>
+                <td class="split w14"></td>
+                <td class="split w14 bold right">Datum</td>
+                <td></td>
+            </tr>
+            <tr ng-repeat="row in $ctrl.hour">
+                <td class="right" ng-class="row.date ? 'done' : ''">{{row.goal | number:0}} kr</td>
+                <td class="right">
+                    <span ng-if="row.date">{{row.date}}</span>
+                </td>
+                <td></td>
+            </tr>
+        </table>
 </article>
 <app-assets />
