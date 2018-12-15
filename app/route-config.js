@@ -26,34 +26,38 @@ function config($routeProvider, $locationProvider) {
             template: '<app-strategy />'
         }).when('/portfoljbolag', {
             template: '<app-portfolio />'
-        }).when('/portfoljbolag/axfood', {
-            template: '<app-asset asset="axfood" />'
-        }).when('/portfoljbolag/autoliv', {
-            template: '<app-asset asset="autoliv" />'
-        }).when('/portfoljbolag/dustin-group', {
-            template: '<app-asset asset="dustin_group" />'
+        }).when('/portfoljbolag/akelius', { 
+            template: '<app-asset asset="akelius" />'
         }).when('/portfoljbolag/atlas-copco', {
             template: '<app-asset asset="atlas_copco" />'
+        }).when('/portfoljbolag/autoliv', {
+            template: '<app-asset asset="autoliv" />'
+        }).when('/portfoljbolag/axfood', {
+            template: '<app-asset asset="axfood" />'
+        }).when('/portfoljbolag/castellum', { 
+            template: '<app-asset asset="castellum" />'
+        }).when('/portfoljbolag/dustin-group', {
+            template: '<app-asset asset="dustin_group" />'
+        }).when('/portfoljbolag/handelsbanken', { 
+            template: '<app-asset asset="handelsbanken" />'
+        }).when('/portfoljbolag/husqvarna', { 
+            template: '<app-asset asset="husqvarna" />'
+        }).when('/portfoljbolag/industrivarden', {
+            template: '<app-asset asset="industrivarden" />'
         }).when('/portfoljbolag/investor', {
             template: '<app-asset asset="investor" />'
+        }).when('/portfoljbolag/kungsleden', { 
+            template: '<app-asset asset="kungsleden" />'
         }).when('/portfoljbolag/latour', { 
             template: '<app-asset asset="latour" />'
+        }).when('/portfoljbolag/np3', { 
+            template: '<app-asset asset="np3" />'
         }).when('/portfoljbolag/sagax-d', { 
             template: '<app-asset asset="sagax" />'
         }).when('/portfoljbolag/skanska', { 
             template: '<app-asset asset="skanska" />'
         }).when('/portfoljbolag/swedbank', { 
             template: '<app-asset asset="swedbank" />'
-        }).when('/portfoljbolag/husqvarna', { 
-            template: '<app-asset asset="husqvarna" />'
-        }).when('/portfoljbolag/castellum', { 
-            template: '<app-asset asset="castellum" />'
-        }).when('/portfoljbolag/kungsleden', { 
-            template: '<app-asset asset="kungsleden" />'
-        }).when('/portfoljbolag/akelius', { 
-            template: '<app-asset asset="akelius" />'
-        }).when('/portfoljbolag/handelsbanken', { 
-            template: '<app-asset asset="handelsbanken" />'
         }).when('/portfoljbolag/xact-hogutdelande', { 
             template: '<app-asset asset="xact_hogutdelande" />'
         });
