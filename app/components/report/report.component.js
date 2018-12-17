@@ -41,15 +41,15 @@ function ReportController() {
                 change: 10,
                 price: 330.00
             }, {
-                asset: autoliv,
-                quantity: 2,
-                change: 2,
-                price: 694.40
-            }, {
                 asset: atlas_copco,
                 quantity: 10,
                 change: 10,
                 price: 200.15
+            }, {
+                asset: autoliv,
+                quantity: 2,
+                change: 2,
+                price: 694.40
             }, {
                 asset: axfood,
                 quantity: 29,
@@ -87,6 +87,10 @@ function ReportController() {
                 quantity: 220, 
                 price: 112.40
             }, {
+                asset: np3,
+                quantity: 20, 
+                price: 61.10
+            }, {
                 asset: sagax,
                 quantity: 660,
                 price: 33.30
@@ -100,8 +104,8 @@ function ReportController() {
                 price: 206.70
             }, {
                 asset: xact_hogutdelande,
-                quantity: 113,
-                change: 113,
+                quantity: 129,
+                change: 129,
                 price: 109.30
             }
         ]

@@ -1,7 +1,7 @@
 var np3 = {
     id: 'np3',
     name: 'NP3 Fastigheter',
-    asset: 'NP3',
+    asset: 'NP3 Fastigheter',
     ticker: 'NP3',
     currency: 'kr',
     quantity: 20,
