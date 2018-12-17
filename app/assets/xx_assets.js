@@ -10,6 +10,7 @@ var assets = [
     investor,
     kungsleden,
     latour,
+    np3,
     sagax,
     skanska,
     swedbank,

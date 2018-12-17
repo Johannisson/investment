@@ -1,6 +1,6 @@
 var industrivarden = {
     id: 'industrivarden',
-    name: 'Industrivärden A',
+    name: 'Industrivärden',
     asset: 'Industrivärden A',
     ticker: 'INDU A',
     currency: 'kr',

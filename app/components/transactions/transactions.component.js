@@ -43,6 +43,8 @@ function TransactionsController() {
         { date: '2018-12-13', asset: atlas_copco, quantity: 10, price: 203.80 },
         { date: '2018-12-14', asset: axfood, quantity: 8, price: 156.20 },
         { date: '2018-12-14', asset: axfood, quantity: 10, price: 154.65 },
+        { date: '2018-12-17', asset: xact_hogutdelande, quantity: 16, price: 108.70 },
+        { date: '2018-12-17', asset: np3, quantity: 20, price: 61.10 },
         { sum: '2018-12' },
     ]
 
