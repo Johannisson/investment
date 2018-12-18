@@ -9,9 +9,6 @@ angular
 
 IndexController.$inject = ['$locale'];
 
-function IndexController($locale) {
+function IndexController() {
     var vm = this;
-
-    $locale.NUMBER_FORMATS.GROUP_SEP = ' ';
-    $locale.NUMBER_FORMATS.DECIMAL_SEP = ',';
 }
