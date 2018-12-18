@@ -29,9 +29,9 @@ function ReportController() {
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
-        forecast: 5947,
+        forecast: 6013,
         goal: 43000,
-        outcome: 29237,
+        outcome: 36729,
         accumulated: 0,
         loan: 9600,
         assets: [
