@@ -52,8 +52,8 @@ function ReportController() {
                 price: 694.40
             }, {
                 asset: axfood,
-                quantity: 29,
-                change: 29,
+                quantity: 44,
+                change: 44,
                 price: 159.00
             }, {
                 asset: castellum,
@@ -74,8 +74,8 @@ function ReportController() {
                 price: 181.30
             }, {
                 asset: investor,
-                quantity: 33,
-                change: 3,
+                quantity: 35,
+                change: 5,
                 price: 390.50
             }, {
                 asset: kungsleden,
@@ -104,8 +104,8 @@ function ReportController() {
                 price: 206.70
             }, {
                 asset: xact_hogutdelande,
-                quantity: 129,
-                change: 129,
+                quantity: 143,
+                change: 143,
                 price: 109.30
             }
         ]
