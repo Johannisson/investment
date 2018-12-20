@@ -93,7 +93,7 @@ function ReportController() {
             }, {
                 asset: pfizer,
                 quantity: 3,
-                change: 2, 
+                change: 3, 
                 price: 380.00
             }, {
                 asset: sagax,
