@@ -74,8 +74,8 @@ function ReportController() {
                 price: 181.30
             }, {
                 asset: investor,
-                quantity: 43,
-                change: 13,
+                quantity: 35,
+                change: 5,
                 price: 390.50
             }, {
                 asset: kungsleden,
