@@ -31,7 +31,7 @@ function ReportController() {
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
         forecast: 6349,
         goal: 43000,
-        outcome: 43127,
+        outcome: 44255,
         accumulated: 0,
         loan: 13527,
         assets: [
@@ -90,6 +90,11 @@ function ReportController() {
                 asset: np3,
                 quantity: 20, 
                 price: 61.10
+            }, {
+                asset: pfizer,
+                quantity: 3,
+                change: 2, 
+                price: 380.00
             }, {
                 asset: sagax,
                 quantity: 660,

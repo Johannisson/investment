@@ -49,6 +49,7 @@ function TransactionsController() {
         { date: '2018-12-18', asset: xact_hogutdelande, quantity: 14, price: 106.72 },
         { date: '2018-12-18', asset: investor, quantity: 2, price: 381.70 },
         { date: '2018-12-20', asset: xact_hogutdelande, quantity: 60, price: 106.63 },
+        { date: '2018-12-20', asset: pfizer, quantity: 3, price: 376.00 },
         { sum: '2018-12' },
     ]
 
