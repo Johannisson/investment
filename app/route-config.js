@@ -52,6 +52,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-asset asset="latour" />'
         }).when('/portfoljbolag/np3', { 
             template: '<app-asset asset="np3" />'
+        }).when('/portfoljbolag/pfizer', { 
+            template: '<app-asset asset="pfizer" />'
         }).when('/portfoljbolag/sagax-d', { 
             template: '<app-asset asset="sagax" />'
         }).when('/portfoljbolag/skanska', { 

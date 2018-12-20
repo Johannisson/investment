@@ -59,6 +59,10 @@ function AssetController($locale) {
             vm.data = latour;
             vm.rows = [0, 0.5, 1, 1.5, 2, 2.5];
         }
+        if (vm.asset === 'pfizer') {
+            vm.data = pfizer;
+            vm.rows = [0, 0.5, 1, 1.5, 2, 2.5];
+        }
         if (vm.asset === 'np3') {
             vm.data = np3;
             vm.rows = [0, 0.5, 1, 1.5, 2, 2.5, 3];
