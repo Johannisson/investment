@@ -29,11 +29,11 @@ function ReportController() {
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen är att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
-        forecast: 6013,
+        forecast: 6313,
         goal: 43000,
-        outcome: 36729,
+        outcome: 43127,
         accumulated: 0,
-        loan: 9600,
+        loan: 13527,
         assets: [
             {
                 asset: akelius,
@@ -74,8 +74,8 @@ function ReportController() {
                 price: 181.30
             }, {
                 asset: investor,
-                quantity: 35,
-                change: 5,
+                quantity: 43,
+                change: 13,
                 price: 390.50
             }, {
                 asset: kungsleden,
@@ -104,8 +104,8 @@ function ReportController() {
                 price: 206.70
             }, {
                 asset: xact_hogutdelande,
-                quantity: 143,
-                change: 143,
+                quantity: 203,
+                change: 203,
                 price: 109.30
             }
         ]

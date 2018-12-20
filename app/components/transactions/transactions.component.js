@@ -48,6 +48,7 @@ function TransactionsController() {
         { date: '2018-12-18', asset: axfood, quantity: 15, price: 151.55 },
         { date: '2018-12-18', asset: xact_hogutdelande, quantity: 14, price: 106.72 },
         { date: '2018-12-18', asset: investor, quantity: 2, price: 381.70 },
+        { date: '2018-12-20', asset: xact_hogutdelande, quantity: 60, price: 106.63 },
         { sum: '2018-12' },
     ]
 
