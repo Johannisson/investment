@@ -6,7 +6,7 @@ var swedbank = {
     currency: 'kr',
     quantity: 110,
     dividends: {
-        march: 13.0
+        april: 13.0
     },
     homepage: {
         name: 'www.swedbank.se' ,
