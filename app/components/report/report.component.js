@@ -31,7 +31,7 @@ function ReportController() {
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
         forecast: 6349,
         goal: 43000,
-        outcome: 44255,
+        outcome: 43899,
         accumulated: 0,
         loan: 13527,
         assets: [
@@ -61,7 +61,8 @@ function ReportController() {
                 price: 159.90
             }, {
                 asset: handelsbanken,
-                quantity: 60,
+                quantity: 100,
+                change: 40,
                 price: 98.78
             }, {
                 asset: husqvarna,
@@ -74,8 +75,8 @@ function ReportController() {
                 price: 181.30
             }, {
                 asset: investor,
-                quantity: 35,
-                change: 5,
+                quantity: 46,
+                change: 16,
                 price: 390.50
             }, {
                 asset: kungsleden,
@@ -97,7 +98,8 @@ function ReportController() {
                 price: 380.00
             }, {
                 asset: sagax,
-                quantity: 660,
+                quantity: 400,
+                change: -260,
                 price: 33.30
             }, {
                 asset: skanska,

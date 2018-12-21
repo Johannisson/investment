@@ -46,7 +46,7 @@ function AssetController($locale) {
         } 
         if (vm.asset === 'industrivarden') {
             vm.data = industrivarden;
-            vm.rows = [0, 2, 4, 6, 8, 10, 12];
+            vm.rows = [0, 1, 2, 3, 4, 5, 6, 7];
         }
         if (vm.asset === 'investor') {
             vm.data = investor;
