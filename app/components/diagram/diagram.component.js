@@ -18,7 +18,7 @@ function DiagramController() {
     var vm = this;
 
     vm.step = function(index, offset) {
-        return Math.floor(index * ((vm.width - 20) / vm.data.length) * 0.95 + offset);
+        return Math.floor(index * ((vm.width - 20) / vm.data.length) * 0.94 + offset);
     };
 
     vm.pixel = function(value) {
@@ -26,7 +26,12 @@ function DiagramController() {
     }
 
     vm.$onInit = function() {
-        vm.scale = 1 / Math.max.apply(null, vm.rows) * 310;
+        vm.scale = 1 / Math.max.apply(null, vm.rows) * 300;
         vm.decimals = undefined;
+        vm.data.forEach(function (element) {
+            element.visibility1 = 'hidden';
+            element.visibility2 = 'hidden';
+            element.visibility3 = 'hidden';
+        });
     }
 }
