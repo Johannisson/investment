@@ -99,7 +99,7 @@
                     <th class="w20 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
                     <th class="w20 right">Utdelning</th>
                 </tr>
-                <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order">
+                <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order" class="hover">
                     <td><a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
                     <td class="right">{{asset.quantity}} st</td>
                     <td class="right">
@@ -110,15 +110,10 @@
                     </td>
                     <td class="right"></td>
                 </tr>
-                <tr class="split">
-                    <td colspan="5"></td>
-                </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="right bold">{{$ctrl.getTotal(month) | number:0:'se-sv'}} kr</td>
-                    <td class="right bold">{{$ctrl.getDividends(month) | number:0:'sv'}} kr</td>
+                    <td colspan="3" class="split-top"></td>
+                    <td class="split-top right bold">{{$ctrl.getTotal(month) | number:0:'se-sv'}} kr</td>
+                    <td class="split-top right bold">{{$ctrl.getDividends(month) | number:0:'sv'}} kr</td>
                 </tr>
             </table>
         </div>
