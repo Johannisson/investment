@@ -20,6 +20,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-milestones />'
         }).when('/manadsrapport', {
             template: '<app-report />'
+        }).when('/arsrapport', {
+            template: '<app-year />'
         }).when('/bevakningslista', {
             template: '<app-watchlist />'
         }).when('/strategi', {

@@ -30,10 +30,4 @@ function DividendsController() {
     vm.diagram.push({value1: vm.last() + 431});
     vm.diagram.push({value1: vm.last() + 182});
     vm.diagram.push({value1: vm.last() + 11});
-    /*
-    [341, 50, 2177, 503, 1440, 11, 341, 50, 144, 431, 182, 11].forEach(
-        function(element) {
-            vm.sum += element;
-        vm.diagram.push({label:'', value1:vm.sum, value2:0, value3:0});
-    });*/
 }
