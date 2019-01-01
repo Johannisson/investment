@@ -1,0 +1,12 @@
+<h1>Ränta på ränta</h1>
+<article>
+    Månadssparande:
+    <input ng-model="$ctrl.month" ng-change="$ctrl.update()" /><br>
+    Ränta:
+    <input ng-model="$ctrl.interest" ng-change="$ctrl.update()" /><br>
+    Startbelopp:
+    <input ng-model="$ctrl.start" ng-change="$ctrl.update()" /><br>
+    Tidshorisont:
+    <input ng-model="$ctrl.years" ng-change="$ctrl.update()" /><br>
+    <app-diagram data="$ctrl.diagram" rows="$ctrl.rows" width="700" height="350" />
+</article>

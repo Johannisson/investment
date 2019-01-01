@@ -12,6 +12,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-index />'
         }).when('/utdelningsprognos', {
             template: '<app-dividend />'
+        }).when('/ranta-pa-ranta', {
+            template: '<app-compound-interest />'
         }).when('/utdelningar', {
             template: '<app-dividends />'
         }).when('/transaktioner', {
