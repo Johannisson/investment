@@ -26,16 +26,15 @@ function CompoundInterestController($locale) {
     };
 
     vm.update = function() {
-        vm.diagram.length = 0;
+        vm.diagram = [];
         vm.diagram.push({
             label: 0,
-            value1:vm.start,
-            value2:0,
+            value1: vm.start,
             visibility1: 'hidden',
             visibility2: 'hidden',
             visibility3: 'hidden'
         });
-        var value1 = vm.start;
+        var value1 = parseInt(vm.start);
         var value2 = 0;
         for (var year = 1; year <= vm.years; year++)
         {
@@ -54,7 +53,7 @@ function CompoundInterestController($locale) {
         }
         var sum = value1 + value2
         var step = sum / 10;
-        vm.rows.length = 0;
+        vm.rows = [];
         if (step < 10000) { step = 10000; }
         else if (step < 20000) { step = 20000; }
         else if (step < 50000) { step = 50000; }
