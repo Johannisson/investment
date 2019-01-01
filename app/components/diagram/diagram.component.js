@@ -18,7 +18,7 @@ function DiagramController() {
     var vm = this;
 
     vm.step = function(index, offset) {
-        return Math.floor(index * ((vm.width - 20) / vm.data.length) * 0.90 + offset);
+        return Math.floor(index * ((vm.width - 20) / vm.data.length) * 0.93 + offset);
     };
 
     vm.pixel = function(value) {

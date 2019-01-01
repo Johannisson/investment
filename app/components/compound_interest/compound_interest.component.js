@@ -15,7 +15,7 @@ function CompoundInterestController($locale) {
     var vm = this;
 
     vm.month = 1000;
-    vm.interest = 10;
+    vm.interest = 8;
     vm.start = 100000;
     vm.years = 25;
 
@@ -39,12 +39,14 @@ function CompoundInterestController($locale) {
         var value2 = 0;
         for (var year = 1; year <= vm.years; year++)
         {
-            value2 += Math.floor((value1 + value2) * (vm.interest / 100));
             value1 += vm.month * 12;
+            var ret = Math.round((value1 + value2) * (vm.interest / 100));
+            value2 += ret;
             vm.diagram.push({
                 label: year,
                 value1:value1,
                 value2:value2,
+                ret: ret,
                 visibility1: 'hidden',
                 visibility2: 'hidden',
                 visibility3: 'hidden'

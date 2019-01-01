@@ -32,7 +32,7 @@
         <td>
             <div class="bold">{{month.name}}</div>
             <table>
-                <tr ng-repeat="asset in $ctrl.assets" ng-if="asset.dividends[month.id] !== undefined">
+                <tr ng-repeat="asset in $ctrl.assets" ng-if="asset.dividends[month.id] !== undefined" class="hover">
                     <td class="w40"><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
                     <td class="w20 right">{{asset.quantity}} st</td>
                     <td class="w20 right">{{asset.dividends[month.id] | number:2}} {{asset.currency}}</td>

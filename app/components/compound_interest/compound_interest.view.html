@@ -8,5 +8,24 @@
     <input ng-model="$ctrl.start" ng-change="$ctrl.update()" /><br>
     Tidshorisont:
     <input ng-model="$ctrl.years" ng-change="$ctrl.update()" /><br>
-    <app-diagram data="$ctrl.diagram" rows="$ctrl.rows" width="700" height="350" />
+    <app-diagram data="$ctrl.diagram" rows="$ctrl.rows" width="840" height="350"></app-diagram>
+    <br><br>
+    <table>
+        <tr class="split">
+            <th>År</th>
+            <th class="right">Sparande</th>
+            <th class="right">Ack. sparande</th>
+            <th class="right">Avkastning</th>
+            <th class="right">Ack. avkastning</th>
+            <th class="right">Slutvärde</th>
+        </tr>
+        <tr ng-repeat="year in $ctrl.diagram" ng-if="$index > 0">
+            <td>{{year.label}}</td>
+            <td class="right">{{$ctrl.month * 12}} kr</td>
+            <td class="right">{{$ctrl.month * 12 * $index}} kr</td>
+            <td class="right">{{year.ret | number:0}} kr</td>
+            <td class="right">{{year.value2 | number:0}} kr</td>
+            <td class="right">{{year.value1 + year.value2 | number:0}} kr</td>
+        </tr>
+    </table>
 </article>
