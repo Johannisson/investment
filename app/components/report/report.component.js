@@ -21,7 +21,7 @@ function ReportController() {
     vm.data['2019-1'] = {
         description: '',
         forecast: 6284,
-        goal: 33000,
+        goal: 28000,
         outcome: 0,
         accumulated: 0,
         loan: 13527,
