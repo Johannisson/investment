@@ -14,13 +14,13 @@ function ReportController() {
 
     vm.order = 'data.name';
 
-    vm.year = 2018;
-    vm.month = 12;
+    vm.year = 2019;
+    vm.month = 1;
 
     vm.data = [];
     vm.data['2019-1'] = {
         description: '',
-        forecast: 6349,
+        forecast: 6284,
         goal: 33000,
         outcome: 0,
         accumulated: 0,
@@ -49,6 +49,7 @@ function ReportController() {
             }, {
                 asset: handelsbanken,
                 quantity: 100,
+                change: 10,
                 price: 98.30
             }, {
                 asset: husqvarna,
@@ -60,7 +61,8 @@ function ReportController() {
                 price: 183.20
             }, {
                 asset: investor,
-                quantity: 46,
+                quantity: 50,
+                change: 4,
                 price: 375.60
             }, {
                 asset: kungsleden,
@@ -108,7 +110,7 @@ function ReportController() {
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
-        forecast: 6349,
+        forecast: 6181,
         goal: 43000,
         outcome: 43899,
         accumulated: 0,

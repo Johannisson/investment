@@ -4,7 +4,7 @@ var investor = {
     asset: 'Investor B',
     ticker: 'INVE B',
     currency: 'kr',
-    quantity: 46,
+    quantity: 50,
     dividends: {
         may: 8.0,
         november: 4.0
