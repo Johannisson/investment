@@ -56,6 +56,7 @@ function TransactionsController() {
         { sum: '2018-12' },
         { label: 'December 2018' },
         { date: '2019-01-02', asset: investor, quantity: 4, price: 367.30 },
+        { date: '2019-01-02', asset: handelsbanken, quantity: 10, price: 96.18 },
         { sum: '2019-01' },
     ]
 
