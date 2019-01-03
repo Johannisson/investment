@@ -24,7 +24,7 @@ function ReportController() {
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
-        forecast: 6284,
+        forecast: 6319,
         goal: 28000,
         outcome: 2431,
         accumulated: 0,
