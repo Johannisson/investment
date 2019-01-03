@@ -4,7 +4,7 @@ var atlas_copco = {
     asset: 'Atlas Copco B',
     ticker: 'ATCO B',
     currency: 'kr',
-    quantity: 10,
+    quantity: 15,
     dividends: {
         march: 7.00
     },

@@ -37,6 +37,7 @@ function ReportController() {
             }, {
                 asset: atlas_copco,
                 quantity: 10,
+                change: 5,
                 price: 193.32
             }, {
                 asset: autoliv,
