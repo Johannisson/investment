@@ -52,6 +52,11 @@ function ReportController() {
                 quantity: 50,
                 price: 163.35
             }, {
+                asset: dustin_group,
+                quantity: 13,
+                change: 13,
+                price: 71.90
+            }, {
                 asset: handelsbanken,
                 quantity: 100,
                 change: 10,

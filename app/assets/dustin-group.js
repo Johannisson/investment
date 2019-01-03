@@ -4,7 +4,7 @@ var dustin_group = {
     asset: 'Dustin Group',
     ticker: 'DUST',
     currency: 'kr',
-    quantity: 0,
+    quantity: 13,
     dividends: {
         december: 3.10
     },

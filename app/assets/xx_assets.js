@@ -4,6 +4,7 @@ var assets = [
     autoliv,
     axfood,
     castellum,
+    dustin_group,
     handelsbanken,
     husqvarna,
     industrivarden,
