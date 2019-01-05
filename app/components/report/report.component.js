@@ -17,6 +17,22 @@ function ReportController() {
     vm.year = 2019;
     vm.month = 1;
 
+    vm.diagram = [];
+    vm.diagram.push({ label: 'Nov', value1: 4380, });
+    vm.diagram.push({ label: 'Dec', value1: 6181, });
+    vm.diagram.push({ label: '2018', value1: 6319, });
+    vm.diagram.push({ label: 'Feb', value1: 0, });
+    vm.diagram.push({ label: 'Mars', value1: 0, });
+    vm.diagram.push({ label: 'April', value1: 0, });
+    vm.diagram.push({ label: 'Maj', value1: 0, });
+    vm.diagram.push({ label: 'Juni', value1: 0, });
+    vm.diagram.push({ label: 'Juli', value1: 0, });
+    vm.diagram.push({ label: 'Aug', value1: 0, });
+    vm.diagram.push({ label: 'Sept', value1: 0, });
+    vm.diagram.push({ label: 'Okt', value1: 0, });
+    vm.diagram.push({ label: 'Nov', value1: 0, });
+    vm.diagram.push({ label: 'Dec', value1: 0, });
+
     vm.data = [];
     vm.data['2019-1'] = {
         description: '<b>Dividend Carpet Bombing</b><br>' +
@@ -26,7 +42,7 @@ function ReportController() {
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
         forecast: 6319,
         goal: 28000,
-        outcome: 2431,
+        outcome: 4314,
         accumulated: 0,
         loan: 13527,
         assets: [
