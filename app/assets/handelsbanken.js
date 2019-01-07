@@ -3,7 +3,7 @@ var handelsbanken = {
     name: 'Handelsbanken',
     asset: 'Handelsbanken A',
     ticker: 'SHB A',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 110,
     dividends: {
         march: 5.50

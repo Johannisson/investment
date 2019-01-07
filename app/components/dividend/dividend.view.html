@@ -9,7 +9,7 @@
         <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
         <td class="right split-right padding">{{asset.quantity}} st</td>
         <td class="right split-right padding" ng-repeat="month in $ctrl.months">
-            <span ng-if="asset.dividends[month.id]">{{asset.dividends[month.id] * asset.quantity | number:0}} kr</span>
+            <span ng-if="asset.dividends[month.id]">{{asset.dividends[month.id] * asset.quantity * $ctrl.currency[asset.currency] | number:0}} kr</span>
         </td>
     </tr>
     <tr>
@@ -35,8 +35,8 @@
                 <tr ng-repeat="asset in $ctrl.assets" ng-if="asset.dividends[month.id] !== undefined" class="hover">
                     <td class="w40"><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
                     <td class="w20 right">{{asset.quantity}} st</td>
-                    <td class="w20 right">{{asset.dividends[month.id] | number:2}} {{asset.currency}}</td>
-                    <td class="w20 right">{{(asset.dividends[month.id] * asset.quantity) | number:0}} {{asset.currency}}</td>
+                    <td class="w20 right">{{asset.dividends[month.id] * $ctrl.currency[asset.currency] | number:2}} kr</td>
+                    <td class="w20 right">{{(asset.dividends[month.id] * asset.quantity * $ctrl.currency[asset.currency]) | number:0}} kr</td>
                 </tr>
             </table>
         </td>

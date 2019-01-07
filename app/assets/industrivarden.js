@@ -3,7 +3,7 @@ var industrivarden = {
     name: 'Industrivärden',
     asset: 'Industrivärden A',
     ticker: 'INDU A',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 10,
     dividends: {
         may: 5.50

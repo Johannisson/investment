@@ -3,7 +3,7 @@ var peab = {
     name: 'Peab',
     asset: 'Peab B',
     ticker: 'PEAB B',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 0,
     dividends: {
         may: 4.00

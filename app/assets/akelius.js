@@ -3,7 +3,7 @@ var akelius = {
     name: 'Akelius Residential Pref',
     asset: 'Akelius Residential Pref',
     ticker: 'AKEL PREF',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 10,
     dividends: {
         february: 5.00,

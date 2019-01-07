@@ -3,7 +3,7 @@ var kungsleden = {
     name: 'Kungsleden',
     asset: 'Kungsleden',
     ticker: 'KLED',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 20,
     dividends: {
         january: 0.55,

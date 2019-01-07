@@ -3,7 +3,7 @@ var sagax = {
     name: 'Sagax D',
     asset: 'Sagax D',
     ticker: 'SAGA D',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 400,
     dividends: {
         january: 0.50,

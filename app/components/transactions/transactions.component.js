@@ -59,6 +59,7 @@ function TransactionsController() {
         { date: '2019-01-02', asset: handelsbanken, quantity: 10, price: 96.18 },
         { date: '2019-01-03', asset: atlas_copco, quantity: 5, price: 189.72 },
         { date: '2019-01-03', asset: dustin_group, quantity: 13, price: 71.90 },
+        { date: '2019-01-07', asset: tryg, quantity: 12, price: 224.08 },
         { sum: '2019-01' }
     ]
 

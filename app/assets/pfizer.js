@@ -3,7 +3,7 @@ var pfizer = {
     name: 'Pfizer',
     asset: 'Pfizer',
     ticker: 'PFE',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 3,
     dividends: {
         march: 3.00,

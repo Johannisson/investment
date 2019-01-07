@@ -3,7 +3,7 @@ var husqvarna = {
     name: 'Husqvarna',
     asset: 'Husqvarna B',
     ticker: 'HUSQ B',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 120,
     dividends: {
         april: 0.75,

@@ -30,6 +30,7 @@ function DividendController() {
     ];
 
     vm.assets = assets;
+    vm.currency = currency;
 
     vm.getSum = function(month) {
         var sum = 0;

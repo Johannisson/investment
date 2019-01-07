@@ -3,7 +3,7 @@ var investor = {
     name: 'Investor',
     asset: 'Investor B',
     ticker: 'INVE B',
-    currency: 'kr',
+    currency: 'sek',
     quantity: 50,
     dividends: {
         may: 8.0,
