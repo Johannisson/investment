@@ -60,6 +60,8 @@ function TransactionsController() {
         { date: '2019-01-03', asset: atlas_copco, quantity: 5, price: 189.72 },
         { date: '2019-01-03', asset: dustin_group, quantity: 13, price: 71.90 },
         { date: '2019-01-07', asset: tryg, quantity: 12, price: 224.08 },
+        { date: '2019-01-08', asset: axfood, quantity: 16, price: 153.45 },
+        { date: '2019-01-08', asset: np3, quantity: 15, price: 63.10 },
         { sum: '2019-01' }
     ]
 

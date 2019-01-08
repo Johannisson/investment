@@ -4,7 +4,7 @@ var np3 = {
     asset: 'NP3 Fastigheter',
     ticker: 'NP3',
     currency: 'sek',
-    quantity: 20,
+    quantity: 35,
     dividends: {
         may: 2.70
     },
