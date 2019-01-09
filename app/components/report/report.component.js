@@ -94,7 +94,8 @@ function ReportController() {
             }, {
                 asset: kungsleden,
                 quantity: 20,
-                price: 62.90
+                price: 62.90,
+                dividend: 11.00
             }, {
                 asset: latour,
                 quantity: 220, 
@@ -116,7 +117,8 @@ function ReportController() {
             }, {
                 asset: sagax,
                 quantity: 400,
-                price: 31.70
+                price: 31.70,
+                dividend: 200.00
             }, {
                 asset: skanska,
                 quantity: 10,

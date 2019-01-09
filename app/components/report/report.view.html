@@ -108,7 +108,9 @@
                     <td class="right">
                         <span>{{asset.quantity * asset.price | number:0}} kr</span>
                     </td>
-                    <td class="right"></td>
+                    <td class="right">
+                        <span ng-if="asset.dividend">{{asset.dividend | number:0}} kr</span>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="3" class="split-top"></td>
