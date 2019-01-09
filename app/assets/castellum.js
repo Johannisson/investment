@@ -4,7 +4,7 @@ var castellum = {
     asset: 'Castellum',
     ticker: 'CAST',
     currency: 'sek',
-    quantity: 50,
+    quantity: 60,
     dividends: {
         march: 2.65,
         september: 2.65

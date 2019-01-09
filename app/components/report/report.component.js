@@ -20,7 +20,7 @@ function ReportController() {
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov', value1: 4380, });
     vm.diagram.push({ label: 'Dec', value1: 6181, });
-    vm.diagram.push({ label: '2018', value1: 6591, });
+    vm.diagram.push({ label: '2018', value1: 6918, });
     vm.diagram.push({ label: 'Feb', value1: 0, });
     vm.diagram.push({ label: 'Mars', value1: 0, });
     vm.diagram.push({ label: 'April', value1: 0, });
@@ -40,9 +40,9 @@ function ReportController() {
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
-        forecast: 6591,
+        forecast: 6918,
         goal: 28000,
-        outcome: 4314,
+        outcome: 15244,
         accumulated: 0,
         loan: 13527,
         assets: [
@@ -99,6 +99,11 @@ function ReportController() {
                 asset: latour,
                 quantity: 220, 
                 price: 112.00
+            }, {
+                asset: nordea,
+                quantity: 40, 
+                change: 40, 
+                price: 79.44
             }, {
                 asset: np3,
                 quantity: 35, 

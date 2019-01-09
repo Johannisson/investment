@@ -11,6 +11,7 @@ var assets = [
     investor,
     kungsleden,
     latour,
+    nordea,
     np3,
     pfizer,
     sagax,

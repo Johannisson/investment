@@ -62,6 +62,8 @@ function TransactionsController() {
         { date: '2019-01-07', asset: tryg, quantity: 12, price: 224.08 },
         { date: '2019-01-08', asset: axfood, quantity: 16, price: 153.45 },
         { date: '2019-01-08', asset: np3, quantity: 15, price: 63.10 },
+        { date: '2019-01-09', asset: castellum, quantity: 10, price: 166.15 },
+        { date: '2019-01-09', asset: nordea, quantity: 40, price: 79.44 },
         { sum: '2019-01' }
     ]
 
