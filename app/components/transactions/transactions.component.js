@@ -64,6 +64,7 @@ function TransactionsController() {
         { date: '2019-01-08', asset: np3, quantity: 15, price: 63.10 },
         { date: '2019-01-09', asset: castellum, quantity: 10, price: 166.15 },
         { date: '2019-01-09', asset: nordea, quantity: 40, price: 79.44 },
+        { date: '2019-01-10', asset: pfizer, quantity: 3, price: 376.00 },
         { sum: '2019-01' }
     ]
 
