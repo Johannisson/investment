@@ -38,6 +38,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-asset asset="autoliv" />'
         }).when('/portfoljbolag/axfood', {
             template: '<app-asset asset="axfood" />'
+        }).when('/portfoljbolag/bayerische-motoren-werke', {
+            template: '<app-asset asset="bayerische-motoren-werke" />'
         }).when('/portfoljbolag/castellum', { 
             template: '<app-asset asset="castellum" />'
         }).when('/portfoljbolag/dustin-group', {

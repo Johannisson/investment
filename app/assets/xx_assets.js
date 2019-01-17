@@ -3,6 +3,7 @@ var assets = [
     atlas_copco,
     autoliv,
     axfood,
+    bmw,
     castellum,
     dustin_group,
     handelsbanken,
