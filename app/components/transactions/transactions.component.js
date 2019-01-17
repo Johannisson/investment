@@ -59,14 +59,14 @@ function TransactionsController() {
         { date: '2019-01-02', asset: handelsbanken, quantity: 10, price: 96.18 },
         { date: '2019-01-03', asset: atlas_copco, quantity: 5, price: 189.72 },
         { date: '2019-01-03', asset: dustin_group, quantity: 13, price: 71.90 },
-        { date: '2019-01-07', asset: tryg, quantity: 12, price: 224.08 },
+        { date: '2019-01-07', asset: tryg, quantity: 12, price: 224.08, rate: 1.36 },
         { date: '2019-01-08', asset: axfood, quantity: 16, price: 153.45 },
         { date: '2019-01-08', asset: np3, quantity: 15, price: 63.10 },
         { date: '2019-01-09', asset: castellum, quantity: 10, price: 166.15 },
         { date: '2019-01-09', asset: nordea, quantity: 40, price: 79.44 },
         { date: '2019-01-10', asset: pfizer, quantity: 3, price: 376.00 },
         { date: '2019-01-15', asset: axfood, quantity: 11, price: 155.85 },
-        { date: '2019-01-17', asset: bmw, quantity: 3, price: 71.26 },
+        { date: '2019-01-17', asset: bmw, quantity: 3, price: 71.26, rate: 10 },
         { date: '2019-01-17', asset: nordea, quantity: 17, price: 80.56 },
         { sum: '2019-01' }
     ]
@@ -76,9 +76,19 @@ function TransactionsController() {
         var sum = 0;
         vm.transactions.forEach(function (transaction) {
             if (transaction.date != undefined && transaction.date.startsWith(month)) {
-                sum += transaction.quantity * transaction.price;
+                sum += transaction.quantity * transaction.price * (transaction.rate || 1);
             }
         });
         return sum;
+    }
+
+    vm.getValue = function(value, currency) {
+        if (currency === 'sek') {
+            return parseFloat(value).toFixed(2) + ' SEK';
+        } if (currency === 'eur') {
+            return parseFloat(value).toFixed(2) + ' EUR';
+        } if (currency === 'dkk') {
+            return parseFloat(value).toFixed(2) + ' DKK';
+        }
     }
 }

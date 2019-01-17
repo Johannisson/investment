@@ -8,8 +8,8 @@
             <td ng-if="transaction.asset" class="w15">{{transaction.date}}</td>
             <td ng-if="transaction.asset" class="w30"><a href="portfoljbolag/{{transaction.asset.id}}">{{transaction.asset.asset}}</a></td>
             <td ng-if="transaction.asset" class="w15 right">{{transaction.quantity}} st</td>
-            <td ng-if="transaction.asset" class="w20 right">{{transaction.price | number:2}} {{transaction.asset.currency}}</td>
-            <td ng-if="transaction.asset" class="w20 right">{{transaction.price * transaction.quantity | number:2}} {{transaction.asset.currency}}</td>
+            <td ng-if="transaction.asset" class="w20 right" ng-bind-html="$ctrl.getValue(transaction.price, transaction.asset.currency)"></td>
+            <td ng-if="transaction.asset" class="w20 right" ng-bind-html="$ctrl.getValue(transaction.price * transaction.quantity, transaction.asset.currency)"></td>
         </tr>
     </table>
 </article>

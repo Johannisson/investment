@@ -16,6 +16,7 @@ function ReportController() {
 
     vm.year = 2019;
     vm.month = 1;
+    vm.currency = currency;
 
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov', value1: 4380, });
@@ -42,8 +43,8 @@ function ReportController() {
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
         forecast: 7159,
         goal: 28000,
-        outcome: 18086,
-        accumulated: 0,
+        outcome: 22561,
+        accumulated: 211,
         loan: 13527,
         assets: [
             {
@@ -68,7 +69,7 @@ function ReportController() {
                 asset: bmw,
                 quantity: 3,
                 change: 3,
-                price: 71.26
+                price: 710.00 // ??
             }, {
                 asset: castellum,
                 quantity: 50,
@@ -350,5 +351,13 @@ function ReportController() {
 
     vm.getForecast = function (month) {
         return vm.data[month].forecast;
+    }
+
+    vm.getValue = function (asset) {
+        return asset.quantity * asset.price;
+    }
+
+    vm.getDividend = function (asset) {
+        return asset.dividend;
     }
 }

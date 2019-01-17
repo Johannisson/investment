@@ -93,11 +93,11 @@
         <div class="w90">
             <table>
                 <tr class="split">
-                    <th class="w20" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
-                    <th class="w20 right">Antal</th>
-                    <th class="w20 right">Köp/Sälj</th>
-                    <th class="w20 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
-                    <th class="w20 right">Utdelning</th>
+                    <th class="w40" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
+                    <th class="w15 right">Antal</th>
+                    <th class="w15 right">Köp/Sälj</th>
+                    <th class="w15 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
+                    <th class="w15 right">Utdelning</th>
                 </tr>
                 <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order" class="hover">
                     <td><a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
@@ -106,10 +106,10 @@
                         <span ng-if="asset.change">{{asset.change + ' st'}}</span>
                     </td>
                     <td class="right">
-                        <span>{{asset.quantity * asset.price | number:0}} kr</span>
+                        <span>{{$ctrl.getValue(asset) | number:0}} kr</span>
                     </td>
                     <td class="right">
-                        <span ng-if="asset.dividend">{{asset.dividend | number:0}} kr</span>
+                        <span ng-if="asset.dividend">{{$ctrl.getDividend(asset) | number:0}} kr</span>
                     </td>
                 </tr>
                 <tr>
