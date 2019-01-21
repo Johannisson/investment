@@ -21,7 +21,7 @@ function ReportController() {
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov', value1: 4380, });
     vm.diagram.push({ label: 'Dec', value1: 6181, });
-    vm.diagram.push({ label: '2018', value1: 7159, });
+    vm.diagram.push({ label: '2018', value1: 7201, });
     vm.diagram.push({ label: 'Feb', value1: 0, });
     vm.diagram.push({ label: 'Mars', value1: 0, });
     vm.diagram.push({ label: 'April', value1: 0, });
@@ -41,7 +41,7 @@ function ReportController() {
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
-        forecast: 7159,
+        forecast: 7201,
         goal: 28000,
         outcome: 22561,
         accumulated: 211,
@@ -62,8 +62,8 @@ function ReportController() {
                 price: 629.80
             }, {
                 asset: axfood,
-                quantity: 71,
-                change: 27,
+                quantity: 77,
+                change: 33,
                 price: 151.70
             }, {
                 asset: bmw,

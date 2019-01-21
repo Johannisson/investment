@@ -59,6 +59,7 @@
         </tr>
         <tr ng-repeat="row in $ctrl.monthly" class="hover">
             <td class="right">{{row.goal | number:0}}&nbsp;kr</td>
+            <td></td>
             <td ng-repeat="month in row.months track by $index" ng-class="month ? 'goal': ''"></td>
         </tr>
     </table>

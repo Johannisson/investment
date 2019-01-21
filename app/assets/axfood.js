@@ -4,7 +4,7 @@ var axfood = {
     asset: 'Axfood',
     ticker: 'AXFO',
     currency: 'sek',
-    quantity: 71,
+    quantity: 77,
     dividends: {
         march: 7.00
     },
