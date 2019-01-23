@@ -43,7 +43,7 @@ function ReportController() {
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
         forecast: 7487,
         goal: 28000,
-        outcome: 24882,
+        outcome: 28289,
         accumulated: 211,
         loan: 13527,
         assets: [

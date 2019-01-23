@@ -6,7 +6,7 @@ var tryg = {
     currency: 'dkk',
     quantity: 12,
     dividends: {
-        march: 1.65,
+        january: 1.65,
         april: 1.65,
         july: 1.65,
         october: 1.65
