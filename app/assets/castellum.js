@@ -4,10 +4,10 @@ var castellum = {
     asset: 'Castellum',
     ticker: 'CAST',
     currency: 'sek',
-    quantity: 60,
+    quantity: 80,
     dividends: {
-        march: 2.65,
-        september: 2.65
+        march: 3.05,
+        september: 3.05
     },
     homepage: {
         name: 'www.castellum.se',
@@ -34,6 +34,7 @@ var castellum = {
         { year: 2015, ordinary: 3.99 },
         { year: 2016, ordinary: 4.25 },
         { year: 2017, ordinary: 5.00 },
-        { year: 2018, ordinary: 5.30 }
+        { year: 2018, ordinary: 5.30 },
+        { year: 2019, ordinary: 6.10 }
     ]
 };

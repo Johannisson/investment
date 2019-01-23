@@ -70,6 +70,7 @@ function TransactionsController() {
         { date: '2019-01-17', asset: nordea, quantity: 17, price: 80.56 },
         { date: '2019-01-21', asset: axfood, quantity: 6, price: 155.70 },
         { date: '2019-01-22', asset: nordea, quantity: 17, price: 81.57 },
+        { date: '2019-01-23', asset: castellum, quantity: 20, price: 170.35 },
         { sum: '2019-01' }
     ]
 
