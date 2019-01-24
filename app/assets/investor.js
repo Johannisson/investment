@@ -6,7 +6,7 @@ var investor = {
     currency: 'sek',
     quantity: 50,
     dividends: {
-        may: 8.0,
+        may: 9.0,
         november: 4.0
     },
     homepage: {
@@ -47,6 +47,7 @@ var investor = {
         { year: 2015, ordinary: 9.00 },
         { year: 2016, ordinary: 10.00 },
         { year: 2017, ordinary: 11.00 },
-        { year: 2018, ordinary: 12.00 }
+        { year: 2018, ordinary: 12.00 },
+        { year: 2019, ordinary: 13.00 }
     ]
 };

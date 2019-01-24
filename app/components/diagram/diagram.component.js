@@ -7,7 +7,8 @@ angular
             data: '=',
             rows: '=',
             width: '=',
-            height: '='
+            height: '=',
+            suffix: '@'
         },
         controller: DiagramController
     });
