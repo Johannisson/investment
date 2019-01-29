@@ -6,7 +6,7 @@ var swedbank = {
     currency: 'sek',
     quantity: 110,
     dividends: {
-        april: 13.0
+        april: 14.20
     },
     homepage: {
         name: 'www.swedbank.se' ,
@@ -27,6 +27,7 @@ var swedbank = {
         { year: 2015, ordinary: 11.35 },
         { year: 2016, ordinary: 10.70 },
         { year: 2017, ordinary: 13.20 },
-        { year: 2018, ordinary: 13.00 }
+        { year: 2018, ordinary: 13.00 },
+        { year: 2019, ordinary: 14.20 }
     ]
 };

@@ -21,7 +21,7 @@ function ReportController() {
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
-    vm.diagram.push({ label: '2018', value1: 7537 });
+    vm.diagram.push({ label: '2018', value1: 7659 });
     vm.diagram.push({ label: 'Feb', value1: 0 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
@@ -41,108 +41,109 @@ function ReportController() {
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
-        forecast: 7537,
+        forecast: 7659,
         goal: 28000,
         outcome: 28289,
         accumulated: 211,
-        loan: 13527,
+        loan: 14386,
         assets: [
             {
                 asset: akelius,
                 quantity: 10,
-                price: 328.50
+                price: 344.50
             }, {
                 asset: atlas_copco,
-                quantity: 10,
+                quantity: 15,
                 change: 5,
-                price: 193.32
+                price: 208.05
             }, {
                 asset: autoliv,
                 quantity: 2,
-                price: 629.80
+                price: 707.00
             }, {
                 asset: axfood,
                 quantity: 77,
                 change: 33,
-                price: 151.70
+                price: 157.20
             }, {
                 asset: bmw,
                 quantity: 3,
                 change: 3,
-                price: 710.00 // ??
+                price: 745.60
             }, {
                 asset: castellum,
-                quantity: 50,
-                price: 163.35
+                quantity: 80,
+                change: 30,
+                price: 167.30
             }, {
                 asset: dustin_group,
                 quantity: 13,
                 change: 13,
-                price: 71.90
+                price: 77.10
             }, {
                 asset: handelsbanken,
-                quantity: 100,
+                quantity: 110,
                 change: 10,
-                price: 98.30
+                price: 100.10
             }, {
                 asset: husqvarna,
                 quantity: 120,
-                price: 65.70
+                price: 68.92
             }, {
                 asset: industrivarden,
                 quantity: 10,
-                price: 183.20
+                price: 187.50
             }, {
                 asset: investor,
                 quantity: 50,
                 change: 4,
-                price: 375.60
+                price: 398.40
             }, {
                 asset: kungsleden,
                 quantity: 20,
-                price: 62.90,
+                price: 62.80,
                 dividend: 11.00
             }, {
                 asset: latour,
                 quantity: 220, 
-                price: 112.00
+                price: 109.10
             }, {
                 asset: nordea,
                 quantity: 74, 
                 change: 74, 
-                price: 79.44
+                price: 82.82
             }, {
                 asset: np3,
                 quantity: 35, 
                 change: 15, 
-                price: 61.00
+                price: 62.70
             }, {
                 asset: pfizer,
                 quantity: 6,
                 change: 3,
-                price: 376.00
+                price: 374.00
             }, {
                 asset: sagax,
                 quantity: 400,
-                price: 31.70,
+                price: 33.40,
                 dividend: 200.00
             }, {
                 asset: skanska,
                 quantity: 10,
-                price: 141.00
+                price: 158.75
             }, {
                 asset: swedbank,
                 quantity: 110,
-                price: 197.75
+                price: 209.70
             }, {
                 asset: tryg,
                 quantity: 12,
                 change: 12,
-                price: 224.08
+                price: 231.83
             }, {
                 asset: xact_hogutdelande,
                 quantity: 203,
-                price: 105.58
+                price: 111.84
             }
         ]
     }

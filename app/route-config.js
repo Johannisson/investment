@@ -32,14 +32,14 @@ function config($routeProvider, $locationProvider) {
             template: '<app-portfolio />'
         }).when('/portfoljbolag/akelius', { 
             template: '<app-asset asset="akelius" />'
+        }).when('/portfoljbolag/bmw', { 
+            template: '<app-asset asset="bmw" />'
         }).when('/portfoljbolag/atlas-copco', {
             template: '<app-asset asset="atlas_copco" />'
         }).when('/portfoljbolag/autoliv', {
             template: '<app-asset asset="autoliv" />'
         }).when('/portfoljbolag/axfood', {
             template: '<app-asset asset="axfood" />'
-        }).when('/portfoljbolag/bayerische-motoren-werke', {
-            template: '<app-asset asset="bmw" />'
         }).when('/portfoljbolag/castellum', { 
             template: '<app-asset asset="castellum" />'
         }).when('/portfoljbolag/dustin-group', {
@@ -56,6 +56,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-asset asset="kungsleden" />'
         }).when('/portfoljbolag/latour', { 
             template: '<app-asset asset="latour" />'
+        }).when('/portfoljbolag/nordea', { 
+            template: '<app-asset asset="nordea" />'
         }).when('/portfoljbolag/np3', { 
             template: '<app-asset asset="np3" />'
         }).when('/portfoljbolag/peab', { 

@@ -1,5 +1,5 @@
 var bmw = {
-    id: 'bayerische-motoren-werke',
+    id: 'bmw',
     name: 'Bayerische Motoren Werke AG',
     asset: 'Bayerische Motoren Werke AG',
     ticker: 'BMW',

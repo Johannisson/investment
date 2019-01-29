@@ -20,6 +20,7 @@ function AssetController($locale) {
         } 
         if (vm.asset === 'atlas_copco') {
             vm.data = atlas_copco;
+            vm.rows = [0, 1, 2, 3, 4, 5, 6, 7];
         } 
         if (vm.asset === 'autoliv') {
             vm.data = autoliv;
@@ -29,12 +30,17 @@ function AssetController($locale) {
             vm.data = axfood;
             vm.rows = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         } 
+        if (vm.asset === 'bmw') {
+            vm.data = bmw;
+            vm.rows = [0, 1, 2, 3, 4, 5];
+        } 
         if (vm.asset === 'castellum') {
             vm.data = castellum;
             vm.rows = [0, 1, 2, 3, 4, 5, 6];
         } 
         if (vm.asset === 'dustin_group') {
             vm.data = dustin_group;
+            vm.rows = [0, 1, 2, 3, 4];
         } 
         if (vm.asset === 'handelsbanken') {
             vm.data = handelsbanken;
@@ -71,8 +77,13 @@ function AssetController($locale) {
             vm.data = np3;
             vm.rows = [0, 0.5, 1, 1.5, 2, 2.5, 3];
         }
+        if (vm.asset === 'nordea') {
+            vm.data = nordea;
+            vm.rows = [0];
+        }
         if (vm.asset === 'sagax') {
             vm.data = sagax;
+            vm.rows = [0];
         } 
         if (vm.asset === 'skanska') {
             vm.data = skanska;
@@ -80,6 +91,10 @@ function AssetController($locale) {
         } 
         if (vm.asset === 'swedbank') {
             vm.data = swedbank;
+            vm.rows = [0, 2.5, 5, 7.5, 10, 12.5, 15]
+        } 
+        if (vm.asset === 'tryg') {
+            vm.data = tryg;
             vm.rows = [0, 2.5, 5, 7.5, 10, 12.5, 15]
         } 
         if (vm.asset === 'xact_hogutdelande') {
