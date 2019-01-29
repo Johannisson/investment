@@ -4,7 +4,7 @@ var autoliv = {
     asset: 'Autoliv SDB',
     ticker: 'ALIV SDB',
     currency: 'sek',
-    quantity: 2,
+    quantity: 4,
     dividends: {
         march: 5.50,
         june: 5.50,

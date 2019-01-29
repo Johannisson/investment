@@ -71,6 +71,8 @@ function TransactionsController() {
         { date: '2019-01-21', asset: axfood, quantity: 6, price: 155.70 },
         { date: '2019-01-22', asset: nordea, quantity: 17, price: 81.57 },
         { date: '2019-01-23', asset: castellum, quantity: 20, price: 170.35 },
+        { date: '2019-01-29', asset: autoliv, quantity: 2, price: 716.20 },
+        { date: '2019-01-29', asset: pfizer, quantity: 4, price: 354.00 },
         { sum: '2019-01' }
     ]
 
