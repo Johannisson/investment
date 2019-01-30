@@ -73,6 +73,7 @@ function TransactionsController() {
         { date: '2019-01-23', asset: castellum, quantity: 20, price: 170.35 },
         { date: '2019-01-29', asset: autoliv, quantity: 2, price: 716.20 },
         { date: '2019-01-29', asset: pfizer, quantity: 4, price: 354.00 },
+        { date: '2019-01-30', asset: tryg, quantity: 12, price: 168.10, rate: 1.38 },
         { sum: '2019-01' }
     ]
 

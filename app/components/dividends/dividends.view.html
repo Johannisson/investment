@@ -4,17 +4,19 @@
     <table>
         <tr class="split">
             <td class="w40"></td>
-            <td class="w20 right bold">Datum</td>
-            <td class="w20 right bold">Antal</td>
-            <td class="w20 right bold">Utdelning</td>
+            <td class="w15 right bold">Datum</td>
+            <td class="w15 right bold">Antal</td>
+            <td class="w15 right bold">Utdelning</td>
+            <td class="w15 right bold">Källskatt</td>
         </tr>
     </table>
     <table>
         <tr ng-repeat="dividend in $ctrl.dividends" class="hover">
             <td class="w40"><a href="portfoljbolag/{{dividend.asset.id}}">{{dividend.asset.name}}</a></td>
-            <td class="w20 right">{{dividend.date}}</td>
-            <td class="w20 right">{{dividend.quantity}} st</td>
-            <td class="w20 right">{{dividend.amount | number:0}} kr</td>
+            <td class="w15 right">{{dividend.date}}</td>
+            <td class="w15 right">{{dividend.quantity}} st</td>
+            <td class="w15 right">{{dividend.amount | number:2}} kr</td>
+            <td class="w15 right" ng-if="dividend.tax">{{dividend.tax | number:2}} kr</td>
         </tr>
     </table>
 </article>
