@@ -50,102 +50,102 @@ function ReportController() {
             {
                 asset: akelius,
                 quantity: 10,
-                price: 344.50
+                price: 346.50
             }, {
                 asset: atlas_copco,
                 quantity: 15,
                 change: 5,
-                price: 208.05
+                price: 216.10
             }, {
                 asset: autoliv,
                 quantity: 4,
                 change: 2,
-                price: 707.00
+                price: 720.00
             }, {
                 asset: axfood,
                 quantity: 77,
                 change: 33,
-                price: 157.20
+                price: 158.40
             }, {
                 asset: bmw,
                 quantity: 3,
                 change: 3,
-                price: 745.60
+                price: 737.55
             }, {
                 asset: castellum,
                 quantity: 80,
                 change: 30,
-                price: 167.30
+                price: 171.40
             }, {
                 asset: dustin_group,
                 quantity: 13,
                 change: 13,
-                price: 77.10
+                price: 81.50
             }, {
                 asset: handelsbanken,
                 quantity: 110,
                 change: 10,
-                price: 100.10
+                price: 98.20
             }, {
                 asset: husqvarna,
                 quantity: 120,
-                price: 68.92
+                price: 69.00
             }, {
                 asset: industrivarden,
                 quantity: 10,
-                price: 187.50
+                price: 190.80
             }, {
                 asset: investor,
                 quantity: 50,
                 change: 4,
-                price: 398.40
+                price: 397.10
             }, {
                 asset: kungsleden,
                 quantity: 20,
-                price: 62.80,
+                price: 68.60,
                 dividend: 11.00
             }, {
                 asset: latour,
                 quantity: 220, 
-                price: 109.10
+                price: 112.20
             }, {
                 asset: nordea,
                 quantity: 74, 
                 change: 74, 
-                price: 82.82
+                price: 82.17
             }, {
                 asset: np3,
                 quantity: 35, 
                 change: 15, 
-                price: 62.70
+                price: 63.70
             }, {
                 asset: pfizer,
                 quantity: 10,
                 change: 7,
-                price: 374.00
+                price: 380.00
             }, {
                 asset: sagax,
                 quantity: 400,
-                price: 33.40,
+                price: 33.00,
                 dividend: 200.00
             }, {
                 asset: skanska,
                 quantity: 10,
-                price: 158.75
+                price: 158.15
             }, {
                 asset: swedbank,
                 quantity: 110,
-                price: 209.70
+                price: 205.10
             }, {
                 asset: tryg,
                 quantity: 24,
                 change: 24,
-                price: 231.83,
+                price: 229.87,
                 dividend: 27.36
             }, {
                 asset: xact_hogutdelande,
                 quantity: 203,
-                price: 111.84
+                price: 111.58
             }
         ]
     }
