@@ -22,7 +22,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2018', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 7830 });
+    vm.diagram.push({ label: 'Feb', value1: 7883 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -37,11 +37,11 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 7830,
+        forecast: 7883,
         goal: 30000,
-        outcome: 0,
+        outcome: 1373,
         accumulated: 238,
-        loan: 14386,
+        loan: 18618,
         assets: [
             {
                 asset: akelius,
@@ -69,7 +69,8 @@ function ReportController() {
                 price: 171.40
             }, {
                 asset: dustin_group,
-                quantity: 13,
+                quantity: 30,
+                change: 17,
                 price: 81.50
             }, {
                 asset: handelsbanken,
@@ -141,7 +142,7 @@ function ReportController() {
         goal: 30000,
         outcome: 33921,
         accumulated: 238,
-        loan: 14386,
+        loan: 16945,
         assets: [
             {
                 asset: akelius,

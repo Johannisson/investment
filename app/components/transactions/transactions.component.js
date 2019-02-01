@@ -74,7 +74,9 @@ function TransactionsController() {
         { date: '2019-01-29', asset: autoliv, quantity: 2, price: 716.20 },
         { date: '2019-01-29', asset: pfizer, quantity: 4, price: 354.00 },
         { date: '2019-01-30', asset: tryg, quantity: 12, price: 168.10, rate: 1.38 },
-        { sum: '2019-01' }
+        { sum: '2019-01' },
+        { date: '2019-02-01', asset: dustin_group, quantity: 17, price: 80.80 },
+        { sum: '2019-02' }
     ]
 
     vm.getSum = function(month)
