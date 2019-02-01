@@ -15,14 +15,14 @@ function ReportController() {
     vm.order = 'data.name';
 
     vm.year = 2019;
-    vm.month = 1;
+    vm.month = 2;
     vm.currency = currency;
 
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2018', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 0 });
+    vm.diagram.push({ label: 'Feb', value1: 7830 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -35,6 +35,102 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec', value1: 0 });
 
     vm.data = [];
+    vm.data['2019-2'] = {
+        description: '',
+        forecast: 7830,
+        goal: 30000,
+        outcome: 0,
+        accumulated: 238,
+        loan: 14386,
+        assets: [
+            {
+                asset: akelius,
+                quantity: 10,
+                price: 346.50
+            }, {
+                asset: atlas_copco,
+                quantity: 15,
+                price: 216.10
+            }, {
+                asset: autoliv,
+                quantity: 4,
+                price: 720.00
+            }, {
+                asset: axfood,
+                quantity: 77,
+                price: 158.40
+            }, {
+                asset: bmw,
+                quantity: 3,
+                price: 737.55
+            }, {
+                asset: castellum,
+                quantity: 80,
+                price: 171.40
+            }, {
+                asset: dustin_group,
+                quantity: 13,
+                price: 81.50
+            }, {
+                asset: handelsbanken,
+                quantity: 110,
+                price: 98.20
+            }, {
+                asset: husqvarna,
+                quantity: 120,
+                price: 69.00
+            }, {
+                asset: industrivarden,
+                quantity: 10,
+                price: 190.80
+            }, {
+                asset: investor,
+                quantity: 50,
+                price: 397.10
+            }, {
+                asset: kungsleden,
+                quantity: 20,
+                price: 68.60,
+            }, {
+                asset: latour,
+                quantity: 220, 
+                price: 112.20
+            }, {
+                asset: nordea,
+                quantity: 74, 
+                price: 82.17
+            }, {
+                asset: np3,
+                quantity: 35, 
+                price: 63.70
+            }, {
+                asset: pfizer,
+                quantity: 10,
+                price: 380.00
+            }, {
+                asset: sagax,
+                quantity: 400,
+                price: 33.00,
+            }, {
+                asset: skanska,
+                quantity: 10,
+                price: 158.15
+            }, {
+                asset: swedbank,
+                quantity: 110,
+                price: 205.10
+            }, {
+                asset: tryg,
+                quantity: 24,
+                price: 229.87,
+            }, {
+                asset: xact_hogutdelande,
+                quantity: 203,
+                price: 111.58
+            }
+        ]
+    }
+
     vm.data['2019-1'] = {
         description: '<b>Dividend Carpet Bombing</b><br>' +
                      'Även om det i praktiken inte spelar någon roll så är det ganska roligt med löpande utdelningar i portföljen. ' + 
