@@ -75,6 +75,7 @@ function TransactionsController() {
         { date: '2019-01-29', asset: pfizer, quantity: 4, price: 354.00 },
         { date: '2019-01-30', asset: tryg, quantity: 12, price: 168.10, rate: 1.38 },
         { sum: '2019-01' },
+        { label: 'Februari 2019' },
         { date: '2019-02-01', asset: dustin_group, quantity: 17, price: 80.80 },
         { date: '2019-02-04', asset: castellum, quantity: 10, price: 169.75 },
         { sum: '2019-02' }
