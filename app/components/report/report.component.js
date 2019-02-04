@@ -22,7 +22,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2018', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 7883 });
+    vm.diagram.push({ label: 'Feb', value1: 7944 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -37,7 +37,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 7883,
+        forecast: 7944,
         goal: 30000,
         outcome: 1373,
         accumulated: 238,
@@ -65,7 +65,8 @@ function ReportController() {
                 price: 737.55
             }, {
                 asset: castellum,
-                quantity: 80,
+                quantity: 90,
+                change: 10,
                 price: 171.40
             }, {
                 asset: dustin_group,
