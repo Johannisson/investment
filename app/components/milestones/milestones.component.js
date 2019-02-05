@@ -26,16 +26,16 @@ function MilestonesController() {
     ]
 
     vm.forecast = [
-        { goal:10000 },
-        { goal:20000 },
-        { goal:30000 },
-        { goal:40000 },
-        { goal:50000 },
+        { goal:12000 },
+        { goal:24000 },
+        { goal:36000 },
+        { goal:48000 },
         { goal:60000 },
-        { goal:70000 },
-        { goal:80000 },
-        { goal:90000 },
-        { goal:100000 }
+        { goal:72000 },
+        { goal:84000 },
+        { goal:96000 },
+        { goal:108000 },
+        { goal:120000 }
     ];
 
     vm.accumulated = [

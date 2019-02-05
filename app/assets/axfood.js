@@ -4,7 +4,7 @@ var axfood = {
     asset: 'Axfood',
     ticker: 'AXFO',
     currency: 'sek',
-    quantity: 77,
+    quantity: 99,
     dividends: {
         march: 7.00
     },
@@ -31,6 +31,7 @@ var axfood = {
         { year: 2015, ordinary: 4.30 },
         { year: 2016, ordinary: 5.00, extra: 4.00 },
         { year: 2017, ordinary: 6.00 },
-        { year: 2018, ordinary: 7.00 }
+        { year: 2018, ordinary: 7.00 },
+        { year: 2019, ordinary: 7.00 }
     ]
 };
