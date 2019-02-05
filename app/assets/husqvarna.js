@@ -7,7 +7,7 @@ var husqvarna = {
     quantity: 120,
     dividends: {
         april: 0.75,
-        october: 0.75
+        october: 1.50
     },
     homepage: {
         name: 'www.husqvarna.com' ,
@@ -26,6 +26,7 @@ var husqvarna = {
         { year: 2015, ordinary: 1.65 },
         { year: 2016, ordinary: 1.65 },
         { year: 2017, ordinary: 1.95 },
-        { year: 2018, ordinary: 2.28 }
+        { year: 2018, ordinary: 2.25 },
+        { year: 2019, ordinary: 2.25 }
     ]
 };
