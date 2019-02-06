@@ -79,7 +79,7 @@ function AssetController($locale) {
         }
         if (vm.asset === 'nordea') {
             vm.data = nordea;
-            vm.rows = [0];
+            vm.rows = [0, 0.25, 0.5, 0.75];
         }
         if (vm.asset === 'sagax') {
             vm.data = sagax;

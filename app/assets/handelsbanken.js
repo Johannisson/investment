@@ -36,6 +36,7 @@ var handelsbanken = {
         { year: 2015, ordinary: 4.17, extra: 5.00 },
         { year: 2016, ordinary: 4.50, extra: 1.50 },
         { year: 2017, ordinary: 5.00 },
-        { year: 2018, ordinary: 5.50, extra: 2.00 }
+        { year: 2018, ordinary: 5.50, extra: 2.00 },
+        { year: 2019, ordinary: 5.50 }
     ]
 };

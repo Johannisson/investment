@@ -6,12 +6,14 @@ var nordea = {
     currency: 'sek',
     quantity: 74,
     dividends: {
-        march: 6.85
+        march: 7.20
     },
     homepage: {
         name: 'www.nordea.se',
         url: 'https://www.nordea.se/'
     },
     years: [
+        { year: 2018, ordinary: 0.68 },
+        { year: 2019, ordinary: 0.69 }
     ]
 };
