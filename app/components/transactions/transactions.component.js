@@ -79,6 +79,8 @@ function TransactionsController() {
         { date: '2019-02-01', asset: dustin_group, quantity: 17, price: 80.80 },
         { date: '2019-02-04', asset: castellum, quantity: 10, price: 169.75 },
         { date: '2019-02-05', asset: axfood, quantity: 22, price: 159.20 },
+        { date: '2019-02-07', asset: handelsbanken, quantity: 10, price: 97.26 },
+        { date: '2019-02-07', asset: np3, quantity: 21, price: 64.20 },
         { sum: '2019-02' }
     ]
 
