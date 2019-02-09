@@ -30,7 +30,15 @@ function DividendsController() {
             quantity: 12,
             amount: 27.36,
             tax: 7.38,
-            asset: tryg
+            asset: tryg,
+            last: true
         },
+        {
+            date: '2019-02-08',
+            quantity: 10,
+            amount: 50.00,
+            asset: akelius,
+            last: true
+        }
     ];
 }

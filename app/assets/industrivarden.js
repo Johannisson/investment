@@ -6,7 +6,7 @@ var industrivarden = {
     currency: 'sek',
     quantity: 10,
     dividends: {
-        may: 5.50
+        may: 5.75
     },
     homepage: {
         name: 'www.industrivarden.se',
@@ -26,6 +26,7 @@ var industrivarden = {
         { year: 2015, ordinary: 6.25 },
         { year: 2016, ordinary: 5.00 },
         { year: 2017, ordinary: 5.25 },
-        { year: 2018, ordinary: 5.50 }
+        { year: 2018, ordinary: 5.50 },
+        { year: 2019, ordinary: 5.75 }
     ]
 };

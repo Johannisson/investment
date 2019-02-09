@@ -39,14 +39,15 @@ function ReportController() {
         description: '',
         forecast: 8325,
         goal: 30000,
-        outcome: 6573,
-        accumulated: 238,
-        loan: 13826,
+        outcome: 8894,
+        accumulated: 288,
+        loan: 16109,
         assets: [
             {
                 asset: akelius,
                 quantity: 10,
-                price: 346.50
+                price: 346.50,
+                dividend: 50.00
             }, {
                 asset: atlas_copco,
                 quantity: 15,
@@ -76,7 +77,8 @@ function ReportController() {
                 price: 81.50
             }, {
                 asset: handelsbanken,
-                quantity: 110,
+                quantity: 120,
+                change: 10,
                 price: 98.20
             }, {
                 asset: husqvarna,
@@ -104,7 +106,8 @@ function ReportController() {
                 price: 82.17
             }, {
                 asset: np3,
-                quantity: 35, 
+                quantity: 56,
+                change: 21,
                 price: 63.70
             }, {
                 asset: pfizer,

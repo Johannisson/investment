@@ -12,11 +12,13 @@
     </table>
     <table>
         <tr ng-repeat="dividend in $ctrl.dividends" class="hover">
-            <td class="w40"><a href="portfoljbolag/{{dividend.asset.id}}">{{dividend.asset.name}}</a></td>
-            <td class="w15 right">{{dividend.date}}</td>
-            <td class="w15 right">{{dividend.quantity}} st</td>
-            <td class="w15 right">{{dividend.amount | number:2}} kr</td>
-            <td class="w15 right" ng-if="dividend.tax">{{dividend.tax | number:2}} kr</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w40"><a href="portfoljbolag/{{dividend.asset.id}}">{{dividend.asset.name}}</a></td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">{{dividend.date}}</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">{{dividend.quantity}} st</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">{{dividend.amount | number:2}} kr</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">
+                <span ng-if="dividend.tax">{{dividend.tax | number:2}} kr</span>
+            </td>
         </tr>
     </table>
 </article>
