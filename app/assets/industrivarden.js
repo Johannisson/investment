@@ -6,7 +6,7 @@ var industrivarden = {
     currency: 'sek',
     quantity: 10,
     dividends: {
-        may: 5.75
+        april: 5.75
     },
     homepage: {
         name: 'www.industrivarden.se',
