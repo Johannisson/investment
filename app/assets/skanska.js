@@ -6,7 +6,7 @@ var skanska = {
     currency: 'sek',
     quantity: 10,
     dividends: {
-        april: 8.25,
+        april: 6.00,
     },
     homepage: {
         name: 'www.skanska.se' ,
@@ -37,6 +37,7 @@ var skanska = {
         { year: 2015, ordinary: 6.75 },
         { year: 2016, ordinary: 7.50 },
         { year: 2017, ordinary: 8.25 },
-        { year: 2018, ordinary: 8.25 }
+        { year: 2018, ordinary: 8.25 },
+        { year: 2019, ordinary: 6.00 }
     ]
 };
