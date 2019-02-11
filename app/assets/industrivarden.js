@@ -13,6 +13,13 @@ var industrivarden = {
         url: 'http://www.industrivarden.se/'
     },
     years: [
+        { year: 1998, ordinary: 1.88 },
+        { year: 1999, ordinary: 2.25 },
+        { year: 2000, ordinary: 2.50, extra: 0.50 },
+        { year: 2001, ordinary: 2.50, extra: 1.70 },
+        { year: 2002, ordinary: 2.50, extra: 1.68 },
+        { year: 2003, ordinary: 2.50, extra: 4.00 },
+        { year: 2004, ordinary: 2.75 },
         { year: 2005, ordinary: 3.00 },
         { year: 2006, ordinary: 1.75 },
         { year: 2007, ordinary: 2.25 },
