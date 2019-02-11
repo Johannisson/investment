@@ -39,9 +39,9 @@ function ReportController() {
         description: '',
         forecast: 8559,
         goal: 30000,
-        outcome: 8894,
+        outcome: 13445,
         accumulated: 288,
-        loan: 16109,
+        loan: 18281,
         assets: [
             {
                 asset: akelius,
