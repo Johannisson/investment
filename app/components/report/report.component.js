@@ -46,95 +46,95 @@ function ReportController() {
             {
                 asset: akelius,
                 quantity: 10,
-                price: 346.50,
+                price: 344.00,
                 dividend: 50.00
             }, {
                 asset: atlas_copco,
                 quantity: 15,
-                price: 216.10
+                price: 225.30
             }, {
                 asset: autoliv,
                 quantity: 4,
-                price: 720.00
+                price: 681.00
             }, {
                 asset: axfood,
                 quantity: 99,
                 change: 22,
-                price: 160.95
+                price: 164.55
             }, {
                 asset: bmw,
                 quantity: 3,
-                price: 737.55
+                price: 729.00
             }, {
                 asset: castellum,
                 quantity: 90,
                 change: 10,
-                price: 171.40
+                price: 174.55
             }, {
                 asset: dustin_group,
                 quantity: 30,
                 change: 17,
-                price: 81.50
+                price: 81.80
             }, {
                 asset: handelsbanken,
                 quantity: 120,
                 change: 10,
-                price: 98.20
+                price: 98.12
             }, {
                 asset: husqvarna,
                 quantity: 120,
-                price: 69.00
+                price: 75.42
             }, {
                 asset: industrivarden,
                 quantity: 10,
-                price: 190.80
+                price: 189.50
             }, {
                 asset: investor,
                 quantity: 50,
-                price: 397.10
+                price: 407.50
             }, {
                 asset: kungsleden,
                 quantity: 20,
-                price: 68.60,
+                price: 69.10
             }, {
                 asset: latour,
                 quantity: 220, 
-                price: 112.20
+                price: 114.20
             }, {
                 asset: nordea,
                 quantity: 100, 
                 change: 26,
-                price: 83.52
+                price: 83.23
             }, {
                 asset: np3,
                 quantity: 56,
                 change: 21,
-                price: 63.70
+                price: 66.90
             }, {
                 asset: pfizer,
                 quantity: 10,
-                price: 380.00
+                price: 389.00
             }, {
                 asset: sagax,
                 quantity: 400,
-                price: 33.00,
+                price: 33.50,
             }, {
                 asset: skanska,
                 quantity: 10,
-                price: 158.15
+                price: 158.70
             }, {
                 asset: swedbank,
                 quantity: 110,
-                price: 205.10
+                price: 208.00
             }, {
                 asset: tryg,
                 quantity: 34,
                 change: 10,
-                price: 229.87,
+                price: 240.12,
             }, {
                 asset: xact_hogutdelande,
                 quantity: 203,
-                price: 111.58
+                price: 114.00
             }
         ]
     }
