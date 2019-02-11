@@ -14,7 +14,7 @@ function MilestonesController() {
 
     vm.value = [
         { goal: 100000, date: '2018-11-28' },
-        { goal: 200000 },
+        { goal: 200000, date: '2019-02-11' },
         { goal: 300000 },
         { goal: 400000 },
         { goal: 500000 },

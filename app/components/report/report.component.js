@@ -22,7 +22,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2018', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 8493 });
+    vm.diagram.push({ label: 'Feb', value1: 8559 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -37,7 +37,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 8493,
+        forecast: 8559,
         goal: 30000,
         outcome: 8894,
         accumulated: 288,
@@ -128,7 +128,8 @@ function ReportController() {
                 price: 205.10
             }, {
                 asset: tryg,
-                quantity: 24,
+                quantity: 34,
+                change: 10,
                 price: 229.87,
             }, {
                 asset: xact_hogutdelande,

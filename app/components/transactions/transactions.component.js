@@ -82,6 +82,7 @@ function TransactionsController() {
         { date: '2019-02-07', asset: handelsbanken, quantity: 10, price: 97.26 },
         { date: '2019-02-07', asset: np3, quantity: 21, price: 64.20 },
         { date: '2019-02-11', asset: nordea, quantity: 26, price: 83.52 },
+        { date: '2019-01-11', asset: tryg, quantity: 10, price: 170.70, rate: 1.40 },
         { sum: '2019-02' }
     ]
 
