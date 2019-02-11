@@ -4,7 +4,7 @@ var nordea = {
     asset: 'Nordea Bank Abp',
     ticker: 'NDA SE',
     currency: 'sek',
-    quantity: 74,
+    quantity: 100,
     dividends: {
         march: 7.20
     },
