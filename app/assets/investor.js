@@ -1,8 +1,8 @@
-var investor = {
-    id: 'investor',
+var investor_a = {
+    id: 'investor-a',
     name: 'Investor',
-    asset: 'Investor B',
-    ticker: 'INVE B',
+    asset: 'Investor A',
+    ticker: 'INVE A',
     currency: 'sek',
     quantity: 50,
     dividends: {
@@ -51,3 +51,8 @@ var investor = {
         { year: 2019, ordinary: 13.00 }
     ]
 };
+
+var investor_b = JSON.parse(JSON.stringify(investor_a));
+investor_b.id = 'investor-b';
+investor_b.asset = 'Investor B';
+investor_b.ticker = 'INVE B';

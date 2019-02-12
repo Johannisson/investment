@@ -9,7 +9,7 @@ var assets = [
     handelsbanken,
     husqvarna,
     industrivarden,
-    investor,
+    investor_b,
     kungsleden,
     latour,
     nordea,
