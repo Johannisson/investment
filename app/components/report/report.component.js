@@ -89,7 +89,7 @@ function ReportController() {
                 quantity: 10,
                 price: 189.50
             }, {
-                asset: investor,
+                asset: investor_b,
                 quantity: 50,
                 price: 407.50
             }, {
@@ -199,7 +199,7 @@ function ReportController() {
                 quantity: 10,
                 price: 190.80
             }, {
-                asset: investor,
+                asset: investor_b,
                 quantity: 50,
                 change: 4,
                 price: 397.10
@@ -309,7 +309,7 @@ function ReportController() {
                 change: 10,
                 price: 183.20
             }, {
-                asset: investor,
+                asset: investor_b,
                 quantity: 46,
                 change: 16,
                 price: 375.60
@@ -385,7 +385,7 @@ function ReportController() {
                 change: 120,
                 price: 71.68
             }, {
-                asset: investor,
+                asset: investor_b,
                 quantity: 30,
                 change: 30,
                 price: 398.70
