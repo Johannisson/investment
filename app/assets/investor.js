@@ -56,3 +56,4 @@ var investor_b = JSON.parse(JSON.stringify(investor_a));
 investor_b.id = 'investor-b';
 investor_b.asset = 'Investor B';
 investor_b.ticker = 'INVE B';
+investor_b.quantity = 0;

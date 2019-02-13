@@ -1,6 +1,6 @@
 var sagax = {
     id: 'sagax',
-    name: 'Sagax D',
+    name: 'Sagax',
     asset: 'Sagax D',
     ticker: 'SAGA D',
     currency: 'sek',

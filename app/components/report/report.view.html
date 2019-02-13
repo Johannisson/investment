@@ -40,12 +40,12 @@
                 <td class="right bold">{{$ctrl.getDividends(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>
-            <tr>
+            <tr class="split">
                 <td>Ackumulerad utdelning</td>
                 <td class="right bold">{{$ctrl.getAccumulatedDividends(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>
-            <tr class="split">
+            <tr>
                 <td>Direktavkastning</td>
                 <td class="right bold">{{$ctrl.getYield(month) | number:2}}</td>
                 <td class="bold">&nbsp;%</td>
@@ -65,12 +65,12 @@
                 <td class="right bold">{{$ctrl.getForecast(month) / 218 | number:2}}</td>
                 <td class="bold">&nbsp;kr/arbetsdag</td>
             </tr>
-            <tr>
+            <tr class="split">
                 <td></td>
                 <td class="right bold">{{$ctrl.getForecast(month) / 8765 | number:2}}</td>
                 <td class="bold">&nbsp;kr/timme</td>
             </tr>
-            <tr class="split">
+            <tr>
                 <td>Belåning</td>
                 <td class="right bold">{{-$ctrl.getLoan(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>

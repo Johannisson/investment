@@ -40,7 +40,7 @@ function ReportController() {
         forecast: 8559,
         goal: 30000,
         outcome: 13445,
-        accumulated: 288,
+        accumulated: 288 + 137,
         loan: 18281,
         assets: [
             {
@@ -89,9 +89,17 @@ function ReportController() {
                 quantity: 10,
                 price: 189.50
             }, {
-                asset: investor_b,
+                asset: investor_a,
                 quantity: 50,
-                price: 407.50
+                change: 50,
+                price: 404.00,
+                dividend: 137.00,
+                arbitrage: true
+            }, {
+                asset: investor_b,
+                quantity: 0,
+                change: -50,
+                price: 408.30
             }, {
                 asset: kungsleden,
                 quantity: 20,
@@ -148,7 +156,7 @@ function ReportController() {
         forecast: 7830,
         goal: 30000,
         outcome: 33921,
-        accumulated: 238,
+        accumulated: 11 + 200 + 27,
         loan: 16945,
         assets: [
             {

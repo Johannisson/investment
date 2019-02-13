@@ -3,20 +3,22 @@
     <!--<app-diagram data="$ctrl.diagram" rows="$ctrl.rows" width="700" height="350" />-->
     <table>
         <tr class="split">
-            <td class="w40"></td>
-            <td class="w15 right bold">Datum</td>
-            <td class="w15 right bold">Antal</td>
-            <td class="w15 right bold">Utdelning</td>
-            <td class="w15 right bold">Källskatt</td>
+            <td class="w30"></td>
+            <td class="w10 right bold">Datum</td>
+            <td class="w10 right bold">Typ</td>
+            <td class="w10 right bold">Antal</td>
+            <td class="w10 right bold">Utdelning</td>
+            <td class="w10 right bold">Källskatt</td>
         </tr>
     </table>
     <table>
         <tr ng-repeat="dividend in $ctrl.dividends" class="hover">
-            <td ng-class="dividend.last ? 'split' : ''" class="w40"><a href="portfoljbolag/{{dividend.asset.id}}">{{dividend.asset.name}}</a></td>
-            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">{{dividend.date}}</td>
-            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">{{dividend.quantity}} st</td>
-            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">{{dividend.amount | number:2}} kr</td>
-            <td ng-class="dividend.last ? 'split' : ''" class="w15 right">
+            <td ng-class="dividend.last ? 'split' : ''" class="w30"><a href="portfoljbolag/{{dividend.asset.id}}">{{dividend.asset.name}}</a></td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w10 right">{{dividend.date}}</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w10 right">{{dividend.type ? 'Arbitrage' : ''}}</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w10 right">{{dividend.quantity}} st</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w10 right">{{dividend.amount | number:2}} kr</td>
+            <td ng-class="dividend.last ? 'split' : ''" class="w10 right">
                 <span ng-if="dividend.tax">{{dividend.tax | number:2}} kr</span>
             </td>
         </tr>

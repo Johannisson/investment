@@ -38,6 +38,13 @@ function DividendsController() {
             quantity: 10,
             amount: 50.00,
             asset: akelius,
+        },
+        {
+            date: '2019-02-13',
+            type: 'arbitrage',
+            quantity: 50,
+            amount: 137.00,
+            asset: investor_a,
             last: true
         }
     ];
