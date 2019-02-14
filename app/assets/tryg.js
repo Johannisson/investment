@@ -4,7 +4,7 @@ var tryg = {
     asset: 'Tryg',
     ticker: 'TRYG',
     currency: 'dkk',
-    quantity: 34,
+    quantity: 40,
     dividends: {
         january: 1.65,
         april: 1.65,

@@ -18,11 +18,27 @@ function ReportController() {
     vm.month = 2;
     vm.currency = currency;
 
+    vm.value = [];
+    vm.value.push({ label: 'Nov', value2: 104487 });
+    vm.value.push({ label: 'Dec', value2: 143692 });
+    vm.value.push({ label: '2019', value2: 183289 });
+    vm.value.push({ label: 'Feb', value2: 202138 });
+    vm.value.push({ label: 'Mars', value2: 0 });
+    vm.value.push({ label: 'April', value2: 0 });
+    vm.value.push({ label: 'Maj', value2: 0 });
+    vm.value.push({ label: 'Juni', value2: 0 });
+    vm.value.push({ label: 'Juli', value2: 0 });
+    vm.value.push({ label: 'Aug', value2: 0 });
+    vm.value.push({ label: 'Sept', value2: 0 });
+    vm.value.push({ label: 'Okt', value2: 0 });
+    vm.value.push({ label: 'Nov', value2: 0 });
+    vm.value.push({ label: 'Dec', value2: 0 });
+
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
-    vm.diagram.push({ label: '2018', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 8559 });
+    vm.diagram.push({ label: '2019', value1: 7830 });
+    vm.diagram.push({ label: 'Feb', value1: 8653 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -37,7 +53,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 8559,
+        forecast: 8653,
         goal: 30000,
         outcome: 13445,
         accumulated: 288 + 137,
@@ -118,7 +134,7 @@ function ReportController() {
                 quantity: 56,
                 change: 21,
                 price: 66.90
-            }, {
+            }, { 
                 asset: pfizer,
                 quantity: 10,
                 price: 389.00
@@ -136,8 +152,8 @@ function ReportController() {
                 price: 208.00
             }, {
                 asset: tryg,
-                quantity: 34,
-                change: 10,
+                quantity: 40,
+                change: 16,
                 price: 240.12,
             }, {
                 asset: xact_hogutdelande,

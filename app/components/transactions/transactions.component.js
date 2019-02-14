@@ -85,6 +85,7 @@ function TransactionsController() {
         { date: '2019-02-11', asset: tryg, quantity: 10, price: 170.70, rate: 1.40 },
         { date: '2019-02-13', asset: investor_b, quantity: -50, price: 408.30 },
         { date: '2019-02-13', asset: investor_a, quantity: 50, price: 404.00 },
+        { date: '2019-02-14', asset: tryg, quantity: 6, price: 172.70, rate: 1.40 },
         { sum: '2019-02' }
     ]
 

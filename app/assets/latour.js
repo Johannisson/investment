@@ -6,7 +6,7 @@ var latour = {
     currency: 'sek',
     quantity: 220,
     dividends: {
-        may: 2.25
+        may: 2.50
     },
     homepage: {
         name: 'www.latour.se' ,
@@ -45,6 +45,7 @@ var latour = {
         { year: 2015, ordinary: 1.50 },
         { year: 2016, ordinary: 1.69 },
         { year: 2017, ordinary: 2.00 },
-        { year: 2018, ordinary: 2.25 }
+        { year: 2018, ordinary: 2.25 },
+        { year: 2019, ordinary: 2.50 }
     ]
 };
