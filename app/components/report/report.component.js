@@ -38,7 +38,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 8653 });
+    vm.diagram.push({ label: 'Feb', value1: 8721 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -53,7 +53,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 8653,
+        forecast: 8721,
         goal: 30000,
         outcome: 13445,
         accumulated: 288 + 137,
@@ -88,8 +88,8 @@ function ReportController() {
                 price: 174.55
             }, {
                 asset: dustin_group,
-                quantity: 30,
-                change: 17,
+                quantity: 52,
+                change: 39,
                 price: 81.80
             }, {
                 asset: handelsbanken,
