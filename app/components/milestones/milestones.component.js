@@ -65,7 +65,7 @@ function MilestonesController() {
     ];
 
     vm.hour = [
-        { goal: 1 },
+        { goal: 1, date: '2019-02-18' },
         { goal: 2 },
         { goal: 3 },
         { goal: 4 },

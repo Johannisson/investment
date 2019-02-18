@@ -38,7 +38,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 8721 });
+    vm.diagram.push({ label: 'Feb', value1: 8754 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -53,7 +53,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 8721,
+        forecast: 8754,
         goal: 30000,
         outcome: 13445,
         accumulated: 288 + 137,
@@ -109,8 +109,7 @@ function ReportController() {
                 quantity: 50,
                 change: 50,
                 price: 408.00,
-                dividend: 137.00,
-                arbitrage: true
+                arbitrage: 137.00
             }, {
                 asset: investor_b,
                 quantity: 0,
@@ -124,6 +123,11 @@ function ReportController() {
                 asset: latour,
                 quantity: 220, 
                 price: 119.10
+            }, {
+                asset: lifco,
+                quantity: 7,
+                change: 7,
+                price: 372.50
             }, {
                 asset: nordea,
                 quantity: 100, 
@@ -476,6 +480,14 @@ function ReportController() {
         return sum;
     }
 
+    vm.getArbitrages = function (month) {
+        var sum = 0;
+        vm.getAssets(month).forEach(function(asset) {
+            sum += asset.arbitrage || 0;
+        });
+        return sum;
+    }
+
     vm.getYield = function (month) {
         return vm.data[month].forecast / vm.getTotal(month) * 100;
     }
@@ -489,6 +501,6 @@ function ReportController() {
     }
 
     vm.getDividend = function (asset) {
-        return asset.dividend;
+        return (asset.dividend || 0) + (asset.arbitrage || 0);
     }
 }

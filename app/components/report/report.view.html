@@ -36,8 +36,13 @@
                 <td class="bold">&nbsp;kr</td>
             </tr>
             <tr>
-                <td>Utdelning &amp; arbitrage</td>
+                <td>Utdelning</td>
                 <td class="right bold">{{$ctrl.getDividends(month) | number:0}}</td>
+                <td class="bold">&nbsp;kr</td>
+            </tr>
+            <tr>
+                <td>Arbitrage</td>
+                <td class="right bold">{{$ctrl.getArbitrages(month) | number:0}}</td>
                 <td class="bold">&nbsp;kr</td>
             </tr>
             <tr class="split">
@@ -111,13 +116,13 @@
                         <span>{{$ctrl.getValue(asset) | number:0}} kr</span>
                     </td>
                     <td class="right">
-                        <span ng-if="asset.dividend">{{$ctrl.getDividend(asset) | number:0}} kr</span>
+                        <span ng-if="asset.dividend || asset.arbitrage">{{$ctrl.getDividend(asset) | number:0}} kr</span>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" class="split-top"></td>
                     <td class="split-top right bold">{{$ctrl.getTotal(month) | number:0:'se-sv'}} kr</td>
-                    <td class="split-top right bold">{{$ctrl.getDividends(month) | number:0:'sv'}} kr</td>
+                    <td class="split-top right bold">{{$ctrl.getDividends(month) + $ctrl.getArbitrages(month) | number:0:'sv'}} kr</td>
                 </tr>
             </table>
         </div>
