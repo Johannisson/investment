@@ -38,7 +38,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 8754 });
+    vm.diagram.push({ label: 'Feb', value1: 8791 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -53,7 +53,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 8754,
+        forecast: 8791,
         goal: 30000,
         outcome: 13445,
         accumulated: 288 + 137,
@@ -135,8 +135,8 @@ function ReportController() {
                 price: 84.90
             }, {
                 asset: np3,
-                quantity: 56,
-                change: 21,
+                quantity: 70,
+                change: 35,
                 price: 68.50
             }, { 
                 asset: pfizer,
