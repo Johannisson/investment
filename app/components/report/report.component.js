@@ -38,7 +38,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 8791 });
+    vm.diagram.push({ label: 'Feb', value1: 9104 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -53,10 +53,10 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 8791,
+        forecast: 9104,
         goal: 30000,
-        outcome: 13445,
-        accumulated: 288 + 137,
+        outcome: 24101,
+        accumulated: 425,
         loan: 18281,
         assets: [
             {
@@ -152,8 +152,9 @@ function ReportController() {
                 price: 162.90
             }, {
                 asset: swedbank,
-                quantity: 110,
-                price: 209.60
+                quantity: 132,
+                change: 22,
+                price: 183.10
             }, {
                 asset: tryg,
                 quantity: 40,

@@ -89,6 +89,7 @@ function TransactionsController() {
         { date: '2019-02-15', asset: dustin_group, quantity: 22, price: 81.60 },
         { date: '2019-02-18', asset: lifco, quantity: 7, price: 369.50 },
         { date: '2019-02-19', asset: np3, quantity: 14, price: 67.70 },
+        { date: '2019-02-20', asset: swedbank, quantity: 22, price: 185.50 },
         { sum: '2019-02' }
     ]
 
