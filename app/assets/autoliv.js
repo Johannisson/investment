@@ -6,10 +6,10 @@ var autoliv = {
     currency: 'sek',
     quantity: 4,
     dividends: {
-        march: 5.50,
-        june: 5.50,
-        september: 5.50,
-        december: 5.50
+        march: 5.78,
+        june: 5.78,
+        september: 5.78,
+        december: 5.78
     },
     homepage: {
         name: 'www.autoliv.com',

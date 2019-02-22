@@ -6,7 +6,8 @@ var np3 = {
     currency: 'sek',
     quantity: 70,
     dividends: {
-        may: 2.70
+        may: 1.50, // ??
+        november: 1.50 // ??
     },
     homepage: {
         name: 'www.np3fastigheter.se',
@@ -16,6 +17,7 @@ var np3 = {
         { year: 2015, ordinary: 0.50 },
         { year: 2016, ordinary: 2.15 },
         { year: 2017, ordinary: 2.40 },
-        { year: 2018, ordinary: 2.70 }
+        { year: 2018, ordinary: 2.70 },
+        { year: 2019, ordinary: 3.00 }
     ]
 };
