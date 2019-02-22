@@ -4,7 +4,7 @@ var swedbank = {
     asset: 'Swedbank A',
     ticker: 'SWED A',
     currency: 'sek',
-    quantity: 132,
+    quantity: 155,
     dividends: {
         april: 14.20
     },
