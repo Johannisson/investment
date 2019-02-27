@@ -8,7 +8,10 @@ angular
             rows: '=',
             width: '=',
             height: '=',
-            suffix: '@'
+            suffix: '@',
+            label1: '@',
+            label2: '@',
+            label3: '@',
         },
         controller: DiagramController
     });
@@ -37,6 +40,42 @@ function DiagramController() {
             element.visibility2 = 'hidden';
             element.visibility3 = 'hidden';
         });
+    }
+
+    vm.showLabel1 = function() {
+        if (!vm.label1) {
+            return false;
+        }
+        for (i in vm.data) {
+            if (vm.data[i].value1) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    vm.showLabel2 = function() {
+        if (!vm.label2) {
+            return false;
+        }
+        for (i in vm.data) {
+            if (vm.data[i].value2) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    vm.showLabel3 = function() {
+        if (!vm.label3) {
+            return false;
+        }
+        for (i in vm.data) {
+            if (vm.data[i].value3) {
+                return true;
+            }
+        }
+        return false;
     }
 
     vm.$onInit = function() {

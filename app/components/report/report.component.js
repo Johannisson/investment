@@ -38,7 +38,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 4380 });
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
-    vm.diagram.push({ label: 'Feb', value1: 9516 });
+    vm.diagram.push({ label: 'Feb', value1: 9533 });
     vm.diagram.push({ label: 'Mars', value1: 0 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
@@ -53,11 +53,11 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-2'] = {
         description: '',
-        forecast: 9516,
+        forecast: 9533,
         goal: 30000,
-        outcome: 27899,
+        outcome: 30461,
         accumulated: 425,
-        loan: 18281,
+        loan: 23953,
         assets: [
             {
                 asset: akelius,
@@ -117,8 +117,9 @@ function ReportController() {
                 price: 0.00
             }, {
                 asset: kungsleden,
-                quantity: 20,
-                price: 69.60
+                quantity: 28,
+                change: 8,
+                price: 69.15
             }, {
                 asset: latour,
                 quantity: 220, 

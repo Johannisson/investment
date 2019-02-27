@@ -1,7 +1,15 @@
 <h1>{{$ctrl.data.name}}</h1>
 <article>
     <h2>Historisk utdelning</h2>
-    <app-diagram data="$ctrl.diagram" rows="$ctrl.rows" suffix="kr" width="750" height="350" />
+    <app-diagram
+        data="$ctrl.diagram"
+        rows="$ctrl.rows"
+        suffix="kr"
+        width="750"
+        height="350"
+        label1="Ordinarie utdelning"
+        label2="Extra utdelning"
+        label3="Distribution av värdepapper" />
 </article>
 <aside>
     <app-data model="$ctrl.data" />

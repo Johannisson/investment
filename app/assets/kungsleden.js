@@ -4,10 +4,10 @@ var kungsleden = {
     asset: 'Kungsleden',
     ticker: 'KLED',
     currency: 'sek',
-    quantity: 20,
+    quantity: 28,
     dividends: {
         january: 0.55,
-        may: 0.55,
+        april: 0.55,
         july: 0.55,
         october: 0.55
     },
