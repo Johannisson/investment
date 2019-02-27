@@ -91,6 +91,7 @@ function TransactionsController() {
         { date: '2019-02-19', asset: np3, quantity: 14, price: 67.70 },
         { date: '2019-02-20', asset: swedbank, quantity: 22, price: 185.50 },
         { date: '2019-02-21', asset: swedbank, quantity: 23, price: 165.10 },
+        { date: '2019-02-26', asset: pfizer, quantity: 5, price: 402.00 },
         { sum: '2019-02' }
     ]
 
