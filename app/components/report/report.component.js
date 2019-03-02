@@ -56,7 +56,7 @@ function ReportController() {
         forecast: 9533,
         goal: 26000,
         outcome: 0,
-        accumulated: 425,
+        accumulated: 425 + 33,
         loan: 23953,
         assets: [
             {
@@ -126,7 +126,8 @@ function ReportController() {
             }, { 
                 asset: pfizer,
                 quantity: 15,
-                price: 403.00
+                price: 403.00,
+                dividend: 33.32
             }, {
                 asset: sagax,
                 quantity: 400,

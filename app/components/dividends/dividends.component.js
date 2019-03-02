@@ -46,6 +46,14 @@ function DividendsController() {
             amount: 137.00,
             asset: investor_a,
             last: true
+        },
+        {
+            date: '2019-03-02',
+            quantity: 10,
+            amount: 33.32,
+            tax: 4.99,
+            asset: pfizer,
+            last: true
         }
     ];
 }
