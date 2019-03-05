@@ -23,7 +23,7 @@ function ReportController() {
     vm.value.push({ label: 'Dec', value2: 143692 });
     vm.value.push({ label: '2019', value2: 183289 });
     vm.value.push({ label: 'Feb', value2: 218823 });
-    vm.value.push({ label: 'Mars', value2: 218823 });
+    vm.value.push({ label: 'Mars', value2: 222872 });
     vm.value.push({ label: 'April', value2: 0 });
     vm.value.push({ label: 'Maj', value2: 0 });
     vm.value.push({ label: 'Juni', value2: 0 });
@@ -39,7 +39,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
     vm.diagram.push({ label: 'Feb', value1: 9533 });
-    vm.diagram.push({ label: 'Mars', value1: 9533 });
+    vm.diagram.push({ label: 'Mars', value1: 9769 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
     vm.diagram.push({ label: 'Juni', value1: 0 });
@@ -50,10 +50,27 @@ function ReportController() {
     vm.diagram.push({ label: 'Nov', value1: 0 });
     vm.diagram.push({ label: 'Dec', value1: 0 });
 
+    vm.dividend = [];
+    vm.dividend.push({ label: 'Nov', value2: 0 });
+    vm.dividend.push({ label: 'Dec', value2: 0 });
+    vm.dividend.push({ label: '2019', value3: 238 });
+    vm.dividend.push({ label: 'Feb', value2: 238, value3: 187 });
+    vm.dividend.push({ label: 'Mars', value2: 425, value3: 33 });
+    vm.dividend.push({ label: 'April', value2: 0 });
+    vm.dividend.push({ label: 'Maj', value2: 0 });
+    vm.dividend.push({ label: 'Juni', value2: 0 });
+    vm.dividend.push({ label: 'Juli', value2: 0 });
+    vm.dividend.push({ label: 'Aug', value2: 0 });
+    vm.dividend.push({ label: 'Sept', value2: 0 });
+    vm.dividend.push({ label: 'Okt', value2: 0 });
+    vm.dividend.push({ label: 'Nov', value2: 0 });
+    vm.dividend.push({ label: 'Dec', value2: 0 });
+
+
     vm.data = [];
     vm.data['2019-3'] = {
         description: '',
-        forecast: 9533,
+        forecast: 9769,
         goal: 26000,
         outcome: 0,
         accumulated: 425 + 33,
@@ -140,6 +157,11 @@ function ReportController() {
                 asset: swedbank,
                 quantity: 155,
                 price: 169.70
+            }, {
+                asset: telia,
+                quantity: 100,
+                change: 100,
+                price: 40.49
             }, {
                 asset: tryg,
                 quantity: 40,

@@ -19,6 +19,7 @@ var assets = [
     sagax,
     skanska,
     swedbank,
+    telia,
     tryg,
     xact_hogutdelande
 ];

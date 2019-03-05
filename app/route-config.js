@@ -72,6 +72,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-asset asset="skanska" />'
         }).when('/portfoljbolag/swedbank', { 
             template: '<app-asset asset="swedbank" />'
+        }).when('/portfoljbolag/telia', { 
+            template: '<app-asset asset="telia" />'
         }).when('/portfoljbolag/tryg', { 
             template: '<app-asset asset="tryg" />'
         }).when('/portfoljbolag/xact-hogutdelande', { 

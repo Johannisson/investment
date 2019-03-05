@@ -97,6 +97,10 @@ function AssetController($locale) {
             vm.data = swedbank;
             vm.rows = [0, 2.5, 5, 7.5, 10, 12.5, 15]
         } 
+        if (vm.asset === 'telia') {
+            vm.data = telia;
+            vm.rows = [0, 2.5, 5, 7.5, 10, 12.5, 15]
+        } 
         if (vm.asset === 'tryg') {
             vm.data = tryg;
             vm.rows = [0, 2.5, 5, 7.5, 10, 12.5, 15]
