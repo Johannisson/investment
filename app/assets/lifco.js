@@ -4,7 +4,7 @@ var lifco = {
     asset: 'Lifco B',
     ticker: 'LIFCO B',
     currency: 'sek',
-    quantity: 7,
+    quantity: 12,
     dividends: {
         may: 4.60
     },

@@ -53,6 +53,13 @@ function DividendsController() {
             amount: 33.32,
             tax: 4.99,
             asset: pfizer,
+        },
+        {
+            date: '2019-03-06',
+            quantity: 4,
+            amount: 22.99,
+            tax: 3.44,
+            asset: autoliv,
             last: true
         }
     ];

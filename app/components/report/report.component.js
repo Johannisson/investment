@@ -55,7 +55,7 @@ function ReportController() {
     vm.dividend.push({ label: 'Dec', value2: 0 });
     vm.dividend.push({ label: '2019', value3: 238 });
     vm.dividend.push({ label: 'Feb', value2: 238, value3: 187 });
-    vm.dividend.push({ label: 'Mars', value2: 425, value3: 33 });
+    vm.dividend.push({ label: 'Mars', value2: 425, value3: 56 });
     vm.dividend.push({ label: 'April', value2: 0 });
     vm.dividend.push({ label: 'Maj', value2: 0 });
     vm.dividend.push({ label: 'Juni', value2: 0 });
@@ -73,7 +73,7 @@ function ReportController() {
         forecast: 9769,
         goal: 26000,
         outcome: 0,
-        accumulated: 425 + 33,
+        accumulated: 481,
         loan: 23953,
         assets: [
             {
@@ -87,7 +87,8 @@ function ReportController() {
             }, {
                 asset: autoliv,
                 quantity: 4,
-                price: 752.80
+                price: 752.80,
+                dividend: 22.99
             }, {
                 asset: axfood,
                 quantity: 99,
@@ -130,7 +131,8 @@ function ReportController() {
                 price: 121.50
             }, {
                 asset: lifco,
-                quantity: 7,
+                quantity: 12,
+                change: 5,
                 price: 378.00
             }, {
                 asset: nordea,
