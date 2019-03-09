@@ -94,6 +94,7 @@ function TransactionsController() {
         { date: '2019-02-26', asset: pfizer, quantity: 5, price: 402.00 },
         { date: '2019-02-27', asset: kungsleden, quantity: 8, price: 69.00 },
         { sum: '2019-02' },
+        { label: 'Mars 2019' },
         { date: '2019-03-05', asset: telia, quantity: 100, price: 40.41 },
         { date: '2019-03-07', asset: lifco, quantity: 5, price: 370.50 },
         { sum: '2019-03' }
