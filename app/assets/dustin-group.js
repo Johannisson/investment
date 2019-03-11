@@ -1,10 +1,10 @@
-var dustin_group = {
+var dustin = {
     id: 'dustin-group',
     name: 'Dustin Group',
     asset: 'Dustin Group',
     ticker: 'DUST',
     currency: 'sek',
-    quantity: 52,
+    quantity: 73,
     dividends: {
         december: 3.10
     },

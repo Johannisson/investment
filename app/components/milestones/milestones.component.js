@@ -52,7 +52,7 @@ function MilestonesController() {
     ]
 
     vm.monthly = [
-        { goal: 250,  months: [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0] },
+        { goal: 250,  months: [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1] },
         { goal: 500,  months: [0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0] },
         { goal: 750,  months: [0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] },
         { goal: 1000, months: [0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] },

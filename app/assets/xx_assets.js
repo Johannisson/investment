@@ -5,7 +5,7 @@ var assets = [
     axfood,
     bmw,
     castellum,
-    dustin_group,
+    dustin,
     handelsbanken,
     husqvarna,
     industrivarden,

@@ -38,8 +38,8 @@ function AssetController($locale) {
             vm.data = castellum;
             vm.rows = [0, 1, 2, 3, 4, 5, 6];
         } 
-        if (vm.asset === 'dustin_group') {
-            vm.data = dustin_group;
+        if (vm.asset === 'dustin') {
+            vm.data = dustin;
             vm.rows = [0, 1, 2, 3, 4];
         } 
         if (vm.asset === 'handelsbanken') {

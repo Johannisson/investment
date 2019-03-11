@@ -43,7 +43,7 @@ function config($routeProvider, $locationProvider) {
         }).when('/portfoljbolag/castellum', { 
             template: '<app-asset asset="castellum" />'
         }).when('/portfoljbolag/dustin-group', {
-            template: '<app-asset asset="dustin_group" />'
+            template: '<app-asset asset="dustin" />'
         }).when('/portfoljbolag/handelsbanken', { 
             template: '<app-asset asset="handelsbanken" />'
         }).when('/portfoljbolag/husqvarna', { 

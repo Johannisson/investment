@@ -39,7 +39,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
     vm.diagram.push({ label: 'Feb', value1: 9533 });
-    vm.diagram.push({ label: 'Mars', value1: 9769 });
+    vm.diagram.push({ label: 'Mars', value1: 9858 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
     vm.diagram.push({ label: 'Juni', value1: 0 });
@@ -70,7 +70,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-3'] = {
         description: '',
-        forecast: 9769,
+        forecast: 9858,
         goal: 26000,
         outcome: 0,
         accumulated: 481,
@@ -102,9 +102,10 @@ function ReportController() {
                 quantity: 90,
                 price: 168.25
             }, {
-                asset: dustin_group,
-                quantity: 52,
-                price: 87.40
+                asset: dustin,
+                quantity: 73,
+                change: 21,
+                price: 86.00
             }, {
                 asset: handelsbanken,
                 quantity: 120,
@@ -212,7 +213,7 @@ function ReportController() {
                 change: 10,
                 price: 168.25
             }, {
-                asset: dustin_group,
+                asset: dustin,
                 quantity: 52,
                 change: 39,
                 price: 87.40
@@ -337,7 +338,7 @@ function ReportController() {
                 change: 30,
                 price: 171.40
             }, {
-                asset: dustin_group,
+                asset: dustin,
                 quantity: 13,
                 change: 13,
                 price: 81.50
