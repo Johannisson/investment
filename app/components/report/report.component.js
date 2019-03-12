@@ -23,7 +23,7 @@ function ReportController() {
     vm.value.push({ label: 'Dec', value2: 143692 });
     vm.value.push({ label: '2019', value2: 183289 });
     vm.value.push({ label: 'Feb', value2: 218823 });
-    vm.value.push({ label: 'Mars', value2: 222872 });
+    vm.value.push({ label: 'Mars', value2: 227779 });
     vm.value.push({ label: 'April', value2: 0 });
     vm.value.push({ label: 'Maj', value2: 0 });
     vm.value.push({ label: 'Juni', value2: 0 });
@@ -72,77 +72,77 @@ function ReportController() {
         description: '',
         forecast: 9858,
         goal: 26000,
-        outcome: 0,
+        outcome: 7672,
         accumulated: 481,
-        loan: 23953,
+        loan: 20459,
         assets: [
             {
                 asset: akelius,
                 quantity: 10,
-                price: 348.50,
+                price: 345.50,
             }, {
                 asset: atlas_copco,
                 quantity: 15,
-                price: 231.80
+                price: 225.60
             }, {
                 asset: autoliv,
                 quantity: 4,
-                price: 752.80,
+                price: 729.00,
                 dividend: 22.99
             }, {
                 asset: axfood,
                 quantity: 99,
-                price: 170.95
+                price: 171.90
             }, {
                 asset: bmw,
                 quantity: 3,
-                price: 2353.00 / 3
+                price: 2314.00 / 3
             }, {
                 asset: castellum,
                 quantity: 90,
-                price: 168.25
+                price: 173.80
             }, {
                 asset: dustin,
                 quantity: 73,
                 change: 21,
-                price: 86.00
+                price: 86.70
             }, {
                 asset: handelsbanken,
                 quantity: 120,
-                price: 105.35
+                price: 102.70
             }, {
                 asset: husqvarna,
                 quantity: 120,
-                price: 75.70
+                price: 75.64
             }, {
                 asset: industrivarden,
                 quantity: 10,
-                price: 196.10
+                price: 198.20
             }, {
                 asset: investor_a,
                 quantity: 50,
-                price: 407.40,
+                price: 406.20,
             }, {
                 asset: kungsleden,
                 quantity: 28,
-                price: 69.00
+                price: 71.20
             }, {
                 asset: latour,
                 quantity: 220, 
-                price: 121.50
+                price: 120.00
             }, {
                 asset: lifco,
                 quantity: 12,
                 change: 5,
-                price: 378.00
+                price: 372.00
             }, {
                 asset: nordea,
                 quantity: 100, 
-                price: 83.76
+                price: 83.09
             }, {
                 asset: np3,
                 quantity: 70,
-                price: 69.60
+                price: 73.20
             }, { 
                 asset: pfizer,
                 quantity: 15,
@@ -151,28 +151,28 @@ function ReportController() {
             }, {
                 asset: sagax,
                 quantity: 400,
-                price: 33.70,
+                price: 34.80,
             }, {
                 asset: skanska,
                 quantity: 10,
-                price: 166.60
+                price: 167.30
             }, {
                 asset: swedbank,
                 quantity: 155,
-                price: 169.70
+                price: 173.95
             }, {
                 asset: telia,
                 quantity: 100,
                 change: 100,
-                price: 40.49
+                price: 41.72
             }, {
                 asset: tryg,
                 quantity: 40,
-                price: 10104.00 / 40,
+                price: 10117.00 / 40,
             }, {
                 asset: xact_hogutdelande,
                 quantity: 203,
-                price: 116.62
+                price: 117.48
             }
         ]
     }
