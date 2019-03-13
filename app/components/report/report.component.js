@@ -23,7 +23,7 @@ function ReportController() {
     vm.value.push({ label: 'Dec', value2: 143692 });
     vm.value.push({ label: '2019', value2: 183289 });
     vm.value.push({ label: 'Feb', value2: 218823 });
-    vm.value.push({ label: 'Mars', value2: 227779 });
+    vm.value.push({ label: 'Mars', value2: 229710 });
     vm.value.push({ label: 'April', value2: 0 });
     vm.value.push({ label: 'Maj', value2: 0 });
     vm.value.push({ label: 'Juni', value2: 0 });
@@ -39,7 +39,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
     vm.diagram.push({ label: 'Feb', value1: 9533 });
-    vm.diagram.push({ label: 'Mars', value1: 9858 });
+    vm.diagram.push({ label: 'Mars', value1: 9895 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
     vm.diagram.push({ label: 'Juni', value1: 0 });
@@ -70,7 +70,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-3'] = {
         description: '',
-        forecast: 9858,
+        forecast: 9895,
         goal: 26000,
         outcome: 7672,
         accumulated: 481,
@@ -128,8 +128,9 @@ function ReportController() {
                 price: 71.20
             }, {
                 asset: latour,
-                quantity: 220, 
-                price: 120.00
+                quantity: 238,
+                change: 18,
+                price: 119.00
             }, {
                 asset: lifco,
                 quantity: 12,

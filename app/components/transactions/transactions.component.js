@@ -98,6 +98,7 @@ function TransactionsController() {
         { date: '2019-03-05', asset: telia, quantity: 100, price: 40.41 },
         { date: '2019-03-07', asset: lifco, quantity: 5, price: 370.50 },
         { date: '2019-03-11', asset: dustin, quantity: 21, price: 84.70 },
+        { date: '2019-03-13', asset: latour, quantity: 18, price: 119.00 },
         { sum: '2019-03' }
     ]
 
