@@ -18,6 +18,7 @@ var assets = [
     pfizer,
     sagax,
     skanska,
+    stora_enso,
     swedbank,
     telia,
     tryg,

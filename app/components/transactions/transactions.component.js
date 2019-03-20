@@ -99,6 +99,11 @@ function TransactionsController() {
         { date: '2019-03-07', asset: lifco, quantity: 5, price: 370.50 },
         { date: '2019-03-11', asset: dustin, quantity: 21, price: 84.70 },
         { date: '2019-03-13', asset: latour, quantity: 18, price: 119.00 },
+        { date: '2019-03-18', asset: husqvarna, quantity: 13, price: 73.42 },
+        { date: '2019-03-18', asset: stora_enso, quantity: 11, price: 122.80 },
+        { date: '2019-03-18', asset: np3, quantity: 8, price: 73.20 },
+        { date: '2019-03-20', asset: stora_enso, quantity: 11, price: 122.50 },
+        { date: '2019-03-20', asset: xact_hogutdelande, quantity: 11, price: 120.02 },
         { sum: '2019-03' }
     ]
 

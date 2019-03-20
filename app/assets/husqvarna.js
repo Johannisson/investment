@@ -4,7 +4,7 @@ var husqvarna = {
     asset: 'Husqvarna B',
     ticker: 'HUSQ B',
     currency: 'sek',
-    quantity: 120,
+    quantity: 133,
     dividends: {
         april: 0.75,
         october: 1.50
