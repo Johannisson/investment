@@ -23,7 +23,7 @@ function ReportController() {
     vm.value.push({ label: 'Dec', value2: 143692 });
     vm.value.push({ label: '2019', value2: 183289 });
     vm.value.push({ label: 'Feb', value2: 218823 });
-    vm.value.push({ label: 'Mars', value2: 240345 });
+    vm.value.push({ label: 'Mars', value2: 246312 });
     vm.value.push({ label: 'April', value2: 0 });
     vm.value.push({ label: 'Maj', value2: 0 });
     vm.value.push({ label: 'Juni', value2: 0 });
@@ -39,7 +39,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
     vm.diagram.push({ label: 'Feb', value1: 9533 });
-    vm.diagram.push({ label: 'Mars', value1: 10169 });
+    vm.diagram.push({ label: 'Mars', value1: 10481 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
     vm.diagram.push({ label: 'Juni', value1: 0 });
@@ -70,9 +70,9 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-3'] = {
         description: '',
-        forecast: 10006,
+        forecast: 10481,
         goal: 26000,
-        outcome: 12119,
+        outcome: 23966,
         accumulated: 481,
         loan: 20459,
         assets: [
@@ -91,8 +91,9 @@ function ReportController() {
                 dividend: 22.99
             }, {
                 asset: axfood,
-                quantity: 99,
-                price: 174.25
+                quantity: 109,
+                change: 10,
+                price: 167.60
             }, {
                 asset: bmw,
                 quantity: 3,
@@ -103,9 +104,9 @@ function ReportController() {
                 price: 175.50
             }, {
                 asset: dustin,
-                quantity: 73,
-                change: 21,
-                price: 84.00
+                quantity: 89,
+                change: 37,
+                price: 83.70
             }, {
                 asset: handelsbanken,
                 quantity: 120,
@@ -161,9 +162,9 @@ function ReportController() {
                 price: 171.85
             }, {
                 asset: stora_enso,
-                quantity: 22,
-                change: 22,
-                price: 122.80
+                quantity: 31,
+                change: 31,
+                price: 110.50
             }, {
                 asset: swedbank,
                 quantity: 155,
@@ -179,9 +180,9 @@ function ReportController() {
                 price: 10430.00 / 40,
             }, {
                 asset: xact_hogutdelande,
-                quantity: 224,
-                change: 11,
-                price: 120.00
+                quantity: 253,
+                change: 50,
+                price: 117.74
             }
         ]
     }

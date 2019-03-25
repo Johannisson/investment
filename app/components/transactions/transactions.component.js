@@ -104,6 +104,11 @@ function TransactionsController() {
         { date: '2019-03-18', asset: np3, quantity: 8, price: 73.20 },
         { date: '2019-03-20', asset: stora_enso, quantity: 11, price: 122.50 },
         { date: '2019-03-20', asset: xact_hogutdelande, quantity: 11, price: 120.02 },
+        { date: '2019-03-21', asset: dustin, quantity: 16, price: 83.70 },
+        { date: '2019-03-22', asset: axfood, quantity: 10, price: 167.60 },
+        { date: '2019-03-25', asset: xact_hogutdelande, quantity: 11, price: 117.50 },
+        { date: '2019-03-25', asset: xact_hogutdelande, quantity: 28, price: 117.56 },
+        { date: '2019-03-25', asset: stora_enso, quantity: 9, price: 110.50 },
         { sum: '2019-03' }
     ]
 
