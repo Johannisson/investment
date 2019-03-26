@@ -23,7 +23,7 @@ function ReportController() {
     vm.value.push({ label: 'Dec', value2: 143692 });
     vm.value.push({ label: '2019', value2: 183289 });
     vm.value.push({ label: 'Feb', value2: 218823 });
-    vm.value.push({ label: 'Mars', value2: 246312 });
+    vm.value.push({ label: 'Mars', value2: 246875 });
     vm.value.push({ label: 'April', value2: 0 });
     vm.value.push({ label: 'Maj', value2: 0 });
     vm.value.push({ label: 'Juni', value2: 0 });
@@ -39,7 +39,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec', value1: 6181 });
     vm.diagram.push({ label: '2019', value1: 7830 });
     vm.diagram.push({ label: 'Feb', value1: 9533 });
-    vm.diagram.push({ label: 'Mars', value1: 10481 });
+    vm.diagram.push({ label: 'Mars', value1: 10538 });
     vm.diagram.push({ label: 'April', value1: 0 });
     vm.diagram.push({ label: 'Maj', value1: 0 });
     vm.diagram.push({ label: 'Juni', value1: 0 });
@@ -70,7 +70,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-3'] = {
         description: '',
-        forecast: 10481,
+        forecast: 10538,
         goal: 26000,
         outcome: 23966,
         accumulated: 481,
@@ -83,106 +83,108 @@ function ReportController() {
             }, {
                 asset: atlas_copco,
                 quantity: 15,
-                price: 230.05
+                price: 228.65
             }, {
                 asset: autoliv,
                 quantity: 4,
-                price: 728.40,
+                price: 679.40,
                 dividend: 22.99
             }, {
                 asset: axfood,
                 quantity: 109,
                 change: 10,
-                price: 167.60
+                price: 168.65
             }, {
                 asset: bmw,
                 quantity: 3,
-                price: 2337.00 / 3
+                price: 2132.00 / 3
             }, {
                 asset: castellum,
                 quantity: 90,
-                price: 175.50
+                price: 178.35
             }, {
                 asset: dustin,
                 quantity: 89,
                 change: 37,
-                price: 83.70
+                price: 83.20
             }, {
                 asset: handelsbanken,
                 quantity: 120,
-                price: 104.60
+                price: 104.50
             }, {
                 asset: husqvarna,
                 quantity: 133,
                 change: 13,
-                price: 73.42
+                price: 75.14
             }, {
                 asset: industrivarden,
-                quantity: 10,
-                price: 200.50
+                quantity: 13,
+                change: 3,
+                price: 196.40
             }, {
                 asset: investor_a,
-                quantity: 50,
-                price: 417.20,
+                quantity: 53,
+                change: 3,
+                price: 410.80,
             }, {
                 asset: kungsleden,
                 quantity: 28,
-                price: 73.60
+                price: 73.25
             }, {
                 asset: latour,
                 quantity: 238,
                 change: 18,
-                price: 121.90
+                price: 123.40
             }, {
                 asset: lifco,
                 quantity: 12,
                 change: 5,
-                price: 383.50
+                price: 379.50
             }, {
                 asset: nordea,
                 quantity: 100, 
-                price: 83.92
+                price: 82.75
             }, {
                 asset: np3,
                 quantity: 78,
                 change: 8,
-                price: 73.20
+                price: 74.70
             }, { 
                 asset: pfizer,
                 quantity: 15,
-                price: 381.00,
+                price: 392.00,
                 dividend: 33.32
             }, {
                 asset: sagax,
                 quantity: 400,
-                price: 34.90,
+                price: 35.30,
             }, {
                 asset: skanska,
                 quantity: 10,
-                price: 171.85
+                price: 172.35
             }, {
                 asset: stora_enso,
                 quantity: 31,
                 change: 31,
-                price: 110.50
+                price: 109.70
             }, {
                 asset: swedbank,
                 quantity: 155,
-                price: 176.75
+                price: 175.00
             }, {
                 asset: telia,
                 quantity: 100,
                 change: 100,
-                price: 52.51
+                price: 41.43
             }, {
                 asset: tryg,
                 quantity: 40,
-                price: 10430.00 / 40,
+                price: 10201.00 / 40,
             }, {
                 asset: xact_hogutdelande,
                 quantity: 253,
                 change: 50,
-                price: 117.74
+                price: 117.68
             }
         ]
     }

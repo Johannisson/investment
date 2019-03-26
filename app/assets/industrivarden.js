@@ -4,7 +4,7 @@ var industrivarden = {
     asset: 'Industrivärden A',
     ticker: 'INDU A',
     currency: 'sek',
-    quantity: 10,
+    quantity: 13,
     dividends: {
         april: 5.75
     },
