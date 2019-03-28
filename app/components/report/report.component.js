@@ -72,7 +72,7 @@ function ReportController() {
         description: '',
         forecast: 10538,
         goal: 26000,
-        outcome: 23966,
+        outcome: 25789,
         accumulated: 481,
         loan: 12652,
         assets: [
