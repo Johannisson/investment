@@ -60,6 +60,18 @@ function DividendsController() {
             amount: 22.99,
             tax: 3.44,
             asset: autoliv,
+        },
+        {
+            date: '2019-03-28',
+            quantity: 99,
+            amount: 693.00,
+            asset: axfood,
+        },
+        {
+            date: '2019-03-28',
+            quantity: 90,
+            amount: 274.50,
+            asset: castellum,
             last: true
         }
     ];

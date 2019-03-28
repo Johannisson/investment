@@ -109,6 +109,8 @@ function TransactionsController() {
         { date: '2019-03-25', asset: xact_hogutdelande, quantity: 11, price: 117.50 },
         { date: '2019-03-25', asset: xact_hogutdelande, quantity: 28, price: 117.56 },
         { date: '2019-03-25', asset: stora_enso, quantity: 9, price: 110.50 },
+        { date: '2019-03-26', asset: investor_a, quantity: 3, price: 411.00 },
+        { date: '2019-03-26', asset: industrivarden, quantity: 3, price: 196.60 },
         { sum: '2019-03' }
     ]
 

@@ -55,7 +55,7 @@ function ReportController() {
     vm.dividend.push({ label: 'Dec', value2: 0 });
     vm.dividend.push({ label: '2019', value3: 238 });
     vm.dividend.push({ label: 'Feb', value2: 238, value3: 187 });
-    vm.dividend.push({ label: 'Mars', value2: 425, value3: 56 });
+    vm.dividend.push({ label: 'Mars', value2: 425, value3: 1023 });
     vm.dividend.push({ label: 'April', value2: 0 });
     vm.dividend.push({ label: 'Maj', value2: 0 });
     vm.dividend.push({ label: 'Juni', value2: 0 });
@@ -74,7 +74,7 @@ function ReportController() {
         goal: 26000,
         outcome: 23966,
         accumulated: 481,
-        loan: 20459,
+        loan: 12652,
         assets: [
             {
                 asset: akelius,
@@ -170,7 +170,7 @@ function ReportController() {
             }, {
                 asset: swedbank,
                 quantity: 155,
-                price: 175.00
+                price: 142.15
             }, {
                 asset: telia,
                 quantity: 100,
