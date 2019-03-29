@@ -103,7 +103,7 @@ function AssetController($locale) {
         } 
         if (vm.asset === 'telia') {
             vm.data = telia;
-            vm.rows = [0, 2.5, 5, 7.5, 10, 12.5, 15]
+            vm.rows = [0, 1, 2, 3, 4, 5, 6, 7]
         } 
         if (vm.asset === 'tryg') {
             vm.data = tryg;
