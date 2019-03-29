@@ -12,6 +12,7 @@ angular
             label1: '@',
             label2: '@',
             label3: '@',
+            label4: '@',
         },
         controller: DiagramController
     });
@@ -39,6 +40,7 @@ function DiagramController() {
             element.visibility1 = 'hidden';
             element.visibility2 = 'hidden';
             element.visibility3 = 'hidden';
+            element.visibility4 = 'hidden';
         });
     }
 
@@ -54,6 +56,7 @@ function DiagramController() {
         return false;
     }
 
+
     vm.showLabel2 = function() {
         if (!vm.label2) {
             return false;
@@ -66,6 +69,14 @@ function DiagramController() {
         return false;
     }
 
+    vm.offsetLabel2 = function() {
+        var result = 0;
+        if (vm.showLabel1()) {
+            result += 150;
+        }
+        return result;
+    }
+
     vm.showLabel3 = function() {
         if (!vm.label3) {
             return false;
@@ -76,6 +87,43 @@ function DiagramController() {
             }
         }
         return false;
+    }
+
+    vm.offsetLabel3 = function() {
+        var result = 0;
+        if (vm.showLabel1()) {
+            result += 150;;
+        }
+        if (vm.showLabel2()) {
+            result += 150;;
+        }
+        return result;
+    }
+
+    vm.showLabel4 = function() {
+        if (!vm.label4) {
+            return false;
+        }
+        for (i in vm.data) {
+            if (vm.data[i].value4) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    vm.offsetLabel4 = function() {
+        var result = 0;
+        if (vm.showLabel1()) {
+            result += 150;;
+        }
+        if (vm.showLabel2()) {
+            result += 150;;
+        }
+        if (vm.showLabel3()) {
+            result += 150;;
+        }
+        return result;
     }
 
     vm.$onInit = function() {

@@ -68,6 +68,7 @@ function AssetController($locale) {
         }
         if (vm.asset === 'kungsleden') {
             vm.data = kungsleden;
+            vm.rows = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
         } 
         if (vm.asset === 'latour') {
             vm.data = latour;
@@ -117,7 +118,7 @@ function AssetController($locale) {
         vm.diagram = [];
 
         vm.data.years.forEach(function(element) {
-            vm.diagram.push({label:(element.year + '').substring(2), value1:element.ordinary, value2:element.extra, value3:element.stocks});
+            vm.diagram.push({label:(element.year + '').substring(2), value1:element.ordinary, value2:element.extra, value3:element.stocks, value4:element.redemption});
         });
     };
 }
