@@ -1,10 +1,10 @@
-var industrivarden = {
+var industrivarden_a = {
     id: 'industrivarden',
     name: 'Industrivärden',
     asset: 'Industrivärden A',
     ticker: 'INDU A',
     currency: 'sek',
-    quantity: 13,
+    quantity: 0,
     dividends: {
         april: 5.75
     },
@@ -37,3 +37,9 @@ var industrivarden = {
         { year: 2019, ordinary: 5.75 }
     ]
 };
+
+var industrivarden_c = JSON.parse(JSON.stringify(industrivarden_a));
+industrivarden_c.id = 'industrivarden-c';
+industrivarden_c.asset = 'Industrivärden C';
+industrivarden_c.ticker = 'INDU C';
+industrivarden_c.quantity = 20;

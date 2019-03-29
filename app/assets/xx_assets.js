@@ -8,7 +8,7 @@ var assets = [
     dustin,
     handelsbanken,
     husqvarna,
-    industrivarden,
+    industrivarden_c,
     investor_a,
     kungsleden,
     latour,

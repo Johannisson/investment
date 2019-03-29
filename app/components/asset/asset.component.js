@@ -50,8 +50,12 @@ function AssetController($locale) {
             vm.data = husqvarna;
             vm.rows = [0, 0.5, 1, 1.5, 2, 2.5];
         } 
-        if (vm.asset === 'industrivarden') {
-            vm.data = industrivarden;
+        if (vm.asset === 'industrivarden-a') {
+            vm.data = industrivarden_a;
+            vm.rows = [0, 1, 2, 3, 4, 5, 6, 7];
+        }
+        if (vm.asset === 'industrivarden-c') {
+            vm.data = industrivarden_c;
             vm.rows = [0, 1, 2, 3, 4, 5, 6, 7];
         }
         if (vm.asset === 'investor-a') {

@@ -48,8 +48,10 @@ function config($routeProvider, $locationProvider) {
             template: '<app-asset asset="handelsbanken" />'
         }).when('/portfoljbolag/husqvarna', { 
             template: '<app-asset asset="husqvarna" />'
-        }).when('/portfoljbolag/industrivarden', {
-            template: '<app-asset asset="industrivarden" />'
+        }).when('/portfoljbolag/industrivarden-a', {
+            template: '<app-asset asset="industrivarden-a" />'
+        }).when('/portfoljbolag/industrivarden-c', {
+            template: '<app-asset asset="industrivarden-c" />'
         }).when('/portfoljbolag/investor-a', {
             template: '<app-asset asset="investor-a" />'
         }).when('/portfoljbolag/investor-b', {

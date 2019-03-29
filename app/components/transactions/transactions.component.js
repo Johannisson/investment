@@ -38,7 +38,7 @@ function TransactionsController() {
         { date: '2018-12-06', asset: xact_hogutdelande, quantity: 40, price: 107.40 },
         { date: '2018-12-10', asset: skanska, quantity: 10, price: 136.30 },
         { date: '2018-12-10', asset: autoliv, quantity: 2, price: 694.40 },
-        { date: '2018-12-10', asset: industrivarden, quantity: 10, price: 181.30 },
+        { date: '2018-12-10', asset: industrivarden_a, quantity: 10, price: 181.30 },
         { date: '2018-12-10', asset: xact_hogutdelande, quantity: 13, price: 107.42 },
         { date: '2018-12-13', asset: atlas_copco, quantity: 10, price: 203.80 },
         { date: '2018-12-14', asset: axfood, quantity: 8, price: 156.20 },
@@ -110,7 +110,11 @@ function TransactionsController() {
         { date: '2019-03-25', asset: xact_hogutdelande, quantity: 28, price: 117.56 },
         { date: '2019-03-25', asset: stora_enso, quantity: 9, price: 110.50 },
         { date: '2019-03-26', asset: investor_a, quantity: 3, price: 411.00 },
-        { date: '2019-03-26', asset: industrivarden, quantity: 3, price: 196.60 },
+        { date: '2019-03-26', asset: industrivarden_a, quantity: 3, price: 196.60 },
+        { date: '2019-03-29', asset: industrivarden_a, quantity: -13, price: 198.80 },
+        { date: '2019-03-29', asset: industrivarden_c, quantity: 7, price: 193.60 },
+        { date: '2019-03-29', asset: industrivarden_c, quantity: 13, price: 193.60 },
+        { date: '2019-03-29', asset: xact_hogutdelande, quantity: 4, price: 117.12 },
         { sum: '2019-03' }
     ]
 

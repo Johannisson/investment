@@ -4,7 +4,7 @@ var xact_hogutdelande = {
     asset: 'XACT Högutdelande',
     ticker: 'XACTHDIV',
     currency: 'sek',
-    quantity: 253,
+    quantity: 257,
     dividends: {
         may: 5.0
     },
