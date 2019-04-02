@@ -115,7 +115,12 @@ function TransactionsController() {
         { date: '2019-03-29', asset: industrivarden_c, quantity: 7, price: 193.60 },
         { date: '2019-03-29', asset: industrivarden_c, quantity: 13, price: 193.60 },
         { date: '2019-03-29', asset: xact_hogutdelande, quantity: 4, price: 117.12 },
-        { sum: '2019-03' }
+        { sum: '2019-03' },
+        { label: 'April 2019' },
+        { date: '2019-04-01', asset: handelsbanken, quantity: 6, price: 97.12 },
+        { date: '2019-04-02', asset: stora_enso, quantity: 11, price: 117.70 },
+        { date: '2019-04-02', asset: husqvarna, quantity: 7, price: 78.20 },
+        { sum: '2019-04' },
     ]
 
     vm.getSum = function(month)

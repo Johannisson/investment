@@ -19,20 +19,20 @@ function ReportController() {
     vm.currency = currency;
 
     vm.value = [];
-    vm.value.push({ label: 'Nov',    value2: 104487 });
-    vm.value.push({ label: 'Dec',    value2: 143692 });
-    vm.value.push({ label: '2019',   value2: 183289 });
-    vm.value.push({ label: 'Feb',    value2: 218823 });
-    vm.value.push({ label: 'Mars',   value2: 241366 });
-    vm.value.push({ label: 'April',  value2: 241366 });
-    vm.value.push({ label: 'Maj',    value2: 0      });
-    vm.value.push({ label: 'Juni',   value2: 0      });
-    vm.value.push({ label: 'Juli',   value2: 0      });
-    vm.value.push({ label: 'Aug',    value2: 0      });
-    vm.value.push({ label: 'Sept',   value2: 0      });
-    vm.value.push({ label: 'Okt',    value2: 0      });
-    vm.value.push({ label: 'Nov',    value2: 0      });
-    vm.value.push({ label: 'Dec',    value2: 0      });
+    vm.value.push({ label: 'Nov',    value1: 104487 });
+    vm.value.push({ label: 'Dec',    value1: 143692 });
+    vm.value.push({ label: '2019',   value1: 183289 });
+    vm.value.push({ label: 'Feb',    value1: 218823 });
+    vm.value.push({ label: 'Mars',   value1: 241838 });
+    vm.value.push({ label: 'April',  value1: 251803 });
+    vm.value.push({ label: 'Maj',    value1: 0      });
+    vm.value.push({ label: 'Juni',   value1: 0      });
+    vm.value.push({ label: 'Juli',   value1: 0      });
+    vm.value.push({ label: 'Aug',    value1: 0      });
+    vm.value.push({ label: 'Sept',   value1: 0      });
+    vm.value.push({ label: 'Okt',    value1: 0      });
+    vm.value.push({ label: 'Nov',    value1: 0      });
+    vm.value.push({ label: 'Dec',    value1: 0      });
 
     vm.diagram = [];
     vm.diagram.push({ label: 'Nov',    value1: 4380  });
@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 10598 });
+    vm.diagram.push({ label: 'April',  value1: 10705 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -51,55 +51,55 @@ function ReportController() {
     vm.diagram.push({ label: 'Dec',    value1: 0     });
 
     vm.dividend = [];
-    vm.dividend.push({ label: 'Nov',    value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Dec',    value2: 0,     value3: 0    });
-    vm.dividend.push({ label: '2019',   value2: 238,   value3: 0    });
-    vm.dividend.push({ label: 'Feb',    value2: 238,   value3: 187  });
-    vm.dividend.push({ label: 'Mars',   value2: 425,   value3: 1080 });
-    vm.dividend.push({ label: 'April',  value2: 1505,  value3: 0    });
-    vm.dividend.push({ label: 'Maj',    value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Juni',   value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Juli',   value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Aug',    value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Sept',   value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Okt',    value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Nov',    value2: 0,     value3: 0    });
-    vm.dividend.push({ label: 'Dec',    value2: 0,     value3: 0    });
+    vm.dividend.push({ label: 'Nov',    value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Dec',    value1: 0,     value2: 0    });
+    vm.dividend.push({ label: '2019',   value1: 238,   value2: 0    });
+    vm.dividend.push({ label: 'Feb',    value1: 238,   value2: 187  });
+    vm.dividend.push({ label: 'Mars',   value1: 425,   value2: 1080 });
+    vm.dividend.push({ label: 'April',  value1: 1505,  value2: 0    });
+    vm.dividend.push({ label: 'Maj',    value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Juni',   value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Juli',   value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Aug',    value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Sept',   value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Okt',    value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Nov',    value1: 0,     value2: 0    });
+    vm.dividend.push({ label: 'Dec',    value1: 0,     value2: 0    });
 
 
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 10598,
+        forecast: 10705,
         goal: 26000,
-        outcome: 27545,
+        outcome: 2424,
         accumulated: 1505,
         loan: 14410,
         assets: [
-            { asset: akelius,            quantity: 10,   price: 345.50,         change: 0 },
-            { asset: atlas_copco,        quantity: 15,   price: 230.10,         change: 0 },
-            { asset: autoliv,            quantity: 4,    price: 680.00,         change: 0 },
-            { asset: axfood,             quantity: 109,  price: 173.00,         change: 0 },
-            { asset: bmw,                quantity: 3,    price: 2143.00 / 3,    change: 0 },
-            { asset: castellum,          quantity: 90,   price: 180.35,         change: 0 },
-            { asset: dustin,             quantity: 89,   price: 87.20,          change: 0 },
-            { asset: handelsbanken,      quantity: 120,  price: 98.10,          change: 0 },
-            { asset: husqvarna,          quantity: 133,  price: 75.94,          change: 0 },
-            { asset: industrivarden_c,   quantity: 20,   price: 194.75,         change: 0 },
-            { asset: investor_a,         quantity: 53,   price: 418.80,         change: 0 },
-            { asset: kungsleden,         quantity: 28,   price: 74.00,          change: 0 },
-            { asset: latour,             quantity: 238,  price: 124.50,         change: 0 },
-            { asset: lifco,              quantity: 12,   price: 379.00,         change: 0 },
-            { asset: nordea,             quantity: 100,  price: 70.75,          change: 0 },
-            { asset: np3,                quantity: 78,   price: 75.00,          change: 0 },
-            { asset: pfizer,             quantity: 15,   price: 393.00,         change: 0 },
-            { asset: sagax,              quantity: 400,  price: 34.70,          change: 0 },
-            { asset: skanska,            quantity: 10,   price: 168.90,         change: 0 },
-            { asset: stora_enso,         quantity: 31,   price: 114.00,         change: 0 },
-            { asset: swedbank,           quantity: 155,  price: 131.35,         change: 0 },
-            { asset: telia,              quantity: 100,  price: 41.95,          change: 0 },
-            { asset: tryg,               quantity: 40,   price: 10202.00 / 40,  change: 0 },
-            { asset: xact_hogutdelande,  quantity: 253,  price: 118.00,         change: 0 }
+            { asset: akelius,            quantity: 10,   price: 347.00,         change: 0 },
+            { asset: atlas_copco,        quantity: 15,   price: 241.50,         change: 0 },
+            { asset: autoliv,            quantity: 4,    price: 717.20,         change: 0 },
+            { asset: axfood,             quantity: 109,  price: 175.00,         change: 0 },
+            { asset: bmw,                quantity: 3,    price: 2229.00 / 3,    change: 0 },
+            { asset: castellum,          quantity: 90,   price: 183.55,         change: 0 },
+            { asset: dustin,             quantity: 89,   price: 90.15,          change: 0 },
+            { asset: handelsbanken,      quantity: 126,  price: 101.60,         change: 6 },
+            { asset: husqvarna,          quantity: 140,  price: 79.22,          change: 7 },
+            { asset: industrivarden_c,   quantity: 20,   price: 201.00,         change: 0 },
+            { asset: investor_a,         quantity: 53,   price: 428.80,         change: 0 },
+            { asset: kungsleden,         quantity: 28,   price: 75.75,          change: 0 },
+            { asset: latour,             quantity: 238,  price: 128.50,         change: 0 },
+            { asset: lifco,              quantity: 12,   price: 391.40,         change: 0 },
+            { asset: nordea,             quantity: 100,  price: 73.26,          change: 0 },
+            { asset: np3,                quantity: 78,   price: 77.50,          change: 0 },
+            { asset: pfizer,             quantity: 15,   price: 402.00,         change: 0 },
+            { asset: sagax,              quantity: 400,  price: 34.90,          change: 0 },
+            { asset: skanska,            quantity: 10,   price: 172.60,         change: 0 },
+            { asset: stora_enso,         quantity: 42,   price: 120.10,         change: 11 },
+            { asset: swedbank,           quantity: 155,  price: 144-00,         change: 0 },
+            { asset: telia,              quantity: 100,  price: 41.99,          change: 0 },
+            { asset: tryg,               quantity: 40,   price: 10470.00 / 40,  change: 0 },
+            { asset: xact_hogutdelande,  quantity: 257,  price: 119.98,         change: 0 }
         ]
     }
 
@@ -135,7 +135,7 @@ function ReportController() {
             { asset: swedbank,           quantity: 155,  price: 131.35,         change: 0,    dividend: 0,       arbitrage: 0     },
             { asset: telia,              quantity: 100,  price: 41.95,          change: 100,  dividend: 0,       arbitrage: 0     },
             { asset: tryg,               quantity: 40,   price: 10202.00 / 40,  change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: xact_hogutdelande,  quantity: 253,  price: 118.00,         change: 50,   dividend: 0,       arbitrage: 0     }
+            { asset: xact_hogutdelande,  quantity: 257,  price: 118.00,         change: 50,   dividend: 0,       arbitrage: 0     }
         ]
     }
 

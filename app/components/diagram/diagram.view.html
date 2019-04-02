@@ -13,7 +13,7 @@
             ng-if="$ctrl.showLabel1()"
             ng-attr-y="{{$ctrl.height + 10}}"
             ng-attr-x="100"
-            fill="#E24A33" />
+            fill="{{$ctrl.color1}}" />
         
         <text font-size="11" font-family="Arial"
             ng-if="$ctrl.showLabel1()"
@@ -24,7 +24,7 @@
             ng-if="$ctrl.showLabel2()"
             ng-attr-y="{{$ctrl.height + 10}}"
             ng-attr-x="{{100 + $ctrl.offsetLabel2()}}"
-            fill="#348ABD" />
+            fill="{{$ctrl.color2}}" />
         
         <text font-size="11" font-family="Arial"
             ng-if="$ctrl.showLabel2()"
@@ -35,7 +35,7 @@
             ng-if="$ctrl.showLabel3()"
             ng-attr-y="{{$ctrl.height + 10}}"
             ng-attr-x="{{100 + $ctrl.offsetLabel3()}}"
-            fill="#69AF35" />
+            fill="{{$ctrl.color3}}" />
         
         <text font-size="11" font-family="Arial"
             ng-if="$ctrl.showLabel3()"
@@ -46,7 +46,7 @@
             ng-if="$ctrl.showLabel4()"
             ng-attr-y="{{$ctrl.height + 10}}"
             ng-attr-x="{{100 + $ctrl.offsetLabel4()}}"
-            fill="#71C897" />
+            fill="{{$ctrl.color4}}" />
         
         <text font-size="11" font-family="Arial"
             ng-if="$ctrl.showLabel4()"
@@ -61,7 +61,7 @@
             ng-attr-height="{{(data.value1 + data.value2 + data.value3 + data.value4) * $ctrl.scale()}}"
             ng-attr-y="{{($ctrl.height - 25) - (data.value1 + data.value2 + data.value3 + data.value4) * $ctrl.scale()}}"
             ng-attr-x="{{$ctrl.step($index, 80)}}"
-            fill="#71C897" />
+            fill="{{$ctrl.color4}}" />
         <rect ng-if="data.value3 !== undefined"
             ng-mouseenter="data.visibility3 = 'visible'"
             ng-mouseleave="data.visibility3 = 'hidden'"
@@ -69,7 +69,7 @@
             ng-attr-height="{{(data.value1 + data.value2 + data.value3) * $ctrl.scale()}}"
             ng-attr-y="{{($ctrl.height - 25) - (data.value1 + data.value2 + data.value3) * $ctrl.scale()}}"
             ng-attr-x="{{$ctrl.step($index, 80)}}"
-            fill="#69AF35" />
+            fill="{{$ctrl.color3}}" />
         <rect ng-if="data.value2 !== undefined"
             ng-mouseenter="data.visibility2 = 'visible'"
             ng-mouseleave="data.visibility2 = 'hidden'"
@@ -77,14 +77,14 @@
             ng-attr-height="{{(data.value1 + data.value2) * $ctrl.scale()}}"
             ng-attr-y="{{($ctrl.height - 25) - (data.value1 + data.value2) * $ctrl.scale()}}"
             ng-attr-x="{{$ctrl.step($index, 80)}}"
-            fill="#348ABD" />
+            fill="{{$ctrl.color2}}" />
         <rect width="9"
             ng-mouseenter="data.visibility1 = 'visible'"
             ng-mouseleave="data.visibility1 = 'hidden'"
             ng-attr-height="{{data.value1 * $ctrl.scale()}}" 
             ng-attr-y="{{($ctrl.height - 25) - data.value1 * $ctrl.scale()}}"
             ng-attr-x="{{$ctrl.step($index, 80)}}"
-            fill="#E24A33" />
+            fill="{{$ctrl.color1}}" />
     </g>
     <g ng-repeat="data in $ctrl.data">
         <rect ng-attr-visibility="{{data.visibility4}}"
