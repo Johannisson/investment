@@ -22,9 +22,9 @@ DiagramController.$inject = [];
 function DiagramController() {
     var vm = this;
 
-    vm.color1 = '#FF674A';
-    vm.color2 = '#234A59';
-    vm.color3 = '#CFE2F3';
+    vm.color1 = '#DF1E32';
+    vm.color2 = '#1F3862';
+    vm.color3 = '#45B9C6';
     vm.color4 = '#0072A8';
 
     vm.step = function(index, offset) {

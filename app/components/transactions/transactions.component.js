@@ -120,6 +120,7 @@ function TransactionsController() {
         { date: '2019-04-01', asset: handelsbanken, quantity: 6, price: 97.12 },
         { date: '2019-04-02', asset: stora_enso, quantity: 11, price: 117.70 },
         { date: '2019-04-02', asset: husqvarna, quantity: 7, price: 78.20 },
+        { date: '2019-04-03', asset: catena_media, quantity: 17, price: 57.40 },
         { sum: '2019-04' },
     ]
 

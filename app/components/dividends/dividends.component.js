@@ -22,6 +22,8 @@ function DividendsController() {
         { date: '2019-03-06',  asset: autoliv,           quantity: 4,    amount: 22.99,   tax: 3.44,  type: '',           last: false },
         { date: '2019-03-28',  asset: axfood,            quantity: 99,   amount: 693.00,  tax: 0,     type: '',           last: false },
         { date: '2019-03-28',  asset: castellum,         quantity: 90,   amount: 274.50,  tax: 0,     type: '',           last: false },
-        { date: '2019-03-29',  asset: industrivarden_a,  quantity: 13,   amount: 56.00,   tax: 0,     type: 'arbitrage',  last: true  }
+        { date: '2019-03-29',  asset: industrivarden_a,  quantity: 13,   amount: 56.00,   tax: 0,     type: '',           last: true  },
+        { date: '2019-04-03',  asset: handelsbanken,     quantity: 120,  amount: 660.00,  tax: 0,     type: '',           last: false },
+        { date: '2019-04-03',  asset: sagax,             quantity: 400,  amount: 200.00,  tax: 0,     type: '',           last: true  }
     ];
 }
