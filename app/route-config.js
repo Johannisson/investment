@@ -42,6 +42,8 @@ function config($routeProvider, $locationProvider) {
             template: '<app-asset asset="axfood" />'
         }).when('/portfoljbolag/castellum', { 
             template: '<app-asset asset="castellum" />'
+        }).when('/portfoljbolag/catena-media', { 
+            template: '<app-asset asset="catena-media" />'
         }).when('/portfoljbolag/dustin-group', {
             template: '<app-asset asset="dustin" />'
         }).when('/portfoljbolag/handelsbanken', { 
