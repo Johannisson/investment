@@ -122,6 +122,7 @@ function TransactionsController() {
         { date: '2019-04-02', asset: husqvarna, quantity: 7, price: 78.20 },
         { date: '2019-04-03', asset: catena_media, quantity: 17, price: 57.40 },
         { date: '2019-04-04', asset: castellum, quantity: 5, price: 180.50 },
+        { date: '2019-04-05', asset: latour, quantity: 11, price: 126.60 },
         { sum: '2019-04' },
     ]
 

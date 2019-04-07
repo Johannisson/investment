@@ -32,7 +32,8 @@ function CompoundInterestController($locale) {
             value1: vm.start,
             visibility1: 'hidden',
             visibility2: 'hidden',
-            visibility3: 'hidden'
+            visibility3: 'hidden',
+            visibility4: 'hidden'
         });
         var value1 = parseInt(vm.start);
         var value2 = 0;
@@ -48,7 +49,8 @@ function CompoundInterestController($locale) {
                 ret: ret,
                 visibility1: 'hidden',
                 visibility2: 'hidden',
-                visibility3: 'hidden'
+                visibility3: 'hidden',
+                visibility4: 'hidden'
             });
         }
         var sum = value1 + value2

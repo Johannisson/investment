@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 10735 });
+    vm.diagram.push({ label: 'April',  value1: 10770 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -70,9 +70,9 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 10735,
+        forecast: 10770,
         goal: 26000,
-        outcome: 3400,
+        outcome: 5695,
         accumulated: 4626,
         loan: 14410,
         assets: [
@@ -89,7 +89,7 @@ function ReportController() {
             { asset: industrivarden_c,   quantity: 20,   price: 205.40,         change: 0  },
             { asset: investor_a,         quantity: 53,   price: 432.60,         change: 0  },
             { asset: kungsleden,         quantity: 28,   price: 74.65,          change: 0  },
-            { asset: latour,             quantity: 238,  price: 130.40,         change: 0  },
+            { asset: latour,             quantity: 249,  price: 127.00,         change: 11 },
             { asset: lifco,              quantity: 12,   price: 403.00,         change: 0  },
             { asset: nordea,             quantity: 100,  price: 74.61,          change: 0  },
             { asset: np3,                quantity: 78,   price: 78.30,          change: 0  },

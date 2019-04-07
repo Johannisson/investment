@@ -4,7 +4,7 @@ var latour = {
     asset: 'Latour B',
     ticker: 'LATO B',
     currency: 'sek',
-    quantity: 235,
+    quantity: 249,
     dividends: {
         may: 2.50
     },
