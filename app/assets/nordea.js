@@ -5,6 +5,7 @@ var nordea = {
     ticker: 'NDA SE',
     currency: 'sek',
     quantity: 100,
+    xact: true,
     dividends: {
         march: 7.20
     },

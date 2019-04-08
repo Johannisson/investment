@@ -5,6 +5,7 @@ var peab = {
     ticker: 'PEAB B',
     currency: 'sek',
     quantity: 0,
+    xact: false,
     dividends: {
         may: 4.00
     },

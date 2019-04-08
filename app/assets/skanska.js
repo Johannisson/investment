@@ -5,6 +5,7 @@ var skanska = {
     ticker: 'SKA B',
     currency: 'sek',
     quantity: 10,
+    xact: true,    
     dividends: {
         april: 6.00,
     },

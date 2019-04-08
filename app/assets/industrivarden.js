@@ -5,6 +5,7 @@ var industrivarden_a = {
     ticker: 'INDU A',
     currency: 'sek',
     quantity: 0,
+    xact: true,    
     dividends: {
         april: 5.75
     },

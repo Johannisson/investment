@@ -5,6 +5,7 @@ var latour = {
     ticker: 'LATO B',
     currency: 'sek',
     quantity: 249,
+    xact: false,
     dividends: {
         may: 2.50
     },

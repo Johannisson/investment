@@ -5,6 +5,7 @@ var husqvarna = {
     ticker: 'HUSQ B',
     currency: 'sek',
     quantity: 140,
+    xact: false,
     dividends: {
         april: 0.75,
         october: 1.50

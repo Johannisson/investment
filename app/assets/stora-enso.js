@@ -5,6 +5,7 @@ var stora_enso = {
     ticker: 'STE R',
     currency: 'sek',
     quantity: 42,
+    xact: false,
     dividends: {
         march: 5.27
     },

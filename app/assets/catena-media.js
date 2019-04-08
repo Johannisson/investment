@@ -5,6 +5,7 @@ var catena_media = {
     ticker: 'TELIACTM',
     currency: 'sek',
     quantity: 17,
+    xact: false,
     dividends: {},
     homepage: {
         name: 'www.catenamedia.com',

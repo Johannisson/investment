@@ -5,6 +5,7 @@ var bmw = {
     ticker: 'BMW',
     currency: 'eur',
     quantity: 3,
+    xact: false,
     dividends: {
         may: 4
     },

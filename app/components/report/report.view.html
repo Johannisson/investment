@@ -100,33 +100,40 @@
         <div class="w90">
             <table>
                 <tr class="split">
-                    <th class="w40" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
-                    <th class="w15 right">Antal</th>
-                    <th class="w15 right">Köp/Sälj</th>
-                    <th class="w15 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
-                    <th class="w15 right">Utdelning</th>
+                    <th class="w35" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
+                    <th class="w10 right">Antal</th>
+                    <th class="w10 right">Köp/Sälj</th>
+                    <th class="w10 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
+                    <th class="w10 right" ng-click="$ctrl.order = '-price * quantity'">Andel</th>
+                    <th class="w10 right">Utdelning</th>
                 </tr>
                 <tr ng-repeat="asset in $ctrl.getAssets(month) | orderBy:$ctrl.order" class="hover">
-                    <td><a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a></td>
+                    <td>
+                        <a href="portfoljbolag/{{asset.asset.id}}">{{asset.asset.asset}}</a>
+                        <sup ng-if="asset.asset.xact"> 1</sup>
+                    </td>
                     <td class="right">{{asset.quantity}} st</td>
                     <td class="right">
                         <span ng-if="asset.change">{{asset.change + ' st'}}</span>
                     </td>
+                    <td class="right">{{$ctrl.getValue(asset) | number:0}} kr</td>
+                    <td class="right">{{$ctrl.getValue(asset) / $ctrl.getTotal(month) * 100 | number:0}} %</td>
                     <td class="right">
-                        <span>{{$ctrl.getValue(asset) | number:0}} kr</span>
-                    </td>
-                    <td class="right">
-                        <span ng-if="asset.dividend || asset.arbitrage">{{$ctrl.getDividend(asset) | number:0}} kr</span>
+                        <span ng-if="asset.dividend">{{$ctrl.getDividend(asset) | number:0}} kr</span>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" class="split-top"></td>
                     <td class="split-top right bold">{{$ctrl.getTotal(month) | number:0:'se-sv'}} kr</td>
+                    <td class="split-top"></td>
                     <td class="split-top right bold">{{$ctrl.getDividends(month) + $ctrl.getArbitrages(month) | number:0:'sv'}} kr</td>
                 </tr>
             </table>
         </div>
     </div>
+    <p>
+        (1) Ingår i <a href="portfoljbolag/xact-hogutdelande">XACT Högutdelande</a>.
+    </p>
     <h2>Portföljvärde</h2>
     <app-diagram data="$ctrl.value" rows="[0, 25000, 50000, 75000, 100000, 125000, 150000, 175000, 200000, 225000, 250000, 275000]" suffix="kr" width="750" height="350"></app-diagram>
     <h2>Utdelningar</h2>

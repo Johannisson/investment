@@ -5,9 +5,10 @@ var np3 = {
     ticker: 'NP3',
     currency: 'sek',
     quantity: 78,
+    xact: false,
     dividends: {
-        may: 1.50, // ??
-        november: 1.50 // ??
+        may: 1.50,
+        november: 1.50
     },
     homepage: {
         name: 'www.np3fastigheter.se',

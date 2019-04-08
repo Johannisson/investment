@@ -5,6 +5,7 @@ var pfizer = {
     ticker: 'PFE',
     currency: 'sek',
     quantity: 15,
+    xact: false,
     dividends: {
         march: 3.00,
         june: 3.00,

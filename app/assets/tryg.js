@@ -5,6 +5,7 @@ var tryg = {
     ticker: 'TRYG',
     currency: 'dkk',
     quantity: 40,
+    xact: true,
     dividends: {
         january: 1.65,
         april: 1.65,

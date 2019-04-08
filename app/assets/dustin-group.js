@@ -5,6 +5,7 @@ var dustin = {
     ticker: 'DUST',
     currency: 'sek',
     quantity: 89,
+    xact: false,
     dividends: {
         december: 3.10
     },

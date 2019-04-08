@@ -5,6 +5,7 @@ var telia = {
     ticker: 'TELIA',
     currency: 'sek',
     quantity: 100,
+    xact: true,
     dividends: {
         april: 1.18,
         october: 1.18

@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 10770 });
+    vm.diagram.push({ label: 'April',  value1: 10809 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -70,37 +70,37 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 10770,
+        forecast: 10809,
         goal: 26000,
         outcome: 5695,
         accumulated: 4626,
         loan: 14410,
         assets: [
-            { asset: akelius,            quantity: 10,   price: 347.50,         change: 0  },
-            { asset: atlas_copco,        quantity: 15,   price: 247.20,         change: 0  },
-            { asset: autoliv,            quantity: 4,    price: 739.00,         change: 0  },
-            { asset: axfood,             quantity: 109,  price: 174.10,         change: 0  },
-            { asset: bmw,                quantity: 3,    price: 2275.00 / 3,    change: 0  },
-            { asset: castellum,          quantity: 95,   price: 183.00,         change: 5  },
-            { asset: catena_media,       quantity: 17,   price: 56.80,          change: 17 },
-            { asset: dustin,             quantity: 89,   price: 93.50,          change: 0  },
+            { asset: akelius,            quantity: 10,   price: 347.50,         change: 0,    dividend: 0    },
+            { asset: atlas_copco,        quantity: 15,   price: 247.20,         change: 0,    dividend: 0    },
+            { asset: autoliv,            quantity: 4,    price: 739.00,         change: 0,    dividend: 0    },
+            { asset: axfood,             quantity: 109,  price: 174.10,         change: 0,    dividend: 0    },
+            { asset: bmw,                quantity: 3,    price: 2275.00 / 3,    change: 0,    dividend: 0    },
+            { asset: castellum,          quantity: 95,   price: 183.00,         change: 5,    dividend: 0    },
+            { asset: catena_media,       quantity: 17,   price: 56.80,          change: 17,   dividend: 0    },
+            { asset: dustin,             quantity: 89,   price: 93.50,          change: 0,    dividend: 0    },
             { asset: handelsbanken,      quantity: 126,  price: 102.65,         change: 6,    dividend: 660  },
-            { asset: husqvarna,          quantity: 140,  price: 80.54,          change: 7  },
-            { asset: industrivarden_c,   quantity: 20,   price: 205.40,         change: 0  },
-            { asset: investor_a,         quantity: 53,   price: 432.60,         change: 0  },
-            { asset: kungsleden,         quantity: 28,   price: 74.65,          change: 0  },
-            { asset: latour,             quantity: 249,  price: 127.00,         change: 11 },
-            { asset: lifco,              quantity: 12,   price: 403.00,         change: 0  },
-            { asset: nordea,             quantity: 100,  price: 74.61,          change: 0  },
-            { asset: np3,                quantity: 78,   price: 78.30,          change: 0  },
-            { asset: pfizer,             quantity: 15,   price: 400.00,         change: 0  },
+            { asset: husqvarna,          quantity: 140,  price: 80.54,          change: 7,    dividend: 0    },
+            { asset: industrivarden_c,   quantity: 20,   price: 205.40,         change: 0,    dividend: 0    },
+            { asset: investor_a,         quantity: 53,   price: 432.60,         change: 0,    dividend: 0    },
+            { asset: kungsleden,         quantity: 28,   price: 74.65,          change: 0,    dividend: 0    },
+            { asset: latour,             quantity: 249,  price: 127.00,         change: 11,   dividend: 0    },
+            { asset: lifco,              quantity: 12,   price: 403.00,         change: 0,    dividend: 0    },
+            { asset: nordea,             quantity: 100,  price: 74.61,          change: 0,    dividend: 0    },
+            { asset: np3,                quantity: 78,   price: 78.30,          change: 0,    dividend: 0    },
+            { asset: pfizer,             quantity: 15,   price: 400.00,         change: 0,    dividend: 0    },
             { asset: sagax,              quantity: 400,  price: 34.75,          change: 0,    dividend: 200  },
             { asset: skanska,            quantity: 10,   price: 174.65,         change: 0,    dividend: 60   },
-            { asset: stora_enso,         quantity: 42,   price: 125.20,         change: 11 },
+            { asset: stora_enso,         quantity: 42,   price: 125.20,         change: 11,   dividend: 0    },
             { asset: swedbank,           quantity: 155,  price: 145.30,         change: 0,    dividend: 2201 },
-            { asset: telia,              quantity: 100,  price: 42.50,          change: 0  },
-            { asset: tryg,               quantity: 40,   price: 10573.00 / 40,  change: 0  },
-            { asset: xact_hogutdelande,  quantity: 257,  price: 121.16,         change: 0  }
+            { asset: telia,              quantity: 100,  price: 42.50,          change: 0,    dividend: 0    },
+            { asset: tryg,               quantity: 40,   price: 10573.00 / 40,  change: 0,    dividend: 0    },
+            { asset: xact_hogutdelande,  quantity: 257,  price: 121.16,         change: 0,    dividend: 0    },
         ]
     }
 
@@ -112,31 +112,31 @@ function ReportController() {
         accumulated: 1505,
         loan: 14410,
         assets: [
-            { asset: akelius,            quantity: 10,   price: 345.50,         change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: atlas_copco,        quantity: 15,   price: 230.10,         change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: autoliv,            quantity: 4,    price: 680.00,         change: 0,    dividend: 22.99,   arbitrage: 0     },
-            { asset: axfood,             quantity: 109,  price: 173.00,         change: 10,   dividend: 693.00,  arbitrage: 0     },
-            { asset: bmw,                quantity: 3,    price: 2143.00 / 3,    change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: castellum,          quantity: 90,   price: 180.35,         change: 0,    dividend: 274.50,  arbitrage: 0     },
-            { asset: dustin,             quantity: 89,   price: 87.20,          change: 37,   dividend: 0,       arbitrage: 0     },
-            { asset: handelsbanken,      quantity: 120,  price: 98.10,          change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: husqvarna,          quantity: 133,  price: 75.94,          change: 13,   dividend: 0,       arbitrage: 0     },
-            { asset: industrivarden_a,   quantity: 0,    price: 0.00,           change: -10,  dividend: 0,       arbitrage: 0     },
-            { asset: industrivarden_c,   quantity: 20,   price: 194.75,         change: 20,   dividend: 0,       arbitrage: 56.00 },
-            { asset: investor_a,         quantity: 53,   price: 418.80,         change: 3,    dividend: 0,       arbitrage: 0     },
-            { asset: kungsleden,         quantity: 28,   price: 74.00,          change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: latour,             quantity: 238,  price: 124.50,         change: 18,   dividend: 0,       arbitrage: 0     },
-            { asset: lifco,              quantity: 12,   price: 379.00,         change: 5,    dividend: 0,       arbitrage: 0     },
-            { asset: nordea,             quantity: 100,  price: 70.75,          change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: np3,                quantity: 78,   price: 75.00,          change: 8,    dividend: 0,       arbitrage: 0     },
-            { asset: pfizer,             quantity: 15,   price: 393.00,         change: 0,    dividend: 33.32,   arbitrage: 0     },
-            { asset: sagax,              quantity: 400,  price: 34.70,          change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: skanska,            quantity: 10,   price: 168.90,         change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: stora_enso,         quantity: 31,   price: 114.00,         change: 31,   dividend: 0,       arbitrage: 0     },
-            { asset: swedbank,           quantity: 155,  price: 131.35,         change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: telia,              quantity: 100,  price: 41.95,          change: 100,  dividend: 0,       arbitrage: 0     },
-            { asset: tryg,               quantity: 40,   price: 10202.00 / 40,  change: 0,    dividend: 0,       arbitrage: 0     },
-            { asset: xact_hogutdelande,  quantity: 257,  price: 118.00,         change: 50,   dividend: 0,       arbitrage: 0     }
+            { asset: akelius,            quantity: 10,   price: 345.50,         change: 0,    dividend: 0      },
+            { asset: atlas_copco,        quantity: 15,   price: 230.10,         change: 0,    dividend: 0      },
+            { asset: autoliv,            quantity: 4,    price: 680.00,         change: 0,    dividend: 22.99  },
+            { asset: axfood,             quantity: 109,  price: 173.00,         change: 10,   dividend: 693.00 },
+            { asset: bmw,                quantity: 3,    price: 2143.00 / 3,    change: 0,    dividend: 0      },
+            { asset: castellum,          quantity: 90,   price: 180.35,         change: 0,    dividend: 274.50 },
+            { asset: dustin,             quantity: 89,   price: 87.20,          change: 37,   dividend: 0      },
+            { asset: handelsbanken,      quantity: 120,  price: 98.10,          change: 0,    dividend: 0      },
+            { asset: husqvarna,          quantity: 133,  price: 75.94,          change: 13,   dividend: 0      },
+            { asset: industrivarden_a,   quantity: 0,    price: 0.00,           change: -10,  dividend: 0      },
+            { asset: industrivarden_c,   quantity: 20,   price: 194.75,         change: 20,   dividend: 56.00,    flags: 'A' },
+            { asset: investor_a,         quantity: 53,   price: 418.80,         change: 3,    dividend: 0      },
+            { asset: kungsleden,         quantity: 28,   price: 74.00,          change: 0,    dividend: 0      },
+            { asset: latour,             quantity: 238,  price: 124.50,         change: 18,   dividend: 0      },
+            { asset: lifco,              quantity: 12,   price: 379.00,         change: 5,    dividend: 0      },
+            { asset: nordea,             quantity: 100,  price: 70.75,          change: 0,    dividend: 0      },
+            { asset: np3,                quantity: 78,   price: 75.00,          change: 8,    dividend: 0      },
+            { asset: pfizer,             quantity: 15,   price: 393.00,         change: 0,    dividend: 33.32  },
+            { asset: sagax,              quantity: 400,  price: 34.70,          change: 0,    dividend: 0      },
+            { asset: skanska,            quantity: 10,   price: 168.90,         change: 0,    dividend: 0      },
+            { asset: stora_enso,         quantity: 31,   price: 114.00,         change: 31,   dividend: 0      },
+            { asset: swedbank,           quantity: 155,  price: 131.35,         change: 0,    dividend: 0      },
+            { asset: telia,              quantity: 100,  price: 41.95,          change: 100,  dividend: 0      },
+            { asset: tryg,               quantity: 40,   price: 10202.00 / 40,  change: 0,    dividend: 0      },
+            { asset: xact_hogutdelande,  quantity: 257,  price: 118.00,         change: 50,   dividend: 0      }
         ]
     }
 
@@ -148,29 +148,29 @@ function ReportController() {
         accumulated: 425,
         loan: 23953,
         assets: [
-            { asset: akelius,            quantity: 10,   price: 348.50,         change: 0,    dividend: 50.00,  arbitrage: 0      },
-            { asset: atlas_copco,        quantity: 15,   price: 231.80,         change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: autoliv,            quantity: 4,    price: 752.80,         change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: axfood,             quantity: 99,   price: 170.95,         change: 22,   dividend: 0,      arbitrage: 0      },
-            { asset: bmw,                quantity: 3,    price: 2353.00 / 3,    change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: castellum,          quantity: 90,   price: 168.25,         change: 10,   dividend: 0,      arbitrage: 0      },
-            { asset: dustin,             quantity: 52,   price: 87.40,          change: 39,   dividend: 0,      arbitrage: 0      },
-            { asset: handelsbanken,      quantity: 120,  price: 105.35,         change: 10,   dividend: 0,      arbitrage: 0      },
-            { asset: husqvarna,          quantity: 120,  price: 75.70,          change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: industrivarden_a,   quantity: 10,   price: 196.10,         change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: investor_a,         quantity: 50,   price: 407.40,         change: 50,   dividend: 0,      arbitrage: 137.00 },
-            { asset: investor_b,         quantity: 0,    price: 0.00,           change: -50,  dividend: 0,      arbitrage: 0      },
-            { asset: kungsleden,         quantity: 28,   price: 69.00,          change: 8,    dividend: 0,      arbitrage: 0      },
-            { asset: latour,             quantity: 220,  price: 121.50,         change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: lifco,              quantity: 7,    price: 378.00,         change: 7,    dividend: 0,      arbitrage: 0      },
-            { asset: nordea,             quantity: 100,  price: 83.76,          change: 26,   dividend: 0,      arbitrage: 0      },
-            { asset: np3,                quantity: 70,   price: 69.60,          change: 35,   dividend: 0,      arbitrage: 0      },
-            { asset: pfizer,             quantity: 15,   price: 403.00,         change: 5,    dividend: 0,      arbitrage: 0      },
-            { asset: sagax,              quantity: 400,  price: 33.70,          change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: skanska,            quantity: 10,   price: 166.60,         change: 0,    dividend: 0,      arbitrage: 0      },
-            { asset: swedbank,           quantity: 155,  price: 169.70,         change: 45,   dividend: 0,      arbitrage: 0      },
-            { asset: tryg,               quantity: 40,   price: 10104.00 / 40,  change: 16,   dividend: 0,      arbitrage: 0      },
-            { asset: xact_hogutdelande,  quantity: 203,  price: 116.62,         change: 0,    dividend: 0,      arbitrage: 0      }
+            { asset: akelius,            quantity: 10,   price: 348.50,         change: 0,    dividend: 50.00,  },
+            { asset: atlas_copco,        quantity: 15,   price: 231.80,         change: 0,    dividend: 0,      },
+            { asset: autoliv,            quantity: 4,    price: 752.80,         change: 0,    dividend: 0,      },
+            { asset: axfood,             quantity: 99,   price: 170.95,         change: 22,   dividend: 0,      },
+            { asset: bmw,                quantity: 3,    price: 2353.00 / 3,    change: 0,    dividend: 0,      },
+            { asset: castellum,          quantity: 90,   price: 168.25,         change: 10,   dividend: 0,      },
+            { asset: dustin,             quantity: 52,   price: 87.40,          change: 39,   dividend: 0,      },
+            { asset: handelsbanken,      quantity: 120,  price: 105.35,         change: 10,   dividend: 0,      },
+            { asset: husqvarna,          quantity: 120,  price: 75.70,          change: 0,    dividend: 0,      },
+            { asset: industrivarden_a,   quantity: 10,   price: 196.10,         change: 0,    dividend: 0,      },
+            { asset: investor_a,         quantity: 50,   price: 407.40,         change: 50,   dividend: 137.00,     flags: 'A' },
+            { asset: investor_b,         quantity: 0,    price: 0.00,           change: -50,  dividend: 0,      },
+            { asset: kungsleden,         quantity: 28,   price: 69.00,          change: 8,    dividend: 0,      },
+            { asset: latour,             quantity: 220,  price: 121.50,         change: 0,    dividend: 0,      },
+            { asset: lifco,              quantity: 7,    price: 378.00,         change: 7,    dividend: 0,      },
+            { asset: nordea,             quantity: 100,  price: 83.76,          change: 26,   dividend: 0,      },
+            { asset: np3,                quantity: 70,   price: 69.60,          change: 35,   dividend: 0,      },
+            { asset: pfizer,             quantity: 15,   price: 403.00,         change: 5,    dividend: 0,      },
+            { asset: sagax,              quantity: 400,  price: 33.70,          change: 0,    dividend: 0,      },
+            { asset: skanska,            quantity: 10,   price: 166.60,         change: 0,    dividend: 0,      },
+            { asset: swedbank,           quantity: 155,  price: 169.70,         change: 45,   dividend: 0,      },
+            { asset: tryg,               quantity: 40,   price: 10104.00 / 40,  change: 16,   dividend: 0,      },
+            { asset: xact_hogutdelande,  quantity: 203,  price: 116.62,         change: 0,    dividend: 0,      }
         ]
     }
 
@@ -311,6 +311,7 @@ function ReportController() {
     vm.getDividends = function (month) {
         var sum = 0;
         vm.getAssets(month).forEach(function(asset) {
+            if (!(asset.flags || '').includes('A'))
             sum += asset.dividend || 0;
         });
         return sum;
@@ -319,7 +320,9 @@ function ReportController() {
     vm.getArbitrages = function (month) {
         var sum = 0;
         vm.getAssets(month).forEach(function(asset) {
-            sum += asset.arbitrage || 0;
+            if ((asset.flags || '').includes('A')) {
+                sum += asset.dividend || 0;
+            }
         });
         return sum;
     }
@@ -337,6 +340,6 @@ function ReportController() {
     }
 
     vm.getDividend = function (asset) {
-        return (asset.dividend || 0) + (asset.arbitrage || 0);
+        return asset.dividend || 0;
     }
 }

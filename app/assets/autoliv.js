@@ -5,6 +5,7 @@ var autoliv = {
     ticker: 'ALIV SDB',
     currency: 'sek',
     quantity: 4,
+    xact: false,
     dividends: {
         march: 5.78,
         june: 5.78,

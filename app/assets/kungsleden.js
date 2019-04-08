@@ -5,6 +5,7 @@ var kungsleden = {
     ticker: 'KLED',
     currency: 'sek',
     quantity: 28,
+    xact: false,
     dividends: {
         january: 0.55,
         april: 0.55,

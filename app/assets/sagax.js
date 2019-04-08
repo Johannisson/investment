@@ -5,6 +5,7 @@ var sagax = {
     ticker: 'SAGA D',
     currency: 'sek',
     quantity: 400,
+    xact: false,
     dividends: {
         january: 0.50,
         april: 0.50,

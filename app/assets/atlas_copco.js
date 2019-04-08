@@ -5,6 +5,7 @@ var atlas_copco = {
     ticker: 'ATCO B',
     currency: 'sek',
     quantity: 15,
+    xact: true,
     dividends: {
         may: 3.15,
         october: 3.15

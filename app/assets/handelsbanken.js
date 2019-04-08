@@ -5,6 +5,7 @@ var handelsbanken = {
     ticker: 'SHB A',
     currency: 'sek',
     quantity: 126,
+    xact: true,    
     dividends: {
         march: 5.50
     },

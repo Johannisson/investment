@@ -5,6 +5,7 @@ var akelius = {
     ticker: 'AKEL PREF',
     currency: 'sek',
     quantity: 10,
+    xact: false,
     dividends: {
         february: 5.00,
         may: 5.00,

@@ -5,6 +5,7 @@ var lifco = {
     ticker: 'LIFCO B',
     currency: 'sek',
     quantity: 12,
+    xact: false,
     dividends: {
         may: 4.60
     },

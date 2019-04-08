@@ -5,6 +5,7 @@ var axfood = {
     ticker: 'AXFO',
     currency: 'sek',
     quantity: 109,
+    xact: true,
     dividends: {
         march: 7.00
     },
