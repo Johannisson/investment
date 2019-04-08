@@ -5,6 +5,7 @@ var investor_a = {
     ticker: 'INVE A',
     currency: 'sek',
     quantity: 56,
+    xact: true,
     dividends: {
         may: 9.0,
         november: 4.0
