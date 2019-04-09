@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 10809 });
+    vm.diagram.push({ label: 'April',  value1: 10848 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -70,7 +70,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 10809,
+        forecast: 10848,
         goal: 26000,
         outcome: 5695,
         accumulated: 4626,
