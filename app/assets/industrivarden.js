@@ -43,4 +43,4 @@ var industrivarden_c = JSON.parse(JSON.stringify(industrivarden_a));
 industrivarden_c.id = 'industrivarden-c';
 industrivarden_c.asset = 'Industrivärden C';
 industrivarden_c.ticker = 'INDU C';
-industrivarden_c.quantity = 20;
+industrivarden_c.quantity = 31;
