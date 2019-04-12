@@ -23,7 +23,7 @@ function DiagramController() {
     var vm = this;
 
     vm.color1 = '#DF1E32';
-    vm.color2 = '#1F3862';
+    vm.color2 = '#0099FF';
     vm.color3 = '#45B9C6';
     vm.color4 = '#0072A8';
 

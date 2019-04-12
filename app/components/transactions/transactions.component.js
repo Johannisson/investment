@@ -123,10 +123,12 @@ function TransactionsController() {
         { date: '2019-04-03', asset: catena_media, quantity: 17, price: 57.40 },
         { date: '2019-04-04', asset: castellum, quantity: 5, price: 180.50 },
         { date: '2019-04-05', asset: latour, quantity: 11, price: 126.60 },
+        { date: '2019-04-08', asset: catena_media, quantity: 10, price: 58.10 },
         { date: '2019-04-08', asset: investor_a, quantity: 3, price: 428.40 },
         { date: '2019-04-09', asset: np3, quantity: 13, price: 74.60 },
         { date: '2019-04-11', asset: industrivarden_c, quantity: 11, price: 205.50 },
         { date: '2019-04-11', asset: stora_enso, quantity: 11, price: 122.70 },
+        { date: '2019-04-12', asset: dustin, quantity: 11, price: 85.45 },
         { sum: '2019-04' },
     ]
 

@@ -4,7 +4,7 @@ var catena_media = {
     asset: 'Catena Media',
     ticker: 'TELIACTM',
     currency: 'sek',
-    quantity: 17,
+    quantity: 27,
     xact: false,
     dividends: {},
     homepage: {
