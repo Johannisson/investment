@@ -23,6 +23,7 @@ var peab = {
         { year: 2015, ordinary: 2.60 },
         { year: 2016, ordinary: 3.60 },
         { year: 2017, ordinary: 4.00 },
-        { year: 2018, ordinary: 4.00 }
+        { year: 2018, ordinary: 4.00 },
+        { year: 2019, ordinary: 4.20 }
     ]
 };
