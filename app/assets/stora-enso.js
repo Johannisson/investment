@@ -4,7 +4,7 @@ var stora_enso = {
     asset: 'Stora Enso R',
     ticker: 'STE R',
     currency: 'sek',
-    quantity: 53,
+    quantity: 65,
     xact: false,
     dividends: {
         march: 5.27

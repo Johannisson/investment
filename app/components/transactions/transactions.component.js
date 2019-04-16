@@ -129,6 +129,8 @@ function TransactionsController() {
         { date: '2019-04-11', asset: industrivarden_c, quantity: 11, price: 205.50 },
         { date: '2019-04-11', asset: stora_enso, quantity: 11, price: 122.70 },
         { date: '2019-04-12', asset: dustin, quantity: 11, price: 85.45 },
+        { date: '2019-04-15', asset: castellum, quantity: 10, price: 177.55 },
+        { date: '2019-04-16', asset: stora_enso, quantity: 12, price: 121.30 },
         { sum: '2019-04' },
     ]
 

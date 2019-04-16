@@ -22,8 +22,8 @@ DiagramController.$inject = [];
 function DiagramController() {
     var vm = this;
 
-    vm.color1 = '#DF1E32';
-    vm.color2 = '#0099FF';
+    vm.color1 = '#BB1E32';
+    vm.color2 = '#33A6BB';
     vm.color3 = '#45B9C6';
     vm.color4 = '#0072A8';
 

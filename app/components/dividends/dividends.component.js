@@ -27,6 +27,8 @@ function DividendsController() {
         { date: '2019-04-03',  asset: sagax,             quantity: 400,  amount: 200.00,   tax: 0,       type: '',           last: false },
         { date: '2019-04-04',  asset: swedbank,          quantity: 155,  amount: 2201.00,  tax: 0,       type: '',           last: false },
         { date: '2019-04-04',  asset: skanska,           quantity: 10,   amount: 60.00,    tax: 0,       type: '',           last: false },
-        { date: '2019-04-04',  asset: nordea,            quantity: 100,  amount: 718.64,   tax: 107.79,  type: '',           last: true  }
+        { date: '2019-04-04',  asset: nordea,            quantity: 100,  amount: 718.64,   tax: 107.79,  type: '',           last: false },
+        { date: '2019-04-15',  asset: tryg,              quantity: 40,   amount: 95.05,    tax: 25.66,   type: '',           last: false },
+        { date: '2019-04-15',  asset: husqvarna,         quantity: 140,  amount: 105.00,   tax: 0,        type: '',          last: true  }
     ];
 }
