@@ -131,6 +131,8 @@ function TransactionsController() {
         { date: '2019-04-12', asset: dustin, quantity: 11, price: 85.45 },
         { date: '2019-04-15', asset: castellum, quantity: 10, price: 177.55 },
         { date: '2019-04-16', asset: stora_enso, quantity: 12, price: 121.30 },
+        { date: '2019-04-17', asset: handelsbanken, quantity: 17, price: 103.30 },
+        { date: '2019-04-17', asset: pfizer, quantity: 2, price: 372.00 },
         { sum: '2019-04' },
     ]
 

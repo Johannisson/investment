@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 11128 });
+    vm.diagram.push({ label: 'April',  value1: 11245 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -56,7 +56,7 @@ function ReportController() {
     vm.dividend.push({ label: '2019',   value1: 238,   value2: 0    });
     vm.dividend.push({ label: 'Feb',    value1: 238,   value2: 187  });
     vm.dividend.push({ label: 'Mars',   value1: 425,   value2: 1080 });
-    vm.dividend.push({ label: 'April',  value1: 1505,  value2: 4039 });
+    vm.dividend.push({ label: 'April',  value1: 1505,  value2: 4157 });
     vm.dividend.push({ label: 'Maj',    value1: 0,     value2: 0    });
     vm.dividend.push({ label: 'Juni',   value1: 0,     value2: 0    });
     vm.dividend.push({ label: 'Juli',   value1: 0,     value2: 0    });
@@ -70,10 +70,10 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 11128,
+        forecast: 11245,
         goal: 26000,
         outcome: 16312,
-        accumulated: 1504 + 660 + 718 + 200 + 60 + 2201 + 105 + 95,
+        accumulated: 1504 + 660 + 718 + 200 + 60 + 2201 + 105 + 95 + 118,
         loan: 23502,
         assets: [
             { asset: akelius,            quantity: 10,   price: 347.00,         change: 0,    dividend: 0    },
@@ -84,7 +84,7 @@ function ReportController() {
             { asset: castellum,          quantity: 105,  price: 177.55,         change: 15,   dividend: 0    },
             { asset: catena_media,       quantity: 27,   price: 60.50,          change: 27,   dividend: 0    },
             { asset: dustin,             quantity: 100,  price: 85.45,          change: 11,   dividend: 0    },
-            { asset: handelsbanken,      quantity: 126,  price: 104.45,         change: 6,    dividend: 660  },
+            { asset: handelsbanken,      quantity: 143,  price: 103.30,         change: 23,   dividend: 660  },
             { asset: husqvarna,          quantity: 140,  price: 81.82,          change: 7,    dividend: 105  },
             { asset: industrivarden_c,   quantity: 31,   price: 211.20,         change: 11,   dividend: 0    },
             { asset: investor_a,         quantity: 56,   price: 429.80,         change: 3,    dividend: 0    },
@@ -93,12 +93,12 @@ function ReportController() {
             { asset: lifco,              quantity: 12,   price: 400.20,         change: 0,    dividend: 0    },
             { asset: nordea,             quantity: 100,  price: 77.57,          change: 0,    dividend: 718  },
             { asset: np3,                quantity: 91,   price: 73.50,          change: 13,   dividend: 0    },
-            { asset: pfizer,             quantity: 15,   price: 390.00,         change: 0,    dividend: 0    },
+            { asset: pfizer,             quantity: 17,   price: 390.00,         change: 2,    dividend: 0    },
             { asset: sagax,              quantity: 400,  price: 34.45,          change: 0,    dividend: 200  },
             { asset: skanska,            quantity: 10,   price: 176.70,         change: 0,    dividend: 60   },
             { asset: stora_enso,         quantity: 65,   price: 125.30,         change: 34,   dividend: 0    },
             { asset: swedbank,           quantity: 155,  price: 149.70,         change: 0,    dividend: 2201 },
-            { asset: telia,              quantity: 100,  price: 41.19,          change: 0,    dividend: 0    },
+            { asset: telia,              quantity: 100,  price: 41.19,          change: 0,    dividend: 118  },
             { asset: tryg,               quantity: 40,   price: 11179.00 / 40,  change: 0,    dividend: 95   },
             { asset: xact_hogutdelande,  quantity: 257,  price: 122.30,         change: 0,    dividend: 0    },
         ]
