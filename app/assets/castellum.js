@@ -4,7 +4,7 @@ var castellum = {
     asset: 'Castellum',
     ticker: 'CAST',
     currency: 'sek',
-    quantity: 105,
+    quantity: 110,
     xact: true,    
     dividends: {
         march: 3.05,

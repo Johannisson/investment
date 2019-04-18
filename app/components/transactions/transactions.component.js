@@ -133,6 +133,7 @@ function TransactionsController() {
         { date: '2019-04-16', asset: stora_enso, quantity: 12, price: 121.30 },
         { date: '2019-04-17', asset: handelsbanken, quantity: 17, price: 103.30 },
         { date: '2019-04-17', asset: pfizer, quantity: 2, price: 372.00 },
+        { date: '2019-04-18', asset: castellum, quantity: 5, price: 177.55 },
         { sum: '2019-04' },
     ]
 
