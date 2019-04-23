@@ -24,7 +24,7 @@ function ReportController() {
     vm.value.push({ label: '2019',   value1: 183289 });
     vm.value.push({ label: 'Feb',    value1: 218823 });
     vm.value.push({ label: 'Mars',   value1: 241838 });
-    vm.value.push({ label: 'April',  value1: 273960 });
+    vm.value.push({ label: 'April',  value1: 276555 });
     vm.value.push({ label: 'Maj',    value1: 0      });
     vm.value.push({ label: 'Juni',   value1: 0      });
     vm.value.push({ label: 'Juli',   value1: 0      });
@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 11245 });
+    vm.diagram.push({ label: 'April',  value1: 11381 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -70,7 +70,7 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 11245,
+        forecast: 11381,
         goal: 26000,
         outcome: 19700,
         accumulated: 1504 + 660 + 718 + 200 + 60 + 2201 + 105 + 95 + 118,
@@ -100,7 +100,7 @@ function ReportController() {
             { asset: swedbank,           quantity: 155,  price: 154.85,         change: 0,    dividend: 2201 },
             { asset: telia,              quantity: 100,  price: 41.05,          change: 0,    dividend: 118  },
             { asset: tryg,               quantity: 40,   price: 11240.00 / 40,  change: 0,    dividend: 95   },
-            { asset: xact_hogutdelande,  quantity: 257,  price: 123.56,         change: 0,    dividend: 0    },
+            { asset: xact_hogutdelande,  quantity: 278,  price: 123.56,         change: 21,   dividend: 0    },
         ]
     }
 
@@ -176,7 +176,7 @@ function ReportController() {
 
     vm.data['2019-1'] = {
         description: '<b>Dividend Carpet Bombing</b><br>' +
-                     'Även om det i praktiken inte spelar någon roll så är det ganska roligt med löpande utdelningar i portföljen. ' + 
+                     'Även om det i praktiken inte spelar någon roll så är det ganska roligt med löpande utdelningar i portföljen. ' +
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
                      'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
@@ -211,9 +211,9 @@ function ReportController() {
     }
     vm.data['2018-12'] = {
         description: '<b>Bevakningsposter</b><br>' +
-                     'Under november månad har jag fokuserat på att köpa mindre bevakningsposter i bolag som jag finner extra intressanta ur ett utdelningsperspektiv. ' + 
+                     'Under november månad har jag fokuserat på att köpa mindre bevakningsposter i bolag som jag finner extra intressanta ur ett utdelningsperspektiv. ' +
                      'Bolagen ska vara stabila utdelningshöjare eller generera löpande kassaflöde för att på så sätt alltid ge lite mer pengar att återinvestera.' +
-                     '<br><br>' + 
+                     '<br><br>' +
                      '<b>Belåning</b><br>' +
                      'Jag har introducerat belåning i portföljen. ' +
                      'Tanken är att den bör ligga kring 10% av portföljens totala värde. ' +
@@ -247,7 +247,7 @@ function ReportController() {
     }
     vm.data['2018-11'] = {
         description: '<b>Utdelningsportföljen</b><br>' +
-                     'Jag har beslutat att bygga en utdelningsportfölj som komplement till min ordinarie fondportfölj. ' + 
+                     'Jag har beslutat att bygga en utdelningsportfölj som komplement till min ordinarie fondportfölj. ' +
                      'Målet med portföljen är att byta investeringsfokus från kapitaltillväxt till utdelningstilväxt. ' +
                      'På så sätt kan jag fokusera på långisktigt värdeskapande i portföljen snarare än dagliga aktiekurser. ' +
                      'Primära målet med portföljen kommer vara utdelningstillväxt, och fokus kommer att ligga på bolag som har stadigt stigande utdelning.' +
