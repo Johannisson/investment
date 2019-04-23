@@ -134,6 +134,9 @@ function TransactionsController() {
         { date: '2019-04-17', asset: handelsbanken, quantity: 17, price: 103.30 },
         { date: '2019-04-17', asset: pfizer, quantity: 2, price: 372.00 },
         { date: '2019-04-18', asset: castellum, quantity: 5, price: 177.55 },
+        { date: '2019-04-23', asset: xact_hogutdelande, quantity: 21, price: 122.84 },
+        { date: '2019-04-23', asset: dustin, quantity: 7, price: 83.05 },
+        { date: '2019-04-23', asset: pfizer, quantity: 2, price: 366.00 },
         { sum: '2019-04' },
     ]
 
