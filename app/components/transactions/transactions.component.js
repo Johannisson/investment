@@ -137,6 +137,8 @@ function TransactionsController() {
         { date: '2019-04-23', asset: xact_hogutdelande, quantity: 21, price: 122.84 },
         { date: '2019-04-23', asset: dustin, quantity: 7, price: 83.05 },
         { date: '2019-04-23', asset: pfizer, quantity: 2, price: 366.00 },
+        { date: '2019-04-24', asset: stora_enso, quantity: 4, price: 120.00 },
+        { date: '2019-04-24', asset: castellum, quantity: 5, price: 178.50 },
         { sum: '2019-04' },
     ]
 

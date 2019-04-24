@@ -24,7 +24,7 @@ function ReportController() {
     vm.value.push({ label: '2019',   value1: 183289 });
     vm.value.push({ label: 'Feb',    value1: 218823 });
     vm.value.push({ label: 'Mars',   value1: 241838 });
-    vm.value.push({ label: 'April',  value1: 278298 });
+    vm.value.push({ label: 'April',  value1: 279279 });
     vm.value.push({ label: 'Maj',    value1: 0      });
     vm.value.push({ label: 'Juni',   value1: 0      });
     vm.value.push({ label: 'Juli',   value1: 0      });
@@ -40,7 +40,7 @@ function ReportController() {
     vm.diagram.push({ label: '2019',   value1: 7830  });
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
-    vm.diagram.push({ label: 'April',  value1: 11426 });
+    vm.diagram.push({ label: 'April',  value1: 11478 });
     vm.diagram.push({ label: 'Maj',    value1: 0     });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
@@ -70,9 +70,9 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-4'] = {
         description: '',
-        forecast: 11426,
+        forecast: 11478,
         goal: 26000,
-        outcome: 23593,
+        outcome: 24966,
         accumulated: 1504 + 660 + 718 + 200 + 60 + 2201 + 105 + 95 + 118,
         loan: 29751,
         assets: [
@@ -81,7 +81,7 @@ function ReportController() {
             { asset: autoliv,            quantity: 4,    price: 789.60,         change: 0,    dividend: 0    },
             { asset: axfood,             quantity: 109,  price: 172.50,         change: 0,    dividend: 0    },
             { asset: bmw,                quantity: 3,    price: 2437.00 / 3,    change: 0,    dividend: 0    },
-            { asset: castellum,          quantity: 110,  price: 177.80,         change: 20,   dividend: 0    },
+            { asset: castellum,          quantity: 115,  price: 177.90,         change: 25,   dividend: 0    },
             { asset: catena_media,       quantity: 27,   price: 57.60,          change: 27,   dividend: 0    },
             { asset: dustin,             quantity: 107,  price: 84.30,          change: 18,   dividend: 0    },
             { asset: handelsbanken,      quantity: 143,  price: 104.10,         change: 23,   dividend: 660  },
@@ -96,7 +96,7 @@ function ReportController() {
             { asset: pfizer,             quantity: 19,   price: 370.00,         change: 4,    dividend: 0    },
             { asset: sagax,              quantity: 400,  price: 34.95,          change: 0,    dividend: 200  },
             { asset: skanska,            quantity: 10,   price: 175.50,         change: 0,    dividend: 60   },
-            { asset: stora_enso,         quantity: 65,   price: 120.00,         change: 34,   dividend: 0    },
+            { asset: stora_enso,         quantity: 69,   price: 120.20,         change: 38,   dividend: 0    },
             { asset: swedbank,           quantity: 155,  price: 154.85,         change: 0,    dividend: 2201 },
             { asset: telia,              quantity: 100,  price: 41.05,          change: 0,    dividend: 118  },
             { asset: tryg,               quantity: 40,   price: 11240.00 / 40,  change: 0,    dividend: 95   },
