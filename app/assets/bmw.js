@@ -1,7 +1,7 @@
 var bmw = {
     id: 'bmw',
-    name: 'Bayerische Motoren Werke AG',
-    asset: 'Bayerische Motoren Werke AG',
+    name: 'Bayerische Motoren Werke',
+    asset: 'Bayerische Motoren Werke',
     ticker: 'BMW',
     currency: 'eur',
     quantity: 3,
