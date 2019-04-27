@@ -179,7 +179,7 @@ function ReportController() {
                      'Även om det i praktiken inte spelar någon roll så är det ganska roligt med löpande utdelningar i portföljen. ' +
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
-                     'Under <a href="utdelningsprognos">utdelningsprognos</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
+                     'Under <a href="utdelningskalender">utdelningskalender</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
         forecast: 7830,
         goal: 30000,
         outcome: 33921,

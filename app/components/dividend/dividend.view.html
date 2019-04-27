@@ -1,9 +1,10 @@
-<h1>UTDELNINGSPROGNOS</h1>
+<h1>UTDELNINGSKALENDER</h1>
 <table>
     <tr>
         <td class="w16 split"></td>
         <td class="w6 split"></td>
         <td class="w6 split right bold padding" ng-repeat="month in $ctrl.months">{{month.short}}</td>
+        <td class="w6 split right bold padding">Summa</td>
     </tr>
     <tr ng-repeat="asset in $ctrl.assets" class="hover">
         <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
@@ -11,43 +12,12 @@
         <td class="right split-right padding" ng-repeat="month in $ctrl.months">
             <span ng-if="asset.dividends[month.id]">{{asset.dividends[month.id] * asset.quantity * $ctrl.currency[asset.currency] | number:0}} kr</span>
         </td>
+        <td class="right split-right padding" style="background:#eee">{{$ctrl.getAssetTotal(asset) | number:0}} kr</td>
     </tr>
     <tr>
         <td class="split-top"></td>
         <td class="split-top"></td>
         <td class="split-top right bold padding" ng-repeat="month in $ctrl.months">{{$ctrl.getSum(month) | number:0}} kr</td>
-    </tr>
-</table>
-<br><br><br><br><br>
-<table>
-    <tr class="split">
-        <td class="w40"></td>
-        <td class="w20 right bold">Antal</td>
-        <td class="w20 right bold">Utdelning</td>
-        <td class="w20 right bold">Summa</td>
-    </tr>
-</table>
-<table>
-    <tr ng-repeat="month in $ctrl.months" class="month">
-        <td>
-            <div class="bold">{{month.name}}</div>
-            <table>
-                <tr ng-repeat="asset in $ctrl.assets" ng-if="asset.dividends[month.id] !== undefined" class="hover">
-                    <td class="w40"><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
-                    <td class="w20 right">{{asset.quantity}} st</td>
-                    <td class="w20 right">{{asset.dividends[month.id] * $ctrl.currency[asset.currency] | number:2}} kr</td>
-                    <td class="w20 right">{{(asset.dividends[month.id] * asset.quantity * $ctrl.currency[asset.currency]) | number:0}} kr</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-<table>
-    <tr class="split">
-        <td colspan="2"></td>
-    </tr>
-    <tr>
-        <td class="w80"></td>
-        <td class="bold w20 right">Summa: {{$ctrl.getTotal() | number:0}} kr</td>
+        <td class="split-top right bold padding">{{$ctrl.getTotal() | number:0}} kr</td>
     </tr>
 </table>

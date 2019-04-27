@@ -32,7 +32,7 @@ function DividendController() {
     vm.assets = assets;
     vm.currency = currency;
 
-    vm.getSum = function(month) {
+    vm.getSum = function (month) {
         var sum = 0;
         vm.assets.forEach(function(asset) {
             if (asset.dividends[month.id] !== undefined) {
@@ -43,14 +43,24 @@ function DividendController() {
     }
 
     vm.getTotal = function () {
-        var total = 0;
+        var sum = 0;
         vm.months.forEach(function(month) {
             vm.assets.forEach(function(asset) {
                 if (asset.dividends[month.id] !== undefined) {
-                    total += asset.dividends[month.id] * asset.quantity
+                    sum += asset.dividends[month.id] * asset.quantity
                 }
             });
         });;
-        return total;
+        return sum;
+    }
+
+    vm.getAssetTotal = function (asset) {
+        var sum = 0;
+        vm.months.forEach(function(month) {
+            if (asset.dividends[month.id] !== undefined) {
+                sum += asset.dividends[month.id] * asset.quantity
+            }
+        });
+        return sum;
     }
 }
