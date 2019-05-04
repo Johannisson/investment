@@ -31,6 +31,9 @@ function DividendsController() {
         { date: '2019-04-15',  asset: tryg,              quantity: 40,   amount: 95.05,    tax: 25.66,   type: '',           last: false },
         { date: '2019-04-15',  asset: husqvarna,         quantity: 140,  amount: 105.00,   tax: 0,       type: '',           last: false },
         { date: '2019-04-17',  asset: telia,             quantity: 100,  amount: 118.00,   tax: 0,       type: '',           last: false },
-        { date: '2019-04-17',  asset: industrivarden_c,  quantity: 31,   amount: 178.25,   tax: 0,       type: '',           last: true  }
+        { date: '2019-04-25',  asset: industrivarden_c,  quantity: 31,   amount: 178.25,   tax: 0,       type: '',           last: true  },
+        { date: '2019-05-02',  asset: atlas_copco,       quantity: 15,   amount: 47.25,    tax: 0,       type: '',           last: false },
+        { date: '2019-05-03',  asset: kungsleden,        quantity: 28,   amount: 16.80,    tax: 0,       type: '',           last: false },
+        { date: '2019-05-03',  asset: lifco,             quantity: 12,   amount: 55.20,    tax: 0,       type: '',           last: true  }
     ];
 }
