@@ -5,7 +5,7 @@ var industrivarden_a = {
     ticker: 'INDU A',
     currency: 'sek',
     quantity: 0,
-    xact: true,    
+    xact: true,
     dividends: {
         april: 5.75
     },
@@ -43,4 +43,4 @@ var industrivarden_c = JSON.parse(JSON.stringify(industrivarden_a));
 industrivarden_c.id = 'industrivarden-c';
 industrivarden_c.asset = 'Industrivärden C';
 industrivarden_c.ticker = 'INDU C';
-industrivarden_c.quantity = 31;
+industrivarden_c.quantity = 35;

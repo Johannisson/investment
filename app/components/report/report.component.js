@@ -25,7 +25,7 @@ function ReportController() {
     vm.value.push({ label: 'Feb',    value1: 218823 });
     vm.value.push({ label: 'Mars',   value1: 241838 });
     vm.value.push({ label: 'April',  value1: 281650 });
-    vm.value.push({ label: 'Maj',    value1: 283460 });
+    vm.value.push({ label: 'Maj',    value1: 282337 });
     vm.value.push({ label: 'Juni',   value1: 0      });
     vm.value.push({ label: 'Juli',   value1: 0      });
     vm.value.push({ label: 'Aug',    value1: 0      });
@@ -41,7 +41,7 @@ function ReportController() {
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
     vm.diagram.push({ label: 'April',  value1: 11478 });
-    vm.diagram.push({ label: 'Maj',    value1: 11645 });
+    vm.diagram.push({ label: 'Maj',    value1: 11746 });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
     vm.diagram.push({ label: 'Aug',    value1: 0     });
@@ -69,11 +69,11 @@ function ReportController() {
     vm.data = [];
     vm.data['2019-5'] = {
         description: '',
-        forecast: 11645,
+        forecast: vm.diagram[6].value1,
         goal: 15000,
-        outcome: 0,
+        outcome: 2322,
         accumulated: vm.dividend[6].value1,
-        loan: 29751,
+        loan: 28177,
         assets: [
             { asset: akelius,            quantity: 10,   price: 344.00,         change: 0,    dividend: 0    },
             { asset: atlas_copco,        quantity: 15,   price: 268.80,         change: 0,    dividend: 47   },
@@ -85,8 +85,8 @@ function ReportController() {
             { asset: dustin,             quantity: 107,  price: 84.65,          change: 0,    dividend: 0    },
             { asset: handelsbanken,      quantity: 143,  price: 104.65,         change: 0,    dividend: 0    },
             { asset: husqvarna,          quantity: 140,  price: 87.76,          change: 0,    dividend: 0    },
-            { asset: industrivarden_c,   quantity: 31,   price: 212.90,         change: 0,    dividend: 0    },
-            { asset: investor_a,         quantity: 56,   price: 449.40,         change: 0,    dividend: 0    },
+            { asset: industrivarden_c,   quantity: 35,   price: 206.80,         change: 4,    dividend: 0    },
+            { asset: investor_a,         quantity: 60,   price: 435.40,         change: 4,    dividend: 0    },
             { asset: kungsleden,         quantity: 28,   price: 71.50,          change: 0,    dividend: 16   },
             { asset: latour,             quantity: 249,  price: 135.90,         change: 0,    dividend: 0    },
             { asset: lifco,              quantity: 12,   price: 452.40,         change: 0,    dividend: 55   },
@@ -95,7 +95,7 @@ function ReportController() {
             { asset: pfizer,             quantity: 19,   price: 392.00,         change: 0,    dividend: 0    },
             { asset: sagax,              quantity: 400,  price: 35.10,          change: 0,    dividend: 0    },
             { asset: skanska,            quantity: 10,   price: 164.15,         change: 0,    dividend: 0    },
-            { asset: stora_enso,         quantity: 69,   price: 121.70,         change: 0,    dividend: 0    },
+            { asset: stora_enso,         quantity: 74,   price: 121.70,         change: 5,    dividend: 0    },
             { asset: swedbank,           quantity: 155,  price: 155.20,         change: 0,    dividend: 0    },
             { asset: telia,              quantity: 100,  price: 40.61,          change: 0,    dividend: 0    },
             { asset: tryg,               quantity: 40,   price: 11612.00 / 40,  change: 0,    dividend: 0    },
@@ -105,7 +105,7 @@ function ReportController() {
 
     vm.data['2019-4'] = {
         description: '',
-        forecast: 11478,
+        forecast: vm.diagram[5].value1,
         goal: 26000,
         outcome: 24966,
         accumulated: vm.dividend[5].value1,
@@ -141,7 +141,7 @@ function ReportController() {
 
     vm.data['2019-3'] = {
         description: '',
-        forecast: 10598,
+        forecast: vm.diagram[4].value1,
         goal: 26000,
         outcome: 27545,
         accumulated: vm.dividend[4].value1,
@@ -177,7 +177,7 @@ function ReportController() {
 
     vm.data['2019-2'] = {
         description: '',
-        forecast: 9533,
+        forecast: vm.diagram[3].value1,
         goal: 30000,
         outcome: 30461,
         accumulated: vm.dividend[3].value1,
@@ -215,7 +215,7 @@ function ReportController() {
                      'Kassaflödet gör att jag löpande får lite mer slantar att återinvestera utöver det jag sparar. ' +
                      'Även om inte målet är att få utdelningar varje månad så har det redan blivit så att jag kommer få utdelning varje månad. ' +
                      'Under <a href="utdelningskalender">utdelningskalender</a> kan man få en tydlig överblick över utdelningarna för respektive månad.',
-        forecast: 7830,
+        forecast: vm.diagram[2].value1,
         goal: 30000,
         outcome: 33921,
         accumulated: vm.dividend[2].value1,
@@ -255,7 +255,7 @@ function ReportController() {
                      'Belåningen ska användas till köp av <a href="portfoljbolag/xact-hogutdelande">Xact&nbsp;Högutdelande</a> för att skapa riskspridning i kombination med stabil utdelning. ' +
                      'Anledningen att jag begränsar mig till 10% belåning är att jag ser det som en sund nivå på hävstång i portföljen. ' +
                      'Målet är att fonden ska utgöra cirka 20% av portföljens total värde.',
-        forecast: 6181,
+        forecast: vm.diagram[1].value1,
         goal: 43000,
         outcome: 43899,
         accumulated: vm.dividend[1].value1,
@@ -291,7 +291,7 @@ function ReportController() {
                      'Byte av courtageklass från Avanza small till mini har gjorts för att jag kan handla mer regelbundet och till mindre summor. ' +
                      'Trots ganska hög köptakt beräknar jag att mina kostnader för courtage inte bör överstiga 100 kr per månad.' +
                      'Skulle jag använda Avanza small skulle samma kostnad bara räcka till i snitt 2,5 affärer per månad.',
-        forecast: 4380,
+        forecast: vm.diagram[0].value1,
         goal: 100000,
         outcome: 101669,
         accumulated: vm.dividend[0].value1,

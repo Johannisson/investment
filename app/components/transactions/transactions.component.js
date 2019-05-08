@@ -140,6 +140,11 @@ function TransactionsController() {
         { date: '2019-04-24', asset: stora_enso, quantity: 4, price: 120.00 },
         { date: '2019-04-24', asset: castellum, quantity: 5, price: 178.50 },
         { sum: '2019-04' },
+        { label: 'Maj 2019' },
+        { date: '2019-05-06', asset: investor_a, quantity: 4, price: 435.00 },
+        { date: '2019-05-07', asset: stora_enso, quantity: 5, price: 116.40 },
+        { date: '2019-05-07', asset: industrivarden_c, quantity: 4, price: 206.80 },
+        { sum: '2019-05' },
     ]
 
     vm.getSum = function(month)
