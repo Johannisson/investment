@@ -146,6 +146,7 @@ function TransactionsController() {
         { date: '2019-05-07', asset: industrivarden_c, quantity: 4, price: 206.80 },
         { date: '2019-05-09', asset: industrivarden_c, quantity: 6, price: 202.80 },
         { date: '2019-05-09', asset: xact_hogutdelande, quantity: 4, price: 122.36 },
+        { date: '2019-05-10', asset: sagax, quantity: 17, price: 34.90 },
         { sum: '2019-05' },
     ]
 

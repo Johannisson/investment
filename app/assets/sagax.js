@@ -4,7 +4,7 @@ var sagax = {
     asset: 'Sagax D',
     ticker: 'SAGA D',
     currency: 'sek',
-    quantity: 400,
+    quantity: 417,
     xact: false,
     dividends: {
         january: 0.50,
@@ -21,7 +21,7 @@ var sagax = {
         { month: 'feb', ordinary: 0.00 },
         { month: 'mar', ordinary: 0.00 },
         { month: 'apr', ordinary: 0.50 },
-        { month: 'maj', ordinary: 0.00 },        
+        { month: 'maj', ordinary: 0.00 },
         { month: 'jun', ordinary: 0.00 },
         { month: 'jul', ordinary: 0.50 },
         { month: 'aug', ordinary: 0.00 },
