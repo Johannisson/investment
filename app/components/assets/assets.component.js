@@ -9,10 +9,10 @@ angular
         controller: AssetsController
     });
 
-AssetsController.$inject = [];
+AssetsController.$inject = ['AssetService'];
 
-function AssetsController() {
+function AssetsController(AssetService) {
     var vm = this;
 
-    vm.assets = assets;
+    vm.assets = AssetService.assets;
 }

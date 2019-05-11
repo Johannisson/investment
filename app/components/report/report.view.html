@@ -1,32 +1,32 @@
 <h1>MÅNADSRAPPORT</h1>
 <article>
     <div>
-        <button class="button_year" ng-class="$ctrl.year === 2018 ? 'active' : ''" ng-click="$ctrl.year = 2018; $ctrl.month = 11">2018</button>
-        <button class="button_year" ng-class="$ctrl.year === 2019 ? 'active' : ''" ng-click="$ctrl.year = 2019; $ctrl.month = 5">2019</button>
+        <button class="button_year" ng-class="$ctrl.year == '2018' ? 'active' : ''" ng-click="$ctrl.year = '2018'; $ctrl.month = '11'">2018</button>
+        <button class="button_year" ng-class="$ctrl.year == '2019' ? 'active' : ''" ng-click="$ctrl.year = '2019'; $ctrl.month = '05'">2019</button>
     </div>
     <br>
-    <div ng-if="$ctrl.year === 2019">
-        <button class="button_month" ng-class="$ctrl.month === 1 ? 'active' : ''" ng-click="$ctrl.month = 1">Januari</button>
-        <button class="button_month" ng-class="$ctrl.month === 2 ? 'active' : ''" ng-click="$ctrl.month = 2">Februari</button>
-        <button class="button_month" ng-class="$ctrl.month === 3 ? 'active' : ''" ng-click="$ctrl.month = 3">Mars</button>
-        <button class="button_month" ng-class="$ctrl.month === 4 ? 'active' : ''" ng-click="$ctrl.month = 4">April</button>
-        <button class="button_month" ng-class="$ctrl.month === 5 ? 'active' : ''" ng-click="$ctrl.month = 5">Maj</button>
+    <div ng-if="$ctrl.year == '2019'">
+        <button class="button_month" ng-class="$ctrl.month == '01' ? 'active' : ''" ng-click="$ctrl.month = '01'">Januari</button>
+        <button class="button_month" ng-class="$ctrl.month == '02' ? 'active' : ''" ng-click="$ctrl.month = '02'">Februari</button>
+        <button class="button_month" ng-class="$ctrl.month == '03' ? 'active' : ''" ng-click="$ctrl.month = '03'">Mars</button>
+        <button class="button_month" ng-class="$ctrl.month == '04' ? 'active' : ''" ng-click="$ctrl.month = '04'">April</button>
+        <button class="button_month" ng-class="$ctrl.month == '05' ? 'active' : ''" ng-click="$ctrl.month = '05'">Maj</button>
 <!--
-       <button class="button_month" ng-class="$ctrl.month === 6 ? 'active' : ''" ng-click="$ctrl.month = 6">Juni</button>
-        <button class="button_month" ng-class="$ctrl.month === 7 ? 'active' : ''" ng-click="$ctrl.month = 7">Juli</button>
-        <button class="button_month" ng-class="$ctrl.month === 8 ? 'active' : ''" ng-click="$ctrl.month = 8">Augusti</button>
-        <button class="button_month" ng-class="$ctrl.month === 9 ? 'active' : ''" ng-click="$ctrl.month = 9">September</button>
-        <button class="button_month" ng-class="$ctrl.month === 10 ? 'active' : ''" ng-click="$ctrl.month = 10">Oktober</button>
-        <button class="button_month" ng-class="$ctrl.month === 11 ? 'active' : ''" ng-click="$ctrl.month = 11">November</button>
-        <button class="button_month" ng-class="$ctrl.month === 12 ? 'active' : ''" ng-click="$ctrl.month = 12">December</button>
+       <button class="button_month" ng-class="$ctrl.month == 6 ? 'active' : ''" ng-click="$ctrl.month = 6">Juni</button>
+        <button class="button_month" ng-class="$ctrl.month == 7 ? 'active' : ''" ng-click="$ctrl.month = 7">Juli</button>
+        <button class="button_month" ng-class="$ctrl.month == 8 ? 'active' : ''" ng-click="$ctrl.month = 8">Augusti</button>
+        <button class="button_month" ng-class="$ctrl.month == 9 ? 'active' : ''" ng-click="$ctrl.month = 9">September</button>
+        <button class="button_month" ng-class="$ctrl.month == 10 ? 'active' : ''" ng-click="$ctrl.month = 10">Oktober</button>
+        <button class="button_month" ng-class="$ctrl.month == 11 ? 'active' : ''" ng-click="$ctrl.month = 11">November</button>
+        <button class="button_month" ng-class="$ctrl.month == 12 ? 'active' : ''" ng-click="$ctrl.month = 12">December</button>
 -->
     </div>
-    <div ng-if="$ctrl.year === 2018">
-        <button class="button_month" ng-class="$ctrl.month === 11 ? 'active' : ''" ng-click="$ctrl.month = 11">November</button>
-        <button class="button_month" ng-class="$ctrl.month === 12 ? 'active' : ''" ng-click="$ctrl.month = 12">December</button>
+    <div ng-if="$ctrl.year == '2018'">
+        <button class="button_month" ng-class="$ctrl.month == '11' ? 'active' : ''" ng-click="$ctrl.month = '11'">November</button>
+        <button class="button_month" ng-class="$ctrl.month == '12' ? 'active' : ''" ng-click="$ctrl.month = '12'">December</button>
     </div>
     <br>
-    <div ng-repeat="month in ['2018-11', '2018-12', '2019-1', '2019-2', '2019-3', '2019-4', '2019-5']" ng-if="$ctrl.year + '-' + $ctrl.month === month">
+    <div ng-repeat="month in ['2018-11', '2018-12', '2019-01', '2019-02', '2019-03', '2019-04', '2019-05']" ng-if="$ctrl.year + '-' + $ctrl.month === month">
         <p class="w90" ng-bind-html="$ctrl.getDescription(month)"></p>
         <br>
         <table class="w40">
@@ -70,10 +70,15 @@
                 <td class="right bold">{{$ctrl.getForecast(month) / 218 | number:2}}</td>
                 <td class="bold">&nbsp;kr/arbetsdag</td>
             </tr>
-            <tr class="split">
+            <tr>
                 <td></td>
                 <td class="right bold">{{$ctrl.getForecast(month) / 8765 | number:2}}</td>
                 <td class="bold">&nbsp;kr/timme</td>
+            </tr>
+            <tr class="split">
+                <td>Andel av fasta kostander</td>
+                <td class="right bold">{{($ctrl.getForecast(month) / 0.12) / $ctrl.expense | number:2}}</td>
+                <td class="bold">&nbsp;%</td>
             </tr>
             <tr>
                 <td>Belåning</td>

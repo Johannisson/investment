@@ -9,9 +9,9 @@ angular
         controller: DividendController
     });
 
-DividendController.$inject = [];
+DividendController.$inject = ['AssetService'];
 
-function DividendController() {
+function DividendController(AssetService) {
     var vm = this;
 
     vm.months = [
@@ -29,7 +29,7 @@ function DividendController() {
         { id: 'december', name: 'December', short: 'Dec' }
     ];
 
-    vm.assets = assets;
+    vm.assets = AssetService.assets;
     vm.currency = currency;
 
     vm.getSum = function (month) {
