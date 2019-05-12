@@ -1,6 +1,6 @@
 <aside>
     <table>
-        <tr ng-repeat="asset in $ctrl.assets">
+        <tr ng-repeat="asset in $ctrl.assets | orderBy : 'asset'" ng-if="asset.quantity > 0">
             <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
             <td class="right">{{asset.quantity}} st</td>
         </tr>

@@ -6,7 +6,7 @@
         <td class="w6 split right bold padding" ng-repeat="month in $ctrl.months">{{month.short}}</td>
         <td class="w6 split right bold padding">Summa</td>
     </tr>
-    <tr ng-repeat="asset in $ctrl.assets" class="hover">
+    <tr ng-repeat="asset in $ctrl.assets | orderBy : 'asset'" class="hover" ng-if="asset.quantity > 0">
         <td><a href="portfoljbolag/{{asset.id}}">{{asset.asset}}</a></td>
         <td class="right split-right padding">{{asset.quantity}} st</td>
         <td class="right split-right padding" ng-repeat="month in $ctrl.months">

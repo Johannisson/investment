@@ -7,10 +7,10 @@
     "quantity": 28,
     "xact": false,
     "dividends": {
-        "january": 0.55,
-        "april": 0.55,
-        "july": 0.55,
-        "october": 0.55
+        "january": 0.60,
+        "april": 0.60,
+        "july": 0.60,
+        "october": 0.60
     },
     "homepage": {
         "name": "www.kungsleden.se",

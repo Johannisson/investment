@@ -26,7 +26,7 @@ function ReportController(TransactionsService, AssetService) {
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
     vm.diagram.push({ label: 'April',  value1: 11478 });
-    vm.diagram.push({ label: 'Maj',    value1: 11837 });
+    vm.diagram.push({ label: 'Maj',    value1: 11843 });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
     vm.diagram.push({ label: 'Aug',    value1: 0     });
