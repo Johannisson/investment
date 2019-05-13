@@ -4,7 +4,7 @@
     "asset": "XACT Högutdelande",
     "ticker": "XACTHDIV",
     "currency": "sek",
-    "quantity": 282,
+    "quantity": 290,
     "xact": false,
     "dividends": {
         "may": 5.60

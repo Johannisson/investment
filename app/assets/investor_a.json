@@ -4,7 +4,7 @@
     "asset": "Investor A",
     "ticker": "INVE A",
     "currency": "sek",
-    "quantity": 60,
+    "quantity": 65,
     "xact": true,
     "dividends": {
         "may": 9.0,

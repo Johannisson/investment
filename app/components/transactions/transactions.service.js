@@ -140,6 +140,8 @@ function TransactionsService(AssetService) {
         { date: '2019-05-09', asset: AssetService.industrivarden_c, quantity: 6, price: 202.80 },
         { date: '2019-05-09', asset: AssetService.xact_hogutdelande, quantity: 4, price: 122.36 },
         { date: '2019-05-10', asset: AssetService.sagax, quantity: 17, price: 34.90 },
+        { date: '2019-05-13', asset: AssetService.investor_a, quantity: 5, price: 427.60 },
+        { date: '2019-05-13', asset: AssetService.xact_hogutdelande, quantity: 8, price: 121.48 },
         { sum: '2019-05' },
     ]
 

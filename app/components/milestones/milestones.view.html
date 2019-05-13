@@ -23,8 +23,10 @@
             <td></td>
         </tr>
         <tr ng-repeat="row in $ctrl.forecast">
-            <td class="right">{{row.goal | number:0}} kr</td>
-            <td></td>
+            <td class="right" ng-class="row.date ? 'done' : ''">{{row.goal | number:0}} kr</td>
+            <td class="right">
+                <span ng-if="row.date">{{row.date}}</span>
+            </td>
         </tr>
     </table>
     <h2>Akumulerad utdelning</h2>

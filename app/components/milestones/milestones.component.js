@@ -26,7 +26,7 @@ function MilestonesController() {
     ]
 
     vm.forecast = [
-        { goal:12000 },
+        { goal:12000, date: '2019-05-13'  },
         { goal:24000 },
         { goal:36000 },
         { goal:48000 },

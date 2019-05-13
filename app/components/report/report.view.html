@@ -124,7 +124,7 @@
                     <td class="right">{{$ctrl.getValue(asset) | number:0}} kr</td>
                     <td class="right">{{$ctrl.getValue(asset) / $ctrl.getTotal(month) * 100 | number:0}} %</td>
                     <td class="right">
-                        <span ng-if="asset.dividend">{{$ctrl.getDividend(asset) | number:0}} kr</span>
+                        <span ng-if="$ctrl.getDividend(month, asset)">{{$ctrl.getDividend(month, asset) | number:0}} kr</span>
                     </td>
                 </tr>
                 <tr>

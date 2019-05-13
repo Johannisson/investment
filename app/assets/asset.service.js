@@ -42,13 +42,17 @@ function AssetService($http) {
     $http.get('app/assets/industrivarden_a.json').then(function(response) {
         vm.assets.push(vm.industrivarden_a = response.data);
         $http.get('app/assets/industrivarden_c.json').then(function(response) {
-            vm.assets.push(angular.copy(vm.industrivarden_c = angular.merge(vm.industrivarden_a, response.data)));
+            vm.industrivarden_c = angular.copy(vm.industrivarden_a);
+            vm.industrivarden_c = angular.merge(vm.industrivarden_c, response.data);
+            vm.assets.push(vm.industrivarden_c);
         });
     });
     $http.get('app/assets/investor_a.json').then(function(response) {
         vm.assets.push(vm.investor_a = response.data);
         $http.get('app/assets/investor_b.json').then(function(response) {
-            vm.assets.push(angular.copy(vm.investor_b = angular.merge(vm.industrivarden_a, response.data)));
+            vm.investor_b = angular.copy(vm.investor_a);
+            vm.investor_b = angular.merge(vm.investor_b, response.data)
+            vm.assets.push(vm.investor_b);
         });
     });
     $http.get('app/assets/kungsleden.json').then(function(response) {

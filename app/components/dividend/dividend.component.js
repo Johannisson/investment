@@ -36,7 +36,7 @@ function DividendController(AssetService) {
         var sum = 0;
         vm.assets.forEach(function(asset) {
             if (asset.dividends[month.id] !== undefined) {
-                sum += asset.dividends[month.id] * asset.quantity
+                sum += asset.dividends[month.id] * asset.quantity * vm.currency[asset.currency];
             }
         });
         return sum;
@@ -47,7 +47,7 @@ function DividendController(AssetService) {
         vm.months.forEach(function(month) {
             vm.assets.forEach(function(asset) {
                 if (asset.dividends[month.id] !== undefined) {
-                    sum += asset.dividends[month.id] * asset.quantity
+                    sum += asset.dividends[month.id] * asset.quantity * vm.currency[asset.currency];
                 }
             });
         });;
@@ -58,7 +58,7 @@ function DividendController(AssetService) {
         var sum = 0;
         vm.months.forEach(function(month) {
             if (asset.dividends[month.id] !== undefined) {
-                sum += asset.dividends[month.id] * asset.quantity
+                sum += asset.dividends[month.id] * asset.quantity * vm.currency[asset.currency];
             }
         });
         return sum;
