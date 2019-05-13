@@ -76,4 +76,11 @@ function MilestonesController() {
         { goal: 9 },
         { goal: 10 },
     ]
+
+    vm.lego = [
+        { date: '2018-11-28', description: '' },
+        { date: '2019-02-11', description: '' },
+        { date: '2019-02-18', description: '' },
+        { date: '2019-05-13', description: '' }
+    ]
 }

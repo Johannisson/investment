@@ -67,18 +67,22 @@
     </table>
     <h2>Utdelning per timme</h2>
     <table class="w80">
-            <tr>
-                <td class="split w14"></td>
-                <td class="split w14 bold right">Datum</td>
-                <td></td>
-            </tr>
-            <tr ng-repeat="row in $ctrl.hour">
-                <td class="right" ng-class="row.date ? 'done' : ''">{{row.goal | number:0}} kr</td>
-                <td class="right">
-                    <span ng-if="row.date">{{row.date}}</span>
-                </td>
-                <td></td>
-            </tr>
-        </table>
+        <tr>
+            <td class="split w14"></td>
+            <td class="split w14 bold right">Datum</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="row in $ctrl.hour">
+            <td class="right" ng-class="row.date ? 'done' : ''">{{row.goal | number:0}} kr</td>
+            <td class="right">
+                <span ng-if="row.date">{{row.date}}</span>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Hall of fame</h2>
+    <div ng-repeat="lego in $ctrl.lego" style="float:left; width: 150px;">
+        <img src="/assets/img/milestones/{{lego.date}}.jpg" height="150" />
+    </div>
 </article>
 <app-assets />
