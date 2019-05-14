@@ -143,7 +143,31 @@ function TransactionsService(AssetService) {
         { date: '2019-05-13', asset: AssetService.investor_a, quantity: 5, price: 427.60 },
         { date: '2019-05-13', asset: AssetService.xact_hogutdelande, quantity: 8, price: 121.48 },
         { sum: '2019-05' },
-    ]
+    ];
+
+    vm.getChange = function(month, asset) {
+        var sum = 0;
+        vm.transactions.forEach(function (transaction) {
+            if (transaction.date != undefined &&
+                transaction.date.startsWith(month) &&
+                transaction.asset.id == asset.id) {
+                    sum += transaction.quantity;
+            }
+        });
+        return sum;
+    };
+
+    vm.getQuantity = function(month, asset) {
+        var sum = 0;
+        vm.transactions.forEach(function (transaction) {
+            if (transaction.date != undefined &&
+                transaction.date.substring(0, 7) <= month &&
+                transaction.asset.id == asset.id) {
+                    sum += transaction.quantity;
+            }
+        });
+        return sum;
+    };
 
     vm.getSum = function(month)
     {
@@ -154,5 +178,5 @@ function TransactionsService(AssetService) {
             }
         });
         return sum;
-    }
+    };
 }

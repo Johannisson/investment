@@ -40,12 +40,12 @@ function DividendsService(AssetService) {
 
     vm.getDividend = function(month, asset) {
         for (var i in vm.dividends) {
-            if (vm.dividends[i].date.startsWith(month) && vm.dividends[i].asset.asset == asset.asset.asset) {
+            if (vm.dividends[i].date.startsWith(month) && vm.dividends[i].asset.id == asset.id) {
                 return vm.dividends[i].amount;
             }
         };
         return 0;
-    }
+    };
 
     vm.getDividends = function(month) {
         var sum = 0;
@@ -55,7 +55,7 @@ function DividendsService(AssetService) {
             }
         };
         return sum;
-    }
+    };
 
     vm.getArbitrages = function(month) {
         var sum = 0;
@@ -65,5 +65,5 @@ function DividendsService(AssetService) {
             }
         };
         return sum;
-    }
+    };
 }
