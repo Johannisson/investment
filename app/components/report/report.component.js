@@ -45,7 +45,7 @@ function ReportController(TransactionsService, AssetService, DividendsService) {
     vm.dividend.push({ label: 'Feb',    value1: 238 + 50 + 137 });
     vm.dividend.push({ label: 'Mars',   value1: 425 + 23 + 693 + 274 + 56 + 33 });
     vm.dividend.push({ label: 'April',  value1: 1504 + 660 + 718 + 200 + 60 + 2201 + 105 + 95 + 118 + 178 });
-    vm.dividend.push({ label: 'Maj',    value1: 5839 + 47 + 16 + 55 + 136 });
+    vm.dividend.push({ label: 'Maj',    value1: 5839 + 47 + 16 + 55 + 136 + 623 });
     vm.dividend.push({ label: 'Juni',   value1: 0 });
     vm.dividend.push({ label: 'Juli',   value1: 0 });
     vm.dividend.push({ label: 'Aug',    value1: 0 });

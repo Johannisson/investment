@@ -34,7 +34,8 @@ function DividendsService(AssetService) {
         { date: '2019-05-02',  asset: AssetService.atlas_copco,       quantity: 15,   amount: 47.25,    tax: 0,       type: '',           last: false },
         { date: '2019-05-03',  asset: AssetService.kungsleden,        quantity: 28,   amount: 16.80,    tax: 0,       type: '',           last: false },
         { date: '2019-05-03',  asset: AssetService.lifco,             quantity: 12,   amount: 55.20,    tax: 0,       type: '',           last: false },
-        { date: '2019-05-10',  asset: AssetService.np3,               quantity: 91,   amount: 136.50,   tax: 0,       type: '',           last: true  }
+        { date: '2019-05-10',  asset: AssetService.np3,               quantity: 91,   amount: 136.50,   tax: 0,       type: '',           last: false },
+        { date: '2019-05-14',  asset: AssetService.latour,            quantity: 249,  amount: 622.50,   tax: 0,       type: '',           last: true  }
     ];
 
     vm.getDividend = function(month, asset) {
