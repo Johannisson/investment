@@ -5,6 +5,7 @@
     "ticker": "SHB A",
     "currency": "sek",
     "quantity": 143,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "march": 5.50

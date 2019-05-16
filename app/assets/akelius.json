@@ -5,6 +5,7 @@
     "ticker": "AKEL PREF",
     "currency": "sek",
     "quantity": 10,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "february": 5.00,

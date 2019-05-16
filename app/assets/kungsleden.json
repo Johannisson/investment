@@ -5,6 +5,7 @@
     "ticker": "KLED",
     "currency": "sek",
     "quantity": 28,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "january": 0.60,

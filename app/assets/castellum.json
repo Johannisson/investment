@@ -5,6 +5,7 @@
     "ticker": "CAST",
     "currency": "sek",
     "quantity": 115,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "march": 3.05,

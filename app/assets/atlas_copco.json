@@ -5,6 +5,7 @@
     "ticker": "ATCO B",
     "currency": "sek",
     "quantity": 15,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "may": 3.15,

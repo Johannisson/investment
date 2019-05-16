@@ -5,6 +5,7 @@
     "ticker": "SWED A",
     "currency": "sek",
     "quantity": 155,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "april": 14.20

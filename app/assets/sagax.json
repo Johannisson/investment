@@ -5,6 +5,7 @@
     "ticker": "SAGA D",
     "currency": "sek",
     "quantity": 417,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "january": 0.50,

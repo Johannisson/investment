@@ -5,6 +5,7 @@
     "ticker": "STE R",
     "currency": "sek",
     "quantity": 74,
+    "account": "KF",
     "xact": false,
     "dividends": {
         "march": 5.27

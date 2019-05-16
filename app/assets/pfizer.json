@@ -5,6 +5,7 @@
     "ticker": "PFE",
     "currency": "sek",
     "quantity": 19,
+    "account": "KF",
     "xact": false,
     "dividends": {
         "march": 3.00,

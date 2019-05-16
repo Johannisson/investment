@@ -5,6 +5,7 @@
     "ticker": "DUST",
     "currency": "sek",
     "quantity": 107,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "december": 3.10

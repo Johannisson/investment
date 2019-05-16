@@ -47,6 +47,9 @@ function AssetService($http) {
             vm.assets.push(vm.industrivarden_c);
         });
     });
+    $http.get('app/assets/indutrade.json').then(function(response) {
+        vm.assets.push(vm.indutrade = response.data);
+    });
     $http.get('app/assets/investor_a.json').then(function(response) {
         vm.assets.push(vm.investor_a = response.data);
         $http.get('app/assets/investor_b.json').then(function(response) {
@@ -78,6 +81,9 @@ function AssetService($http) {
     });
     $http.get('app/assets/sagax.json').then(function(response) {
         vm.assets.push(vm.sagax = response.data);
+    });
+    $http.get('app/assets/sampo.json').then(function(response) {
+        vm.assets.push(vm.sampo = response.data);
     });
     $http.get('app/assets/skanska.json').then(function(response) {
         vm.assets.push(vm.skanska = response.data);

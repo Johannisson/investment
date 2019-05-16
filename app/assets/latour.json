@@ -5,6 +5,7 @@
     "ticker": "LATO B",
     "currency": "sek",
     "quantity": 249,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "may": 2.50

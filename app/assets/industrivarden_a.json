@@ -5,6 +5,7 @@
     "ticker": "INDU A",
     "currency": "sek",
     "quantity": 0,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "april": 5.75

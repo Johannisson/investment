@@ -5,6 +5,7 @@
     "ticker": "INVE A",
     "currency": "sek",
     "quantity": 65,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "may": 9.0,

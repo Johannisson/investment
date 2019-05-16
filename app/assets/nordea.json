@@ -5,6 +5,7 @@
     "ticker": "NDA SE",
     "currency": "sek",
     "quantity": 100,
+    "account": "KF",
     "xact": true,
     "dividends": {
         "march": 7.20

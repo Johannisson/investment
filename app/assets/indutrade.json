@@ -1,0 +1,24 @@
+{
+    "id": "indutrade",
+    "name": "Indutrade",
+    "asset": "Indutrade",
+    "ticker": "INDT",
+    "currency": "sek",
+    "quantity": 6,
+    "account": "ISK",
+    "xact": false,
+    "dividends": {
+        "may": 4.50
+    },
+    "homepage": {
+        "name": "www.indutrade.se",
+        "url": "https://www.indutrade.se/"
+    },
+    "years": [
+        { "year": 2019, "ordinary": 4.50 },
+        { "year": 2018, "ordinary": 3.75 },
+        { "year": 2017, "ordinary": 3.20 },
+        { "year": 2016, "ordinary": 3.00 },
+        { "year": 2015, "ordinary": 2.58 }
+    ]
+}

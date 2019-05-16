@@ -5,6 +5,7 @@
     "ticker": "LIFCO B",
     "currency": "sek",
     "quantity": 12,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "may": 4.60

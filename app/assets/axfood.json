@@ -5,6 +5,7 @@
     "ticker": "AXFO",
     "currency": "sek",
     "quantity": 109,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "march": 7.00

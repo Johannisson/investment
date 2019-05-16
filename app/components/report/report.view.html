@@ -105,7 +105,7 @@
         <div class="w90">
             <table>
                 <tr class="split">
-                    <th class="w35" ng-click="$ctrl.order = 'data.name'">Aktie<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
+                    <th class="w35" ng-click="$ctrl.order = 'data.name'">Värdepapper<span ng-if="$ctrl.order === 'data.name'">&nbsp;&#9660;</span></th>
                     <th class="w10 right">Antal</th>
                     <th class="w10 right">Köp/Sälj</th>
                     <th class="w10 right" ng-click="$ctrl.order = '-price * quantity'"><span ng-if="$ctrl.order === '-price * quantity'">&#9660;&nbsp;</span>Värde</th>
@@ -115,7 +115,9 @@
                 <tr ng-repeat="holding in $ctrl.getHoldings(month) | orderBy:$ctrl.order" class="hover">
                     <td>
                         <a href="portfoljbolag/{{holding.asset.id}}">{{holding.asset.asset}}</a>
-                        <sup ng-if="holding.asset.xact"> 1</sup>
+                        <sup ng-if="holding.asset.xact && holding.asset.account == 'ISK'">1</sup>
+                        <sup ng-if="holding.asset.xact && holding.asset.account == 'KF'">1, 2</sup>
+                        <sup ng-if="!holding.asset.xact && holding.asset.account == 'KF'">2</sup>
                     </td>
                     <td class="right">{{holding.quantity}} st</td>
                     <td class="right">
@@ -137,7 +139,8 @@
         </div>
     </div>
     <p>
-        1: Värdepappret ingår i XACT Högutdelande.
+        1: Värdepappret ingår i XACT Högutdelande.<br>
+        2: Värdepappret ligger i kapitalförsäkring.
     </p>
     <h2>Portföljvärde</h2>
     <app-diagram data="$ctrl.value" rows="[0, 50000, 100000, 150000, 200000, 250000, 300000]" suffix="kr" width="750" height="350"></app-diagram>

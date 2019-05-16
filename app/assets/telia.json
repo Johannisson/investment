@@ -5,6 +5,7 @@
     "ticker": "TELIA",
     "currency": "sek",
     "quantity": 100,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "april": 1.18,

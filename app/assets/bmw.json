@@ -5,6 +5,7 @@
     "ticker": "BMW",
     "currency": "eur",
     "quantity": 3,
+    "account": "KF",
     "xact": false,
     "dividends": {
         "may": 4

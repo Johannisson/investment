@@ -59,7 +59,7 @@ function TransactionsService(AssetService) {
         { date: '2019-01-09', asset: AssetService.nordea, quantity: 40, price: 79.44 },
         { date: '2019-01-10', asset: AssetService.pfizer, quantity: 3, price: 376.00 },
         { date: '2019-01-15', asset: AssetService.axfood, quantity: 11, price: 155.85 },
-        { date: '2019-01-17', asset: AssetService.bmw, quantity: 3, price: 71.26, rate: 10 },
+        { date: '2019-01-17', asset: AssetService.bmw, quantity: 3, price: 71.26, rate: 10.00 },
         { date: '2019-01-17', asset: AssetService.nordea, quantity: 17, price: 80.56 },
         { date: '2019-01-21', asset: AssetService.axfood, quantity: 6, price: 155.70 },
         { date: '2019-01-22', asset: AssetService.nordea, quantity: 17, price: 81.57 },
@@ -143,6 +143,8 @@ function TransactionsService(AssetService) {
         { date: '2019-05-13', asset: AssetService.investor_a, quantity: 5, price: 427.60 },
         { date: '2019-05-13', asset: AssetService.xact_hogutdelande, quantity: 8, price: 121.48 },
         { date: '2019-05-15', asset: AssetService.industrivarden_c, quantity: 4, price: 201.10 },
+        { date: '2019-05-16', asset: AssetService.sampo, quantity: 3, price: 39.29, rate: 10.75 },
+        { date: '2019-05-16', asset: AssetService.indutrade, quantity: 6, price: 283.40 },
         { sum: '2019-05' },
     ];
 

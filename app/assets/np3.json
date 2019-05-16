@@ -5,6 +5,7 @@
     "ticker": "NP3",
     "currency": "sek",
     "quantity": 91,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "may": 1.50,

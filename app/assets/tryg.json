@@ -5,6 +5,7 @@
     "ticker": "TRYG",
     "currency": "dkk",
     "quantity": 40,
+    "account": "KF",
     "xact": true,
     "dividends": {
         "january": 1.65,

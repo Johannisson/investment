@@ -5,6 +5,7 @@
     "ticker": "ALIV SDB",
     "currency": "sek",
     "quantity": 4,
+    "account": "KF",
     "xact": false,
     "dividends": {
         "march": 5.78,

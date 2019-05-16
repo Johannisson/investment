@@ -5,6 +5,7 @@
     "ticker": "PEAB B",
     "currency": "sek",
     "quantity": 0,
+    "account": "ISK",
     "xact": false,
     "dividends": {
         "may": 4.00

@@ -31,7 +31,7 @@ function ReportController(TransactionsService, AssetService, DividendsService) {
     vm.diagram.push({ label: 'Feb',    value1: 9533  });
     vm.diagram.push({ label: 'Mars',   value1: 10598 });
     vm.diagram.push({ label: 'April',  value1: 11478 });
-    vm.diagram.push({ label: 'Maj',    value1: 12189 });
+    vm.diagram.push({ label: 'Maj',    value1: 12308 });
     vm.diagram.push({ label: 'Juni',   value1: 0     });
     vm.diagram.push({ label: 'Juli',   value1: 0     });
     vm.diagram.push({ label: 'Aug',    value1: 0     });
@@ -76,6 +76,7 @@ function ReportController(TransactionsService, AssetService, DividendsService) {
             { asset: AssetService.handelsbanken,      price: 101.65        },
             { asset: AssetService.husqvarna,          price: 85.12         },
             { asset: AssetService.industrivarden_c,   price: 202.70        },
+            { asset: AssetService.indutrade,          price: 289.40        },
             { asset: AssetService.investor_a,         price: 430.20        },
             { asset: AssetService.kungsleden,         price: 72.25         },
             { asset: AssetService.latour,             price: 129.30        },
@@ -84,6 +85,7 @@ function ReportController(TransactionsService, AssetService, DividendsService) {
             { asset: AssetService.np3,                price: 75.20         },
             { asset: AssetService.pfizer,             price: 392.00        },
             { asset: AssetService.sagax,              price: 35.15         },
+            { asset: AssetService.sampo,              price: 1279.00 / 3   },
             { asset: AssetService.skanska,            price: 161.35        },
             { asset: AssetService.stora_enso,         price: 111.30        },
             { asset: AssetService.swedbank,           price: 145.20        },

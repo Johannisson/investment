@@ -5,6 +5,7 @@
     "ticker": "SKA B",
     "currency": "sek",
     "quantity": 10,
+    "account": "ISK",
     "xact": true,
     "dividends": {
         "april": 6.00

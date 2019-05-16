@@ -5,6 +5,7 @@
     "ticker": "TELIACTM",
     "currency": "sek",
     "quantity": 27,
+    "account": "ISK",
     "xact": false,
     "dividends": {},
     "homepage": {
